@@ -1,0 +1,3 @@
+[2024-10-16 12:21:05,234] multiqc.core.file_search                           [INFO   ]  Search path: /mnt/omar/pipelines/ont/work/results
+[2024-10-16 12:21:11,027] multiqc.modules.kraken.kraken                      [INFO   ]  Found 26 reports
+[2024-10-16 12:21:12,112] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 12 reports

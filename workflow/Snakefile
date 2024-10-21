@@ -1,0 +1,14 @@
+# Load the necessary environments
+configfile: "workflow/config.yml"
+
+rule all:
+    input:
+        expand("results/multiqc/multiqc_report.html")
+
+
+include: "rules/001_basecall.smk"
+include: "rules/002_qc.smk"
+include: "rules/003_abundance.smk"
+include: "rules/004_pathways.smk"
+include: "rules/005_amr.smk"
+include: "rules/010_multiqc.smk"
