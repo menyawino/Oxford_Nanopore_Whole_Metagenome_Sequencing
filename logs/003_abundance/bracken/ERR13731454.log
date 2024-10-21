@@ -2,18 +2,18 @@
  >> Running Bracken 
       >> python src/est_abundance.py -i results/003_abundance/kraken2/reports/ERR13731454_kraken_report.txt -o results/003_abundance/bracken/ERR13731454_bracken_output.txt -k /mnt/omar/pipelines/ont/work/ref/kraken2/database150mers.kmer_distrib -l S -t 10
 >> Checking report file: results/003_abundance/kraken2/reports/ERR13731454_kraken_report.txt
-PROGRAM START TIME: 10-17-2024 08:25:42
+PROGRAM START TIME: 10-21-2024 11:55:44
 BRACKEN SUMMARY (Kraken report: results/003_abundance/kraken2/reports/ERR13731454_kraken_report.txt)
     >>> Threshold: 10 
-    >>> Number of species in sample: 8964 
-	  >> Number of species with reads > threshold: 5430 
-	  >> Number of species with reads < threshold: 3534 
-    >>> Total reads in sample: 10714398
-	  >> Total reads kept at species level (reads > threshold): 3556988
-	  >> Total reads discarded (species reads < threshold): 15523
-	  >> Reads distributed: 1877037
-	  >> Reads not distributed (eg. no species above threshold): 3733
-	  >> Unclassified reads: 5261117
+    >>> Number of species in sample: 8954 
+	  >> Number of species with reads > threshold: 5356 
+	  >> Number of species with reads < threshold: 3598 
+    >>> Total reads in sample: 10018570
+	  >> Total reads kept at species level (reads > threshold): 3313962
+	  >> Total reads discarded (species reads < threshold): 15841
+	  >> Reads distributed: 1768644
+	  >> Reads not distributed (eg. no species above threshold): 3642
+	  >> Unclassified reads: 4916481
 BRACKEN OUTPUT PRODUCED: results/003_abundance/bracken/ERR13731454_bracken_output.txt
-PROGRAM END TIME: 10-17-2024 08:25:43
+PROGRAM END TIME: 10-21-2024 11:55:45
   Bracken complete.

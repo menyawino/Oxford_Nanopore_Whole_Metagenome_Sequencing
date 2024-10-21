@@ -1,0 +1,19 @@
+Entry blaLAP-1_EF026092 contained antibiotic 'cephalotin' not found in ab class def file.
+Entry blaLAP-2_EU159120 contained antibiotic 'cephalotin' not found in ab class def file.
+Found /mnt/omar/pipelines/ont/work/results/005_amr/resfinder/ERR13731454/resfinder_kma/kma_aminoglycoside.res skipping DB.
+Found /mnt/omar/pipelines/ont/work/results/005_amr/resfinder/ERR13731454/resfinder_kma/kma_beta-lactam.res skipping DB.
+Found /mnt/omar/pipelines/ont/work/results/005_amr/resfinder/ERR13731454/resfinder_kma/kma_colistin.res skipping DB.
+Found /mnt/omar/pipelines/ont/work/results/005_amr/resfinder/ERR13731454/resfinder_kma/kma_fosfomycin.res skipping DB.
+Found /mnt/omar/pipelines/ont/work/results/005_amr/resfinder/ERR13731454/resfinder_kma/kma_fusidicacid.res skipping DB.
+Found /mnt/omar/pipelines/ont/work/results/005_amr/resfinder/ERR13731454/resfinder_kma/kma_macrolide.res skipping DB.
+Found /mnt/omar/pipelines/ont/work/results/005_amr/resfinder/ERR13731454/resfinder_kma/kma_misc.res skipping DB.
+Found /mnt/omar/pipelines/ont/work/results/005_amr/resfinder/ERR13731454/resfinder_kma/kma_nitroimidazole.res skipping DB.
+Found /mnt/omar/pipelines/ont/work/results/005_amr/resfinder/ERR13731454/resfinder_kma/kma_oxazolidinone.res skipping DB.
+Found /mnt/omar/pipelines/ont/work/results/005_amr/resfinder/ERR13731454/resfinder_kma/kma_phenicol.res skipping DB.
+Found /mnt/omar/pipelines/ont/work/results/005_amr/resfinder/ERR13731454/resfinder_kma/kma_quinolone.res skipping DB.
+Found /mnt/omar/pipelines/ont/work/results/005_amr/resfinder/ERR13731454/resfinder_kma/kma_rifampicin.res skipping DB.
+Found /mnt/omar/pipelines/ont/work/results/005_amr/resfinder/ERR13731454/resfinder_kma/kma_sulphonamide.res skipping DB.
+Found /mnt/omar/pipelines/ont/work/results/005_amr/resfinder/ERR13731454/resfinder_kma/kma_tetracycline.res skipping DB.
+Found /mnt/omar/pipelines/ont/work/results/005_amr/resfinder/ERR13731454/resfinder_kma/kma_trimethoprim.res skipping DB.
+Found /mnt/omar/pipelines/ont/work/results/005_amr/resfinder/ERR13731454/resfinder_kma/kma_glycopeptide.res skipping DB.
+Found /mnt/omar/pipelines/ont/work/results/005_amr/resfinder/ERR13731454/resfinder_kma/kma_pseudomonicacid.res skipping DB.

@@ -98,3 +98,337 @@ Found t__SGB4670 : 0.03% of mapped reads ( s__Coprococcus_catus,g__Coprococcus.s
 Found t__SGB4811 : 0.03% of mapped reads ( s__Blautia_obeum,g__Blautia.s__Blautia_sp_210820_DFI_6_14 )
 Found t__SGB14397 : 0.02% of mapped reads ( s__Collinsella_sp_CAG_289,g__Collinsella.s__Collinsella_sp_KGMB02528 )
 Found g__Mediterraneibacter.s__Ruminococcus_gnavus : 0.02% of mapped reads ( g__Dorea.s__Dorea_sp_OM07_5,g__Dorea.s__Dorea_sp_AF24_7LB,g__Dorea.s__Dorea_sp_NSJ_36,g__Dorea.s__Dorea_sp_AM13_35,g__Dorea.s__Dorea_sp_AM10_31 )
+Found g__Lawsonibacter.s__Lawsonibacter_SGB15145 : 0.02% of mapped reads (  )
+Found g__GGB9759.s__GGB9759_SGB15370 : 0.02% of mapped reads (  )
+Found t__SGB14912 : 0.02% of mapped reads ( s__Clostridium_sp_CAG_242 )
+Found g__Oscillospiraceae_unclassified.s__Oscillospiraceae_bacterium_CLA_AA_H250 : 0.02% of mapped reads ( g__Oscillospiraceae_unclassified.s__Oscillospiraceae_bacterium_MH27_1,g__Oscillospiraceae_unclassified.s__Oscillospiraceae_bacterium_MH27_2 )
+Found t__SGB4721 : 0.02% of mapped reads ( s__Clostridium_sp_CAG_58,g__Clostridiaceae_unclassified.s__Clostridiaceae_bacterium,g__Clostridium.s__Clostridium_sp_MCC334 )
+Found t__SGB9712 : 0.02% of mapped reads ( s__Haemophilus_parainfluenzae,g__Haemophilus.s__Haemophilus_sp_HMSC61B11 )
+Found g__GGB9760.s__GGB9760_SGB15374 : 0.02% of mapped reads (  )
+Found t__SGB4960 : 0.02% of mapped reads ( s__Eubacterium_ramulus,g__Roseburia.s__Roseburia_sp_OM02_15 )
+Found t__SGB15120 : 0.02% of mapped reads ( s__Firmicutes_bacterium_CAG_114 )
+Found g__Clostridium.s__Clostridium_SGB4750 : 0.02% of mapped reads (  )
+Found g__Dysosmobacter.s__Dysosmobacter_welbionis : 0.01% of mapped reads ( g__Oscillospiraceae_unclassified.s__Oscillospiraceae_bacterium_VE202_24 )
+Found t__SGB2295 : 0.01% of mapped reads ( s__Alistipes_shahii,g__Rikenellaceae_unclassified.s__Rikenellaceae_bacterium,g__Alistipes.s__Alistipes_sp_AF14_19 )
+Found t__SGB7241 : 0.01% of mapped reads ( s__Lactobacillus_futsaii,g__Companilactobacillus.s__Companilactobacillus_futsaii )
+Found g__GGB9619.s__GGB9619_SGB15067 : 0.01% of mapped reads (  )
+Found t__SGB1790 : 0.01% of mapped reads ( s__Odoribacter_splanchnicus )
+
+Total species selected from prescreen: 549
+
+Selected species explain 99.96% of predicted community composition
+
+
+Creating custom ChocoPhlAn database ........
+
+
+Running bowtie2-build ........
+
+
+Running bowtie2 ........
+
+Total bugs from nucleotide alignment: 69
+g__Bacteroides.s__Bacteroides_plebeius: 2021289 hits
+g__Bacteroides.s__Bacteroides_coprocola: 1576010 hits
+g__Barnesiella.s__Barnesiella_intestinihominis: 26829 hits
+g__Roseburia.s__Roseburia_intestinalis: 671729 hits
+g__Bacteroides.s__Bacteroides_vulgatus: 350105 hits
+g__Blautia.s__Blautia_wexlerae: 41143 hits
+g__Faecalibacterium.s__Faecalibacterium_prausnitzii: 687041 hits
+g__Bifidobacterium.s__Bifidobacterium_catenulatum: 17503 hits
+g__Streptococcus.s__Streptococcus_pneumoniae: 73403 hits
+g__Bacteroides.s__Bacteroides_ovatus: 75314 hits
+g__Lachnospiraceae_unclassified.s__Eubacterium_rectale: 231920 hits
+g__Blautia.s__Blautia_sp_CAG_52: 55611 hits
+g__Bacteroides.s__Bacteroides_uniformis: 91872 hits
+g__Bacteroides.s__Bacteroides_stercoris: 115681 hits
+g__Blautia.s__Blautia_obeum: 128218 hits
+g__Bacteroides.s__Bacteroides_massiliensis: 313478 hits
+g__Eubacterium.s__Eubacterium_sp_CAG_252: 156300 hits
+g__Bacteroides.s__Bacteroides_thetaiotaomicron: 98557 hits
+g__Fusicatenibacter.s__Fusicatenibacter_saccharivorans: 54335 hits
+g__Coprococcus.s__Coprococcus_comes: 30208 hits
+g__Prevotella.s__Prevotella_sp_CAG_279: 125059 hits
+g__Coprococcus.s__Coprococcus_catus: 12873 hits
+g__Collinsella.s__Collinsella_aerofaciens: 25345 hits
+g__Dorea.s__Dorea_longicatena: 124746 hits
+g__Dorea.s__Dorea_formicigenerans: 31398 hits
+g__Parabacteroides.s__Parabacteroides_distasonis: 88940 hits
+g__Bifidobacterium.s__Bifidobacterium_adolescentis: 49911 hits
+g__Eubacterium.s__Eubacterium_eligens: 38603 hits
+g__Alistipes.s__Alistipes_putredinis: 17161 hits
+g__Clostridium.s__Clostridium_sp_CAG_221: 11758 hits
+g__Slackia.s__Slackia_isoflavoniconvertens: 4816 hits
+g__Anaerostipes.s__Anaerostipes_hadrus: 38642 hits
+g__Paraprevotella.s__Paraprevotella_clara: 32452 hits
+g__Ruminococcus.s__Ruminococcus_lactaris: 37536 hits
+g__Haemophilus.s__Haemophilus_parainfluenzae: 60903 hits
+g__Bacteroides.s__Bacteroides_caccae: 52116 hits
+g__Parabacteroides.s__Parabacteroides_merdae: 67918 hits
+g__Clostridiales_unclassified.s__Clostridiales_bacterium_KLE1615: 6699 hits
+g__Eubacterium.s__Eubacterium_ramulus: 16224 hits
+g__Intestinibacter.s__Intestinibacter_bartlettii: 20795 hits
+g__Senegalimassilia.s__Senegalimassilia_anaerobia: 21002 hits
+g__Clostridium.s__Clostridium_sp_AM22_11AC: 14375 hits
+g__Subdoligranulum.s__Subdoligranulum_sp_APC924_74: 14554 hits
+g__Eubacterium.s__Eubacterium_hallii: 23254 hits
+g__Oscillibacter.s__Oscillibacter_sp_57_20: 9814 hits
+g__Sutterella.s__Sutterella_wadsworthensis: 21176 hits
+g__Gemmiger.s__Gemmiger_formicilis: 24125 hits
+g__Firmicutes_unclassified.s__Firmicutes_bacterium_CAG_56: 7172 hits
+g__Lawsonibacter.s__Lawsonibacter_asaccharolyticus: 4468 hits
+g__Agathobaculum.s__Agathobaculum_butyriciproducens: 17483 hits
+g__Odoribacter.s__Odoribacter_splanchnicus: 29057 hits
+g__Turicibacter.s__Turicibacter_sanguinis: 16304 hits
+g__Firmicutes_unclassified.s__Firmicutes_bacterium_CAG_41: 1225 hits
+g__Streptococcus.s__Streptococcus_salivarius: 7914 hits
+g__Bifidobacterium.s__Bifidobacterium_longum: 31292 hits
+g__Streptococcus.s__Streptococcus_parasanguinis: 4615 hits
+g__Veillonella.s__Veillonella_infantium: 2158 hits
+g__Veillonella.s__Veillonella_dispar: 3957 hits
+g__Phascolarctobacterium.s__Phascolarctobacterium_faecium: 7914 hits
+g__Alistipes.s__Alistipes_shahii: 5362 hits
+g__Eggerthella.s__Eggerthella_sp_CAG_209: 2026 hits
+g__Veillonella.s__Veillonella_parvula: 721 hits
+g__Coprobacter.s__Coprobacter_fastidiosus: 987 hits
+g__Clostridium.s__Clostridium_sp_CAG_242: 273 hits
+g__Collinsella.s__Collinsella_sp_CAG_289: 745 hits
+g__Clostridium.s__Clostridium_sp_CAG_58: 681 hits
+g__Firmicutes_unclassified.s__Firmicutes_bacterium_CAG_114: 269 hits
+g__Lactobacillus.s__Lactobacillus_futsaii: 85 hits
+g__Oscillibacter.s__Oscillibacter_valericigenes: 22 hits
+
+Total gene families from nucleotide alignment: 110521
+
+Unaligned reads after nucleotide alignment: 39.8808345887 %
+
+
+Running diamond ........
+
+
+Aligning to reference database: uniref90_201901b_full.dmnd
+
+Total bugs after translated alignment: 70
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+g__Bacteroides.s__Bacteroides_plebeius: 2021289 hits
+g__Bacteroides.s__Bacteroides_coprocola: 1576010 hits
+g__Barnesiella.s__Barnesiella_intestinihominis: 26829 hits
+g__Roseburia.s__Roseburia_intestinalis: 671729 hits
+g__Bacteroides.s__Bacteroides_vulgatus: 350105 hits
+g__Blautia.s__Blautia_wexlerae: 41143 hits
+g__Faecalibacterium.s__Faecalibacterium_prausnitzii: 687041 hits
+g__Bifidobacterium.s__Bifidobacterium_catenulatum: 17503 hits
+g__Streptococcus.s__Streptococcus_pneumoniae: 73403 hits
+g__Bacteroides.s__Bacteroides_ovatus: 75314 hits
+g__Lachnospiraceae_unclassified.s__Eubacterium_rectale: 231920 hits
+g__Blautia.s__Blautia_sp_CAG_52: 55611 hits
+g__Bacteroides.s__Bacteroides_uniformis: 91872 hits
+g__Bacteroides.s__Bacteroides_stercoris: 115681 hits
+g__Blautia.s__Blautia_obeum: 128218 hits
+g__Bacteroides.s__Bacteroides_massiliensis: 313478 hits
+g__Eubacterium.s__Eubacterium_sp_CAG_252: 156300 hits
+g__Bacteroides.s__Bacteroides_thetaiotaomicron: 98557 hits
+g__Fusicatenibacter.s__Fusicatenibacter_saccharivorans: 54335 hits
+g__Coprococcus.s__Coprococcus_comes: 30208 hits
+g__Prevotella.s__Prevotella_sp_CAG_279: 125059 hits
+g__Coprococcus.s__Coprococcus_catus: 12873 hits
+g__Collinsella.s__Collinsella_aerofaciens: 25345 hits
+g__Dorea.s__Dorea_longicatena: 124746 hits
+g__Dorea.s__Dorea_formicigenerans: 31398 hits
+g__Parabacteroides.s__Parabacteroides_distasonis: 88940 hits
+g__Bifidobacterium.s__Bifidobacterium_adolescentis: 49911 hits
+g__Eubacterium.s__Eubacterium_eligens: 38603 hits
+g__Alistipes.s__Alistipes_putredinis: 17161 hits
+g__Clostridium.s__Clostridium_sp_CAG_221: 11758 hits
+g__Slackia.s__Slackia_isoflavoniconvertens: 4816 hits
+g__Anaerostipes.s__Anaerostipes_hadrus: 38642 hits
+g__Paraprevotella.s__Paraprevotella_clara: 32452 hits
+g__Ruminococcus.s__Ruminococcus_lactaris: 37536 hits
+g__Haemophilus.s__Haemophilus_parainfluenzae: 60903 hits
+g__Bacteroides.s__Bacteroides_caccae: 52116 hits
+g__Parabacteroides.s__Parabacteroides_merdae: 67918 hits
+g__Clostridiales_unclassified.s__Clostridiales_bacterium_KLE1615: 6699 hits
+g__Eubacterium.s__Eubacterium_ramulus: 16224 hits
+g__Intestinibacter.s__Intestinibacter_bartlettii: 20795 hits
+g__Senegalimassilia.s__Senegalimassilia_anaerobia: 21002 hits
+g__Clostridium.s__Clostridium_sp_AM22_11AC: 14375 hits
+g__Subdoligranulum.s__Subdoligranulum_sp_APC924_74: 14554 hits
+g__Eubacterium.s__Eubacterium_hallii: 23254 hits
+g__Oscillibacter.s__Oscillibacter_sp_57_20: 9814 hits
+g__Sutterella.s__Sutterella_wadsworthensis: 21176 hits
+g__Gemmiger.s__Gemmiger_formicilis: 24125 hits
+g__Firmicutes_unclassified.s__Firmicutes_bacterium_CAG_56: 7172 hits
+g__Lawsonibacter.s__Lawsonibacter_asaccharolyticus: 4468 hits
+g__Agathobaculum.s__Agathobaculum_butyriciproducens: 17483 hits
+g__Odoribacter.s__Odoribacter_splanchnicus: 29057 hits
+g__Turicibacter.s__Turicibacter_sanguinis: 16304 hits
+g__Firmicutes_unclassified.s__Firmicutes_bacterium_CAG_41: 1225 hits
+g__Streptococcus.s__Streptococcus_salivarius: 7914 hits
+g__Bifidobacterium.s__Bifidobacterium_longum: 31292 hits
+g__Streptococcus.s__Streptococcus_parasanguinis: 4615 hits
+g__Veillonella.s__Veillonella_infantium: 2158 hits
+g__Veillonella.s__Veillonella_dispar: 3957 hits
+g__Phascolarctobacterium.s__Phascolarctobacterium_faecium: 7914 hits
+g__Alistipes.s__Alistipes_shahii: 5362 hits
+g__Eggerthella.s__Eggerthella_sp_CAG_209: 2026 hits
+g__Veillonella.s__Veillonella_parvula: 721 hits
+g__Coprobacter.s__Coprobacter_fastidiosus: 987 hits
+g__Clostridium.s__Clostridium_sp_CAG_242: 273 hits
+g__Collinsella.s__Collinsella_sp_CAG_289: 745 hits
+g__Clostridium.s__Clostridium_sp_CAG_58: 681 hits
+g__Firmicutes_unclassified.s__Firmicutes_bacterium_CAG_114: 269 hits
+g__Lactobacillus.s__Lactobacillus_futsaii: 85 hits
+g__Oscillibacter.s__Oscillibacter_valericigenes: 22 hits
+unclassified: 1398621 hits
+
+Total gene families after translated alignment: 153906
+
+Unaligned reads after translated alignment: 30.3472842154 %
+
+
+Computing gene families ...
+
+Computing pathways abundance and coverage ...
+
+Output files created: 
+/mnt/omar/pipelines/ont/work/results/004_pathways/humann/ERR13731435/ERR13731435_merged_genefamilies.tsv
+/mnt/omar/pipelines/ont/work/results/004_pathways/humann/ERR13731435/ERR13731435_merged_pathabundance.tsv
+/mnt/omar/pipelines/ont/work/results/004_pathways/humann/ERR13731435/ERR13731435_merged_pathcoverage.tsv
+

@@ -7,8 +7,10 @@ rule multiqc:
         fastp = expand("results/002_qc/trimmed/{sample}_{read}_trimmed.fastq.gz", sample=config["samples"], read=config["reads"]),
         kraken = expand("results/003_abundance/kraken2/reports/{sample}_kraken_report.txt", sample=config["samples"]),
         bracken = expand("results/003_abundance/bracken/{sample}_bracken_output.txt", sample=config["samples"]),
-        humann = expand("results/004_pathways/humann/{sample}_pathways_abundance.tsv", sample=config["samples"]),
-        amr = expand("results/005_amr/{sample}_amr_results.tsv", sample=config["samples"])
+        # humann = expand("results/004_pathways/humann/{sample}_pathways_abundance.tsv", sample=config["samples"]),
+        # amrfinder = expand("results/005_amr/amrfinder/{sample}_amr_results.tsv", sample=config["samples"]),
+        resfinder = expand("results/005_amr/resfinder/{sample}/ResFinder_results.txt", sample=config["samples"]),
+        tree = expand("results/005_tree/tree/{sample}_tree.nwk", sample=config["samples"]),
     output:
         html = "results/multiqc/multiqc_report.html"
     conda:
@@ -21,6 +23,6 @@ rule multiqc:
         """
         multiqc -f \
         -o results/multiqc/ \
-        results/ \
+        results/ logs/ benchmark/ \
         > {log} 2>&1
         """

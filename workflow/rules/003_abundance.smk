@@ -13,6 +13,8 @@ rule classify_taxa:
         "ont"
     threads: 
         config["threads"]
+    resources:
+        mem_mb = 37000
     benchmark:
         "benchmark/003_abundance/kraken2/{sample}.time"
     log:

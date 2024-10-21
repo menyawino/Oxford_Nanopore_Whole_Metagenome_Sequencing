@@ -1,9 +1,5 @@
 /.snakemake/*
 /ref/*
-/results/002_qc/merged/*
-/results/002_qc/trimmed/*
-/results/003_abundance/kraken2/*
-/results/003_abundance/bracken/*
-/results/004_pathways/humann/*
+/results/*
 /samples/*
 /others/*

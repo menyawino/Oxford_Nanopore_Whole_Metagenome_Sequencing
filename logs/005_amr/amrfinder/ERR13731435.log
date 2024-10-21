@@ -1,0 +1,23 @@
+
+*** ERROR ***
+"results/002_qc/merged/ERR13731435_merged.fastq.gz" cannot be a positional parameter
+
+Identify AMR and virulence genes in proteins and/or contigs and print a report
+
+DOCUMENTATION
+    See https://github.com/ncbi/amr/wiki for full documentation
+
+UPDATES
+    Subscribe to the amrfinder-announce mailing list for database and software update notifications:
+    https://www.ncbi.nlm.nih.gov/mailman/listinfo/amrfinder-announce
+
+USAGE:   amrfinder [--update] [--force_update] [--protein PROT_FASTA] [--nucleotide NUC_FASTA] [--gff GFF_FILE] [--annotation_format ANNOTATION_FORMAT] [--database DATABASE_DIR] [--database_version] [--ident_min MIN_IDENT] [--coverage_min MIN_COV] [--organism ORGANISM] [--list_organisms] [--translation_table TRANSLATION_TABLE] [--plus] [--report_common] [--report_all_equal] [--name NAME] [--print_node] [--mutation_all MUT_ALL_FILE] [--output OUTPUT_FILE] [--protein_output PROT_FASTA_OUT] [--nucleotide_output NUC_FASTA_OUT] [--nucleotide_flank5_output NUC_FLANK5_FASTA_OUT] [--nucleotide_flank5_size NUC_FLANK5_SIZE] [--blast_bin BLAST_DIR] [--hmmer_bin HMMER_DIR] [--quiet] [--pgap] [--gpipe_org] [--parm PARM] [--threads THREADS] [--debug] [--log LOG]
+HELP:    amrfinder --help or amrfinder -h
+VERSION: amrfinder --version
+
+HOSTNAME: ?
+SHELL: /usr/bin/zsh
+PWD: /mnt/omar/pipelines/ont/work
+PATH: /home/omar/tutorials/ont/ont-guppy-cpu/bin:/home/omar/.vscode-server/cli/servers/Stable-384ff7382de624fb94dbaf6da11977bba1ecd427/server/bin/remote-cli:/home/omar/Downloads/miniconda3/envs/ont/bin:/home/omar/Downloads/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+Progam name:  amrfinder
+Command line: amrfinder -n 6 -o results/005_amr/amrfinder/ERR13731435_amr_results.tsv results/002_qc/merged/ERR13731435_merged.fastq.gz

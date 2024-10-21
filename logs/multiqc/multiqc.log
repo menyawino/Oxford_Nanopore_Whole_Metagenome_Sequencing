@@ -2,9 +2,11 @@
 /// MultiQC 🔍 v1.25.1
 
        file_search | Search path: /mnt/omar/pipelines/ont/work/results
+       file_search | Search path: /mnt/omar/pipelines/ont/work/logs
+       file_search | Search path: /mnt/omar/pipelines/ont/work/benchmark
 
-            kraken | Found 26 reports
-            fastqc | Found 12 reports
+            kraken | Found 6 reports
+            fastqc | Found 6 reports
 
      write_results | Data        : results/multiqc/multiqc_data
      write_results | Report      : results/multiqc/multiqc_report.html

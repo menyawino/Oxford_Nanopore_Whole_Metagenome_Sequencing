@@ -33,9 +33,8 @@ rule trim_adapters_fastp:
         fastq1 = "samples/fastq/{sample}_1.fastq.gz",
         fastq2 = "samples/fastq/{sample}_2.fastq.gz"
     output:
-        trimmed_fastq1 = "results/002_qc/trimmed/{sample}_1_trimmed.fastq.gz",
-        trimmed_fastq2 = "results/002_qc/trimmed/{sample}_2_trimmed.fastq.gz",
         html = "results/002_qc/trimmed/{sample}_fastp.html",
+        merged_fastq = "results/002_qc/merged/{sample}_merged.fastq.gz"
     conda:
         "ont"
     threads: 
@@ -49,32 +48,10 @@ rule trim_adapters_fastp:
         fastp \
         -i {input.fastq1} \
         -I {input.fastq2} \
-        -o {output.trimmed_fastq1} \
-        -O {output.trimmed_fastq2} \
+        -m --merged_out {output.merged_fastq} \
+        --include_unmerged \
         -j {log} \
         -w {threads} \
         -h {output.html} \
         > {log} 2>&1
-        """
-
-
-#######################################
-#        Rule 4: Merge Reads          #
-#######################################
-rule merge_reads:
-    message:
-        "Merging reads from {wildcards.sample}"
-    input:
-        fastq1 = "results/002_qc/trimmed/{sample}_1_trimmed.fastq.gz",
-        fastq2 = "results/002_qc/trimmed/{sample}_2_trimmed.fastq.gz"
-    output:
-        merged_fastq = "results/002_qc/merged/{sample}_merged.fastq.gz"
-    benchmark:
-        "benchmark/002_qc/merged/{sample}.time"
-    log:
-        "logs/002_qc/merged/{sample}.log"
-    shell:
-        """
-        cat {input.fastq1} {input.fastq2} \
-        > {output.merged_fastq}
         """
