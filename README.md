@@ -60,11 +60,12 @@ Long read sequencing has revolutionized the field of metagenomics by enabling mo
 
 **Tools:**
 
+- **FASTQC:** Standard genomics QC tool.
 - **NanoPlot/NanoQC:** Visualizes the quality of ONT reads.
 - **Filtlong:** Filters long reads by quality and length for ONT.
 - **PacBio QC:** SMRT Link also provides tools for read quality assessment.
 
-**How It Works (CS Level):**
+**How It Works:**
 
 - **NanoPlot/NanoQC:** These tools parse the FASTQ files to generate visual reports of read length distributions, quality scores, and GC content. They use Python libraries like `pandas` for data manipulation and `matplotlib`/`seaborn` for visualization.
     - **Input:** FASTQ files.
@@ -77,58 +78,6 @@ Long read sequencing has revolutionized the field of metagenomics by enabling mo
 
 - Quality control ensures that only the best data is used in subsequent steps, improving the reliability of downstream analyses. It removes low-quality reads that could lead to errors in assembly or misclassification in taxonomic analysis.
 
-### 3. **De Novo Assembly**
-
-**Description:**
-
-- In this step, the filtered high-quality reads are assembled into contiguous sequences (contigs). Assembly reconstructs the original genomes present in the metagenomic sample.
-
-**Tools:**
-
-- **ONT:** Flye, Canu, or Shasta.
-- **PacBio:** Canu, Flye, or HiCanu for HiFi reads.
-- **Hybrid assemblies:** SPAdes in hybrid mode (short + long reads) or Unicycler.
-
-**How It Works (CS Level):**
-
-- **Flye:** Flye uses an overlap-layout-consensus (OLC) algorithm optimized for long reads. It starts by finding overlaps between all pairs of reads (using data structures like hash tables for efficient lookups). Next, it builds a layout graph where nodes represent reads and edges represent overlaps. Finally, it resolves the graph into contigs through a consensus step.
-    - **Input:** FASTQ files of long reads.
-    - **Output:** Assembled contigs in FASTA format.
-- **Canu:** Canu improves on the OLC approach by incorporating error correction. It first corrects the reads by identifying and fixing common sequencing errors. Then, it constructs an overlap graph and simplifies it to generate the final assembly.
-    - **Input:** FASTQ files of long reads.
-    - **Output:** Assembled contigs in FASTA format.
-- **Shasta:** Shasta uses a unique approach based on a "shingling" method, where reads are split into smaller k-mers, and overlaps are identified based on these k-mers. It’s highly optimized for speed and memory usage.
-    - **Input:** FASTQ files of long reads.
-    - **Output:** Assembled contigs in FASTA format.
-
-**Rationale:**
-
-- Assembly is critical for reconstructing the genomes of the organisms present in the sample. Long reads are advantageous as they span repetitive regions and complex genomic structures that short reads cannot resolve. Tools like Flye and Canu are designed to handle the error-prone nature of long reads while producing high-quality assemblies.
-
-### 4. **Polishing the Assembly**
-
-**Description:**
-
-- Polishing corrects errors in the assembled contigs by aligning the original reads back to the assembly and refining the consensus sequence.
-
-**Tools:**
-
-- **ONT:** Medaka, Racon.
-- **PacBio:** Arrow (for CCS reads), Racon.
-
-**How It Works (CS Level):**
-
-- **Racon:** Racon performs multiple rounds of read alignment and consensus correction. It uses the `minimap2` aligner to map reads to the assembled contigs, then corrects the contigs by calculating a consensus sequence from the aligned reads.
-    - **Input:** Assembled contigs (FASTA), original reads (FASTQ).
-    - **Output:** Polished contigs in FASTA format.
-- **Medaka:** Medaka focuses on polishing ONT assemblies by leveraging neural networks. It refines the consensus sequence based on the likelihood of different base calls given the alignment of multiple reads.
-    - **Input:** Assembled contigs (FASTA), original reads (FASTQ).
-    - **Output:** Polished contigs in FASTA format.
-
-**Rationale:**
-
-- Polishing is essential to reduce the error rate in the final assembly, especially given the higher error rates associated with long-read sequencing. It ensures that the consensus sequence more accurately reflects the true biological sequences present in the sample.
-
 ### 5. **Taxonomic Classification**
 
 **Description:**
@@ -138,45 +87,16 @@ Long read sequencing has revolutionized the field of metagenomics by enabling mo
 **Tools:**
 
 - **Kraken2:** A taxonomic classification tool that assigns taxonomy based on exact k-mer matches.
-- **Centrifuge:** Uses a Burrows-Wheeler Transform (BWT)-based approach to classify reads.
-- **MetaPhlAn3:** Uses marker genes for species-level resolution.
 
-**How It Works (CS Level):**
+**How It Works:**
 
 - **Kraken2:** Kraken2 builds a database of k-mers from known reference genomes. Each k-mer is associated with a taxon in a classification tree. During classification, Kraken2 breaks down the reads into k-mers and matches them against the database. The tool then assigns the read to the taxon with the most k-mer matches.
     - **Input:** Reads or contigs in FASTA/FASTQ format.
     - **Output:** Taxonomic assignments with confidence scores.
-- **Centrifuge:** Centrifuge compresses reference genomes using BWT and FM-index, which allows efficient storage and rapid query. During classification, it aligns reads to the compressed reference, identifying the most likely taxonomic assignment.
-    - **Input:** Reads or contigs in FASTA/FASTQ format.
-    - **Output:** Taxonomic classifications and confidence scores.
 
 **Rationale:**
 
 - Accurate taxonomic classification helps elucidate the composition of the microbial community. Tools like Kraken2 and Centrifuge are optimized for speed and accuracy, making them suitable for large metagenomic datasets.
-
-### 6. **Binning of Contigs**
-
-**Description:**
-
-- Binning groups contigs that likely belong to the same genome, reconstructing metagenome-assembled genomes (MAGs).
-
-**Tools:**
-
-- **MetaBAT2:** A probabilistic approach to binning based on sequence composition and read coverage.
-- **MaxBin2:** Uses an expectation-maximization algorithm to assign contigs to bins based on similar coverage and GC content.
-
-**How It Works (CS Level):**
-
-- **MetaBAT2:** MetaBAT2 calculates the tetranucleotide frequency of contigs and uses a Gaussian mixture model to group contigs with similar sequence composition. It also uses coverage information to refine binning, assuming that contigs from the same organism will have similar coverage across samples.
-    - **Input:** Assembled contigs in FASTA format, read coverage data.
-    - **Output:** Binned contigs (MAGs) in separate FASTA files.
-- **MaxBin2:** MaxBin2 first calculates the probability of each contig belonging to different bins based on sequence composition and coverage. It iteratively refines these probabilities to maximize the likelihood that contigs are correctly binned.
-    - **Input:** Assembled contigs in FASTA format, read coverage data.
-    - **Output:** Binned contigs (MAGs) in separate FASTA files.
-
-**Rationale:**
-
-- Binning is crucial for reconstructing the genomes of individual species or strains from a metagenomic sample. Accurate binning allows for more detailed downstream analyses, such as functional annotation and comparative genomics.
 
 ### 7. **Functional Annotation**
 
