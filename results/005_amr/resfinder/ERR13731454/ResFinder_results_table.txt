@@ -1,0 +1,72 @@
+Aminoglycoside
+Resistance gene	Identity	Alignment Length/Gene Length	Coverage	Position in reference	Contig	Position in contig	Phenotype	Accession no.
+aph(6)-Id	100.00	837/837	100.0	1..838	NA	NA..NA	Streptomycin	M28829
+ant(6)-Ia	100.00	867/867	100.0	1..868	NA	NA..NA	Streptomycin	KF864551
+aac(6')-aph(2'')	100.00	1440/1440	100.0	1..1441	NA	NA..NA	Gentamicin, Tobramycin, Netilmicin, Kanamycin, Amikacin, Dibekacin, Isepamicin, Fortimicin, Streptomycin	M13771
+aadA1	97.47	772/792	97.47	21..793	NA	NA..NA	Spectinomycin, Streptomycin	JX185132
+aph(3')-III	91.82	795/795	91.95	1..796	NA	NA..NA	Kanamycin, Amikacin, Neomycin, Butirosin, Isepamicin, Lividomycin, Paromomycin, Ribostamycin	M26832
+aph(3'')-Ib	100.00	804/804	100.0	1..805	NA	NA..NA	Streptomycin	AF321551
+
+Beta-lactam
+Resistance gene	Identity	Alignment Length/Gene Length	Coverage	Position in reference	Contig	Position in contig	Phenotype	Accession no.
+blaTEM-1B	100.00	861/861	100.0	1..862	NA	NA..NA	Amoxicillin, Ampicillin, Cephalothin, Piperacillin, Ticarcillin	AY458016
+cfxA	98.55	966/966	98.65	1..967	NA	NA..NA	Cefoxitin, Ampicillin	U38243
+
+Colistin
+No hit found
+
+Fosfomycin
+No hit found
+
+Fusidic Acid
+No hit found
+
+MLS - Macrolide, Lincosamide and Streptogramin B
+Resistance gene	Identity	Alignment Length/Gene Length	Coverage	Position in reference	Contig	Position in contig	Phenotype	Accession no.
+erm(B)	100.00	738/738	100.0	1..739	NA	NA..NA	Erythromycin, Lincomycin, Clindamycin, Quinupristin, Pristinamycin IA, Virginiamycin S	U18931
+erm(F)	99.50	801/801	100.0	1..802	NA	NA..NA	Erythromycin, Lincomycin, Clindamycin, Quinupristin, Pristinamycin IA, Virginiamycin S	M17808
+lnu(C)	84.85	495/495	89.09	1..496	NA	NA..NA	Lincomycin	AY928180
+
+Misc
+No hit found
+
+Nitroimidazole
+No hit found
+
+Oxazolidinone
+No hit found
+
+Phenicol
+No hit found
+
+Fluoroquinolone
+No hit found
+
+Rifampicin
+No hit found
+
+Sulphonamide
+Resistance gene	Identity	Alignment Length/Gene Length	Coverage	Position in reference	Contig	Position in contig	Phenotype	Accession no.
+sul1	98.96	867/867	98.96	1..868	NA	NA..NA	Sulfamethoxazole	EU780013
+sul2	100.00	816/816	100.0	1..817	NA	NA..NA	Sulfamethoxazole	AY034138
+
+Tetracycline
+Resistance gene	Identity	Alignment Length/Gene Length	Coverage	Position in reference	Contig	Position in contig	Phenotype	Accession no.
+tet(32)	89.06	1920/1920	89.43	1..1921	NA	NA..NA	Doxycycline, Tetracycline, Minocycline	EU722333
+tet(40)	99.92	1221/1221	100.0	1..1222	NA	NA..NA	Doxycycline, Tetracycline	FJ158002
+tet(B)	100.00	1206/1206	100.0	1..1207	NA	NA..NA	Doxycycline, Tetracycline, Minocycline	AF326777
+tet(Q)	99.84	1926/1926	100.0	1..1927	NA	NA..NA	Doxycycline, Tetracycline, Minocycline	L33696
+tet(Q)	92.58	1799/1926	93.41	1..1800	NA	NA..NA	Doxycycline, Tetracycline, Minocycline	Z21523
+tet(W)	100.00	1920/1920	100.0	1..1921	NA	NA..NA	Doxycycline, Tetracycline, Minocycline	AJ427422
+tet(O/32/O)	99.90	1920/1920	100.0	1..1921	NA	NA..NA	Doxycycline, Tetracycline, Minocycline	FP929050
+
+Trimethoprim
+Resistance gene	Identity	Alignment Length/Gene Length	Coverage	Position in reference	Contig	Position in contig	Phenotype	Accession no.
+dfrA1	99.16	474/474	99.16	1..475	NA	NA..NA	Trimethoprim	AF203818
+
+Glycopeptide
+No hit found
+
+Pseudomonic Acid
+No hit found
+

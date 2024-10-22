@@ -1,0 +1,78 @@
+Aminoglycoside
+Resistance gene	Identity	Alignment Length/Gene Length	Coverage	Position in reference	Contig	Position in contig	Phenotype	Accession no.
+ant(6)-Ia	100.00	867/867	100.0	1..868	NA	NA..NA	Streptomycin	KF864551
+aac(6')-aph(2'')	100.00	1440/1440	100.0	1..1441	NA	NA..NA	Gentamicin, Tobramycin, Netilmicin, Kanamycin, Amikacin, Dibekacin, Isepamicin, Fortimicin, Streptomycin	M13771
+aac(6')-Ii	99.64	549/549	100.0	1..550	NA	NA..NA	Tobramycin, Dibekacin, Gentamicin, Sisomicin, Netilmicin	L12710
+
+Beta-lactam
+No hit found
+
+Colistin
+No hit found
+
+Fosfomycin
+Resistance gene	Identity	Alignment Length/Gene Length	Coverage	Position in reference	Contig	Position in contig	Phenotype	Accession no.
+fosA	92.62	420/420	100.0	1..421	NA	NA..NA	Fosfomycin	AGDM01000012
+fosA6	99.52	420/420	100.0	1..421	NA	NA..NA	Fosfomycin	KU254579
+
+Fusidic Acid
+No hit found
+
+MLS - Macrolide, Lincosamide and Streptogramin B
+Resistance gene	Identity	Alignment Length/Gene Length	Coverage	Position in reference	Contig	Position in contig	Phenotype	Accession no.
+ere(D)	96.66	1227/1227	100.0	1..1228	NA	NA..NA	Erythromycin	KP265721
+erm(F)	99.50	801/801	100.0	1..802	NA	NA..NA	Erythromycin, Lincomycin, Clindamycin, Quinupristin, Pristinamycin IA, Virginiamycin S	M17808
+erm(T)	100.00	735/735	100.0	1..736	NA	NA..NA	Erythromycin, Lincomycin, Clindamycin, Quinupristin, Pristinamycin IA, Virginiamycin S	AY894138
+mef(A)	95.16	1218/1218	100.0	1..1219	NA	NA..NA	Erythromycin, Azithromycin	AF227520
+msr(C)	98.99	1479/1479	100.0	1..1480	NA	NA..NA	Erythromycin, Telithromycin, Quinupristin, Pristinamycin IA, Virginiamycin S	AY004350
+msr(D)	82.72	1461/1464	87.16	1..1462	NA	NA..NA	Erythromycin, Azithromycin, Telithromycin, Quinupristin, Pristinamycin IA, Virginiamycin S	AF274302
+lnu(C)	95.96	495/495	100.0	1..496	NA	NA..NA	Lincomycin	AY928180
+erm(B)	100.00	738/738	100.0	1..739	NA	NA..NA	Erythromycin, Lincomycin, Clindamycin, Quinupristin, Pristinamycin IA, Virginiamycin S	X72021
+
+Misc
+No hit found
+
+Nitroimidazole
+No hit found
+
+Oxazolidinone
+No hit found
+
+Phenicol
+Resistance gene	Identity	Alignment Length/Gene Length	Coverage	Position in reference	Contig	Position in contig	Phenotype	Accession no.
+cfr(C)	99.60	1251/1251	99.6	1..1252	NA	NA..NA	Chloramphenicol, Florfenicol, Clindamycin, Lincomycin, Linezolid, Dalfopristin, Pristinamycin IIA, Virginiamycin M, Tiamulin	CANB01000378
+
+Fluoroquinolone
+Resistance gene	Identity	Alignment Length/Gene Length	Coverage	Position in reference	Contig	Position in contig	Phenotype	Accession no.
+OqxA	99.40	1176/1176	100.0	1..1177	NA	NA..NA	Chloramphenicol, Nalidixic acid, Ciprofloxacin, Trimethoprim	EU370913
+OqxB	99.11	3153/3153	100.0	1..3154	NA	NA..NA	Chloramphenicol, Nalidixic acid, Ciprofloxacin, Trimethoprim	EU370913
+
+Rifampicin
+No hit found
+
+Sulphonamide
+No hit found
+
+Tetracycline
+Resistance gene	Identity	Alignment Length/Gene Length	Coverage	Position in reference	Contig	Position in contig	Phenotype	Accession no.
+tet(40)	99.59	1221/1221	100.0	1..1222	NA	NA..NA	Doxycycline, Tetracycline	FJ158002
+tet(A)	99.75	1197/1200	99.75	4..1201	NA	NA..NA	Doxycycline, Tetracycline	AJ517790
+tet(M)	97.45	1920/1920	97.5	1..1921	NA	NA..NA	Doxycycline, Tetracycline, Minocycline	AM990992
+tet(L)	97.82	1354/1377	98.26	24..1378	NA	NA..NA	Doxycycline, Tetracycline, Doxycycline, Tetracycline, Minocycline, Tigecycline	M29725
+tet(Q)	99.84	1926/1926	100.0	1..1927	NA	NA..NA	Doxycycline, Tetracycline, Minocycline	L33696
+tet(Q)	88.11	1926/1926	90.34	1..1927	NA	NA..NA	Doxycycline, Tetracycline, Minocycline	X58717
+tet(Q)	98.22	1965/1965	99.75	1..1966	NA	NA..NA	Doxycycline, Tetracycline, Minocycline	U73497
+tet(X)	92.97	1134/1167	92.97	34..1168	NA	NA..NA	Doxycycline, Tetracycline, Minocycline, Tigecycline	GU014535
+tet(W)	100.00	1920/1920	100.0	1..1921	NA	NA..NA	Doxycycline, Tetracycline, Minocycline	AJ427422
+tet(O/32/O)	90.78	1849/1920	90.94	72..1921	NA	NA..NA	Doxycycline, Tetracycline, Minocycline	FP929050
+
+Trimethoprim
+Resistance gene	Identity	Alignment Length/Gene Length	Coverage	Position in reference	Contig	Position in contig	Phenotype	Accession no.
+dfrG	100.00	498/498	100.0	1..499	NA	NA..NA	Trimethoprim	AB205645
+
+Glycopeptide
+No hit found
+
+Pseudomonic Acid
+No hit found
+

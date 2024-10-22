@@ -1,5 +1,8 @@
 /.snakemake/*
 /ref/*
-/results/*
+/results/002_qc/*
+/results/003_abundance/kraken2/outputs/*
+/results/004_pathways/humann/*/*_merged_humann_temp/*
+/results/005_amr/resfinder/*/resfinder_kma/*
 /samples/*
 /others/*

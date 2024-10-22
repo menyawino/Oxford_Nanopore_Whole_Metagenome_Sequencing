@@ -1,0 +1,14 @@
+Resistance gene	Identity	Alignment Length/Gene Length	Coverage	Position in reference	Contig	Position in contig	Phenotype	Accession no.
+ant(6)-Ia	99.77	867/867	100.0	1..868	NA	NA..NA	Streptomycin	KF864551
+cfxA5	99.90	966/966	100.0	1..967	NA	NA..NA	Unknown Beta-lactam	AY769934
+msr(D)	88.66	1464/1464	88.73	1..1465	NA	NA..NA	Erythromycin, Azithromycin, Telithromycin, Quinupristin, Pristinamycin IA, Virginiamycin S	AF274302
+erm(B)	97.02	716/738	97.02	1..717	NA	NA..NA	Erythromycin, Lincomycin, Clindamycin, Quinupristin, Pristinamycin IA, Virginiamycin S	X72021
+cat	96.96	624/624	100.0	1..625	NA	NA..NA	Chloramphenicol	M35190
+catS	95.34	519/537	96.65	19..538	NA	NA..NA	Chloramphenicol	X74948
+catP	97.92	611/624	97.92	11..622	NA	NA..NA	Chloramphenicol	U15027
+tet(40)	99.84	1221/1221	100.0	1..1222	NA	NA..NA	Doxycycline, Tetracycline	AM419751
+tet(O)	85.21	1636/1920	85.21	250..1886	NA	NA..NA	Doxycycline, Tetracycline, Minocycline	Y07780
+tet(Q)	99.84	1926/1926	100.0	1..1927	NA	NA..NA	Doxycycline, Tetracycline, Minocycline	L33696
+tet(Q)	86.66	1841/1926	88.79	86..1927	NA	NA..NA	Doxycycline, Tetracycline, Minocycline	X58717
+tet(W)	100.00	1920/1920	100.0	1..1921	NA	NA..NA	Doxycycline, Tetracycline, Minocycline	AJ427422
+tet(O/32/O)	93.28	1857/1920	94.95	65..1922	NA	NA..NA	Doxycycline, Tetracycline, Minocycline	FP929050
