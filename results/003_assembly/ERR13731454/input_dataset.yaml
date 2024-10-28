@@ -1,0 +1,4 @@
+- "number": !!int "1"
+  "single reads":
+  - "/mnt/omar/pipelines/ont/work/results/002_qc/merged/ERR13731454_merged.fastq.gz"
+  "type": "single"

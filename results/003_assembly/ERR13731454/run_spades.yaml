@@ -1,0 +1,170 @@
+- STAGE: Before start
+  args: []
+  config_dir: ''
+  del_after:
+  - tmp/hammer_l226__6k
+  - .bin_reads
+  - tmp/spades_rjldyh4y
+  - configs
+  - tmp/hammer_2ezg6yex
+  - .bin_reads
+  - tmp/spades_0wnxu2kh
+  - configs
+  output_files: []
+  path: 'true'
+  short_name: before_start
+- STAGE: Read error correction
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: ec_start
+- STAGE: Read error correction
+  args:
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/corrected/configs/config.info
+  config_dir: corrected
+  del_after:
+  - tmp/hammer_grzq9fxx
+  output_files:
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/corrected/corrected.yaml
+  path: /home/omar/Downloads/miniconda3/envs/ont/bin/spades-hammer
+  short_name: ec_runtool
+- STAGE: corrected reads compression
+  args:
+  - /home/omar/Downloads/miniconda3/envs/ont/share/spades/spades_pipeline/scripts/compress_all.py
+  - --input_file
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/corrected/corrected.yaml
+  - --ext_python_modules_home
+  - /home/omar/Downloads/miniconda3/envs/ont/share/spades
+  - --max_threads
+  - '40'
+  - --output_dir
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/corrected
+  - --gzip_output
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: /home/omar/Downloads/miniconda3/envs/ont/bin/python3
+  short_name: ec_compress
+- STAGE: Read error correction
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: ec_finish
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: as_start
+- STAGE: K21
+  args:
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/K21/configs/config.info
+  config_dir: K21
+  del_after: []
+  output_files: []
+  path: /home/omar/Downloads/miniconda3/envs/ont/bin/spades-core
+  short_name: k21
+- STAGE: K33
+  args:
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/K33/configs/config.info
+  config_dir: K33
+  del_after: []
+  output_files: []
+  path: /home/omar/Downloads/miniconda3/envs/ont/bin/spades-core
+  short_name: k33
+- STAGE: K55
+  args:
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/K55/configs/config.info
+  config_dir: K55
+  del_after: []
+  output_files: []
+  path: /home/omar/Downloads/miniconda3/envs/ont/bin/spades-core
+  short_name: k55
+- STAGE: K77
+  args:
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/K77/configs/config.info
+  config_dir: K77
+  del_after: []
+  output_files: []
+  path: /home/omar/Downloads/miniconda3/envs/ont/bin/spades-core
+  short_name: k77
+- STAGE: K99
+  args:
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/K99/configs/config.info
+  config_dir: K99
+  del_after: []
+  output_files: []
+  path: /home/omar/Downloads/miniconda3/envs/ont/bin/spades-core
+  short_name: k99
+- STAGE: K127
+  args:
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/K127/configs/config.info
+  config_dir: K127
+  del_after: []
+  output_files: []
+  path: /home/omar/Downloads/miniconda3/envs/ont/bin/spades-core
+  short_name: k127
+- STAGE: Copy files
+  args:
+  - /home/omar/Downloads/miniconda3/envs/ont/share/spades/spades_pipeline/scripts/copy_files.py
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/K127/before_rr.fasta
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/before_rr.fasta
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/K127/assembly_graph_after_simplification.gfa
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/assembly_graph_after_simplification.gfa
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/K127/final_contigs.fasta
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/contigs.fasta
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/K127/first_pe_contigs.fasta
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/first_pe_contigs.fasta
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/K127/strain_graph.gfa
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/strain_graph.gfa
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/K127/scaffolds.fasta
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/scaffolds.fasta
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/K127/scaffolds.paths
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/scaffolds.paths
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/K127/assembly_graph_with_scaffolds.gfa
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/assembly_graph_with_scaffolds.gfa
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/K127/assembly_graph.fastg
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/assembly_graph.fastg
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/K127/final_contigs.paths
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/contigs.paths
+  config_dir: ''
+  del_after:
+  - .bin_reads
+  - tmp/spades_pituxhkn
+  output_files: []
+  path: /home/omar/Downloads/miniconda3/envs/ont/bin/python3
+  short_name: copy_files
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: as_finish
+- STAGE: Breaking scaffolds
+  args:
+  - /home/omar/Downloads/miniconda3/envs/ont/share/spades/spades_pipeline/scripts/breaking_scaffolds_script.py
+  - --result_scaffolds_filename
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/scaffolds.fasta
+  - --misc_dir
+  - /mnt/omar/pipelines/ont/work/results/003_assembly/ERR13731454/misc
+  - --threshold_for_breaking_scaffolds
+  - '3'
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: /home/omar/Downloads/miniconda3/envs/ont/bin/python3
+  short_name: bs
+- STAGE: Terminate
+  args: []
+  config_dir: ''
+  del_after:
+  - configs
+  output_files: []
+  path: 'true'
+  short_name: terminate

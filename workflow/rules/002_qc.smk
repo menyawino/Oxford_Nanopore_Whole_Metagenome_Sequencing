@@ -7,8 +7,8 @@ rule qc_fastq:
     input:
         fastq = "samples/fastq/{sample}_{read}.fastq.gz"
     output:
-        html = "results/002_qc/{sample}_{read}_fastqc.html",
-        zip = "results/002_qc/{sample}_{read}_fastqc.zip"
+        html = "results/002_qc/fastqc/{sample}_{read}_fastqc.html",
+        zip = "results/002_qc/fastqc/{sample}_{read}_fastqc.zip"
     conda:
         "ont"
     benchmark:
