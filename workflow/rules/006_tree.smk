@@ -76,10 +76,15 @@ rule msa_clustalo:
         # Run Clustal Omega for multiple sequence alignment
         clustalo -i {input.contigs} \
         -o {output.msa} \
+        --seqtype=DNA \
+        --infmt=fa \
+        --outfmt=clu \
         --threads={threads} \
         --force \
+        --verbose \
         > {log} 2>&1
         """
+
 
 #######################################
 # Rule: Phylogenetic Tree Construction (FastTree)

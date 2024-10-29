@@ -3,7 +3,6 @@
 /results/002_qc/*
 /results/003_abundance/kraken2/outputs/*
 /results/003_assembly/*/*/*
-/results/004_pathways/humann/*
 /results/004_pathways/humann/*/*_merged_humann_temp/*
 /results/005_amr/resfinder/*/resfinder_kma/*
 /samples/*
