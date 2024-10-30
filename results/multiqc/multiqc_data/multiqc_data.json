@@ -12,12 +12,12 @@
         },
         "FastQC": {
             "all_sections": {
-                "ERR13731454_2": "/mnt/omar/pipelines/ont/work/results/002_qc/ERR13731454_2_fastqc.zip",
-                "ERR13731530_2": "/mnt/omar/pipelines/ont/work/results/002_qc/ERR13731530_2_fastqc.zip",
-                "ERR13731435_2": "/mnt/omar/pipelines/ont/work/results/002_qc/ERR13731435_2_fastqc.zip",
-                "ERR13731454_1": "/mnt/omar/pipelines/ont/work/results/002_qc/ERR13731454_1_fastqc.zip",
-                "ERR13731530_1": "/mnt/omar/pipelines/ont/work/results/002_qc/ERR13731530_1_fastqc.zip",
-                "ERR13731435_1": "/mnt/omar/pipelines/ont/work/results/002_qc/ERR13731435_1_fastqc.zip"
+                "ERR13731454_2": "/mnt/omar/pipelines/ont/work/results/002_qc/fastqc/ERR13731454_2_fastqc.zip",
+                "ERR13731530_2": "/mnt/omar/pipelines/ont/work/results/002_qc/fastqc/ERR13731530_2_fastqc.zip",
+                "ERR13731435_2": "/mnt/omar/pipelines/ont/work/results/002_qc/fastqc/ERR13731435_2_fastqc.zip",
+                "ERR13731454_1": "/mnt/omar/pipelines/ont/work/results/002_qc/fastqc/ERR13731454_1_fastqc.zip",
+                "ERR13731530_1": "/mnt/omar/pipelines/ont/work/results/002_qc/fastqc/ERR13731530_1_fastqc.zip",
+                "ERR13731435_1": "/mnt/omar/pipelines/ont/work/results/002_qc/fastqc/ERR13731435_1_fastqc.zip"
             }
         }
     },
@@ -212,7 +212,7 @@
             }
         }
     ],
-    "report_multiqc_command": "/home/omar/Downloads/miniconda3/envs/ont/bin/multiqc -f -o results/multiqc/ results/ logs/ benchmark/",
+    "report_multiqc_command": "/home/omar/Downloads/miniconda3/envs/multiqc_env/bin/multiqc -f -o results/multiqc/ results/ logs/ benchmark/",
     "report_plot_data": {
         "kraken-top-n-plot": {
             "id": "kraken-top-n-plot",
@@ -72774,12 +72774,12 @@
         "logs/",
         "benchmark/"
     ],
-    "config_creation_date": "2024-10-21, 15:04 EEST",
+    "config_creation_date": "2024-10-30, 11:12 EEST",
     "config_git_hash": null,
     "config_intro_text": null,
     "config_report_comment": null,
     "config_report_header_info": null,
-    "config_script_path": "/home/omar/Downloads/miniconda3/envs/ont/lib/python3.12/site-packages/multiqc",
+    "config_script_path": "/home/omar/Downloads/miniconda3/envs/multiqc_env/lib/python3.13/site-packages/multiqc",
     "config_short_version": "1.25.1",
     "config_subtitle": null,
     "config_title": null,

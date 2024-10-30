@@ -1,5 +1,5 @@
-[2024-10-21 15:04:03,269] multiqc.core.file_search                           [INFO   ]  Search path: /mnt/omar/pipelines/ont/work/results
-[2024-10-21 15:04:03,270] multiqc.core.file_search                           [INFO   ]  Search path: /mnt/omar/pipelines/ont/work/logs
-[2024-10-21 15:04:03,270] multiqc.core.file_search                           [INFO   ]  Search path: /mnt/omar/pipelines/ont/work/benchmark
-[2024-10-21 15:04:17,191] multiqc.modules.kraken.kraken                      [INFO   ]  Found 6 reports
-[2024-10-21 15:04:18,423] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 6 reports
+[2024-10-30 11:12:13,962] multiqc.core.file_search                           [INFO   ]  Search path: /mnt/omar/pipelines/ont/work/results
+[2024-10-30 11:12:13,962] multiqc.core.file_search                           [INFO   ]  Search path: /mnt/omar/pipelines/ont/work/logs
+[2024-10-30 11:12:13,963] multiqc.core.file_search                           [INFO   ]  Search path: /mnt/omar/pipelines/ont/work/benchmark
+[2024-10-30 11:12:25,141] multiqc.modules.kraken.kraken                      [INFO   ]  Found 6 reports
+[2024-10-30 11:12:25,439] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 6 reports

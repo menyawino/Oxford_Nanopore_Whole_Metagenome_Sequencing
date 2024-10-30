@@ -13,7 +13,7 @@ rule multiqc:
     output:
         html = "results/multiqc/multiqc_report.html"
     conda:
-        "010_multiqc"
+        "multiqc_env"
     benchmark:
         "benchmark/multiqc/multiqc.time"
     log:

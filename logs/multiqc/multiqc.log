@@ -1,5 +1,5 @@
 
-/// MultiQC 🔍 v1.25.1
+/// MultiQC 🎃 v1.25.1
 
        file_search | Search path: /mnt/omar/pipelines/ont/work/results
        file_search | Search path: /mnt/omar/pipelines/ont/work/logs
@@ -8,6 +8,6 @@
             kraken | Found 6 reports
             fastqc | Found 6 reports
 
-     write_results | Data        : results/multiqc/multiqc_data
+     write_results | Data        : results/multiqc/multiqc_data   (overwritten)
      write_results | Report      : results/multiqc/multiqc_report.html
            multiqc | MultiQC complete
