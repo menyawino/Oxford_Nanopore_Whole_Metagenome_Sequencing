@@ -31,3 +31,11 @@ rule humann_functional_profiling:
         --resume \
         > {log} 2>&1
         """
+
+rule humann_disease_association:
+    input:
+        humann_output = "results/004_pathways/humann/{sample}/{sample}_merged_pathabundance.tsv"
+    output:
+        disease_association = "results/004_pathways/humann/{sample}/{sample}_disease_association.tsv"
+    script:
+        "scripts/humann_disease_association.py"
