@@ -1,0 +1,11 @@
+name: humann_env
+
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  - humann=3.0.0
+  # - scipy
+  # - biom-format

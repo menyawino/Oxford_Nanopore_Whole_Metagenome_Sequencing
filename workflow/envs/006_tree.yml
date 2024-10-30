@@ -1,0 +1,7 @@
+name: tree_env
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.8
+  - anytree=2.8.0

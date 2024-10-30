@@ -1,5 +1,3 @@
-
-
 #######################################
 # Rule 3: Trim adapters using Porechop
 #######################################
@@ -26,36 +24,78 @@
 #         """
 
 
-#######################################
-# Rule 6: Functional Profiling with HUMAnN3
-#######################################
-# rule humann_functional_profiling:
+# #######################################
+# # Rule: MSA with Clustal Omega
+# #######################################
+# rule msa_clustalo:
 #     input:
-#         fastq = "results/trimmed/{sample}_trimmed.fastq"
+#         contigs = rules.assemble_spades.output.contigs
 #     output:
-#         gene_families = "results/humann/{sample}_gene_families.tsv",
-#         pathways_abundance = "results/humann/{sample}_pathways_abundance.tsv",
-#         pathways_coverage = "results/humann/{sample}_pathways_coverage.tsv"
-#     params:
-#         humann_nuc_db = config["humann_nuc_db"],
-#         humann_prot_db = config["humann_prot_db"]
+#         msa = "results/006_tree/msa/{sample}_msa.fasta"
+#     conda:
+#         "ont"
 #     threads: 
 #         config["threads"]
-#     conda:
-#         "humann_env"
 #     benchmark:
-#         "benchmark/humann/{sample}.time"
+#         "benchmark/006_tree/msa/{sample}.time"
 #     log:
-#         "logs/humann/{sample}.log"
+#         "logs/006_tree/msa/{sample}.log"
 #     shell:
 #         """
-#         humann --input {input.fastq} \
-#         --output results/humann/{wildcards.sample} \
-#         --threads {threads} \
-#         --nucleotide-database {params.humann_nuc_db} \
-#         --protein-database {params.humann_prot_db} \
-#         --resume \
-#         > {log} 2>&1
+#         # Run Clustal Omega for multiple sequence alignment
+#         clustalo -i {input.contigs} \
+#         -o {output.msa} \
+#         --seqtype=DNA \
+#         --infmt=fa \
+#         --outfmt=fa \
+#         --threads={threads} \
+#         --force \
+#         --verbose \
+#         --iter=1 \
+#         --log {log} \
+#         >> {log} 2>&1
+#         """
+
+# #######################################
+# # Rule: MSA with MUSCLE
+# #######################################
+# rule msa_muscle:
+#     input:
+#         contigs = rules.assemble_spades.output.contigs
+#     output:
+#         msa = "results/006_tree/msa/{sample}_msa.fasta"
+#     conda:
+#         "msa_tools"
+#     threads: 
+#         config["threads"]
+#     benchmark:
+#         "benchmark/006_tree/msa/{sample}.time"
+#     log:
+#         "logs/006_tree/msa/{sample}.log"
+#     shell:
+#         """
+#         # Run MUSCLE for multiple sequence alignment
+#         muscle -align {input.contigs} -output {output.msa} -maxiters 2 -diags1 -sv -distance1 kbit20_3 -threads {threads} > {log} 2>&1
+#         """
+
+# #######################################
+# # Rule: Phylogenetic Tree Construction (FastTree)
+# #######################################
+# rule tree_fasttree:
+#     input:
+#         msa = rules.msa_clustalo.output.msa
+#     output:
+#         tree = "results/006_tree/tree/{sample}_tree.nwk"
+#     conda:
+#         "ont"
+#     benchmark:
+#         "benchmark/006_tree/tree/{sample}.time"
+#     log:
+#         "logs/006_tree/tree/{sample}.log"
+#     shell:
+#         """
+#         fasttree {input.msa} > {output.tree} \
+#         2> {log}
 #         """
 
 # #######################################

@@ -3,7 +3,7 @@
 #######################################
 rule classify_taxa:
     input:
-        fastq = "results/002_qc/merged/{sample}_merged.fastq.gz"
+        fastq = rules.trim_adapters_fastp.output.merged_fastq
     output:
         kraken_report = "results/003_abundance/kraken2/reports/{sample}_kraken_report.txt",
         kraken_output = "results/003_abundance/kraken2/outputs/{sample}_kraken_output.txt"
@@ -35,7 +35,7 @@ rule classify_taxa:
 #######################################
 rule reestimate_abundance:
     input:
-        kraken_report = "results/003_abundance/kraken2/reports/{sample}_kraken_report.txt"
+        kraken_report = rules.classify_taxa.output.kraken_report
     output:
         bracken_output = "results/003_abundance/bracken/{sample}_bracken_output.txt"
     params:

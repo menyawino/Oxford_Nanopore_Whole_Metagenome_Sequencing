@@ -3,7 +3,7 @@
 #########################################
 rule humann_functional_profiling:
     input:
-        fastq = "results/002_qc/merged/{sample}_merged.fastq.gz"
+        fastq = rules.trim_adapters_fastp.output.merged_fastq
     output:
         gene_families = "results/004_pathways/humann/{sample}/{sample}_gene_families.tsv",
         pathways_abundance = "results/004_pathways/humann/{sample}/{sample}_pathways_abundance.tsv",
