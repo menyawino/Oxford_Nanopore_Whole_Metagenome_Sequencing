@@ -1,8 +1,0 @@
-application/gzip
-Started analysis of ERR13731612_2.fastq.gz
-Failed to process file ERR13731612_2.fastq.gz
-uk.ac.babraham.FastQC.Sequence.SequenceFormatException: ID line didn't start with '@' at line 7454329
-	at uk.ac.babraham.FastQC.Sequence.FastQFile.readNext(FastQFile.java:163)
-	at uk.ac.babraham.FastQC.Sequence.FastQFile.next(FastQFile.java:129)
-	at uk.ac.babraham.FastQC.Analysis.AnalysisRunner.run(AnalysisRunner.java:77)
-	at java.base/java.lang.Thread.run(Thread.java:1570)

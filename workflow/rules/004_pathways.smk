@@ -38,4 +38,4 @@ rule humann_disease_association:
     output:
         disease_association = "results/004_pathways/humann/{sample}/{sample}_disease_association.tsv"
     script:
-        "scripts/humann_disease_association.py"
+        "workflow/scripts/humann_disease_association.py"
