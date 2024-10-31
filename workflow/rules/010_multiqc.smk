@@ -9,7 +9,8 @@ rule multiqc:
         # bracken = expand("results/003_abundance/bracken/{sample}_bracken_output.txt", sample=config["samples"]),
         # humann = expand("results/004_pathways/humann/{sample}_pathways_abundance.tsv", sample=config["samples"]),
         # resfinder = expand("results/005_amr/resfinder/{sample}/ResFinder_results.txt", sample=config["samples"]),
-        tree = expand(rules.tree_build.output.tree_txt, sample=config["samples"])
+        tree = expand(rules.tree_build.output.tree_txt, sample=config["samples"]),
+        disease = expand(rules.compare_phenotypes.output.phenotype_likelihood, sample=config["samples"]),
     output:
         html = "results/multiqc/multiqc_report.html"
     conda:

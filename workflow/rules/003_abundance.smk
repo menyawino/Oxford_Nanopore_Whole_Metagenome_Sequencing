@@ -56,3 +56,29 @@ rule reestimate_abundance:
         -r 150 \
         > {log} 2>&1
         """
+
+#######################################
+# Rule 6: Compare Bracken Output to Phenotype Database
+#######################################
+rule compare_phenotypes:
+    input:
+        bracken_output = rules.reestimate_abundance.output.bracken_output,
+        phenotype_db = "workflow/config/phenotype_summary.tsv"
+    output:
+        phenotype_likelihood = "results/003_abundance/phenotypes/{sample}_phenotype_likelihood.txt"
+    params:
+        script = "scripts/calculate_phenotype_likelihood.py"
+    conda:
+        "ont"
+    benchmark:
+        "benchmark/003_abundance/phenotypes/{sample}.time"
+    log:
+        "logs/003_abundance/phenotypes/{sample}.log"
+    shell:
+        """
+        python {params.script} \
+        --bracken {input.bracken_output} \
+        --phenotypes {input.phenotype_db} \
+        --output {output.phenotype_likelihood} \
+        > {log} 2>&1
+        """
