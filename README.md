@@ -1,162 +1,150 @@
-# Introduction to Long Read Sequencing in Metagenomics
+# Metagenomic Analysis Pipeline
 
-Long read sequencing has revolutionized the field of metagenomics by enabling more accurate and comprehensive analysis of complex microbial communities. This technology allows for the sequencing of DNA fragments that are much longer than traditional short-read methods, typically ranging from several kilobases to over a megabase in length. The increased read length provides numerous advantages in metagenomic studies, including improved genome assembly, better resolution of repetitive regions, and enhanced ability to link genetic elements across long distances.
+This pipeline is designed for comprehensive metagenomic analysis using long-read sequencing data. It includes steps for quality control, taxonomic classification, phenotype likelihood calculation, functional profiling, antimicrobial resistance detection, phylogenetic tree construction, and multi-sample reporting.
 
-## Basic Knowledge
+## Tools Used in the Pipeline
 
-- Definition and advantages of long read sequencing: Long read sequencing refers to technologies that can sequence DNA fragments of several kilobases or more in a single read. The primary advantages include improved genome assembly, better resolution of repetitive regions, and the ability to detect structural variants more accurately.
-- Comparison with short read sequencing technologies: While short read technologies (e.g., Illumina) offer high throughput and low error rates, they struggle with repetitive regions and structural variants. Long reads can span these challenging regions, providing a more complete picture of genomic structure.
-- Key applications in metagenomics: Long read sequencing is particularly valuable in metagenomics for assembling complete or near-complete genomes from complex communities, identifying mobile genetic elements, and resolving strain-level variations within species.
-
-## Long Read Sequencing Technologies
-
-- Pacific Biosciences (PacBio) SMRT sequencing: This technology uses a single DNA polymerase molecule to sequence a single strand of DNA. It produces high-quality, long reads with an average length of 10-30 kb, and can achieve read lengths of up to 100 kb.
-- Oxford Nanopore Technologies (ONT) sequencing: ONT uses nanopores to sequence DNA by measuring changes in electrical current as DNA passes through the pore. It can produce ultra-long reads (>1 Mb) and allows for real-time sequencing and analysis.
-- PacBio typically offers higher accuracy but shorter read lengths compared to ONT. ONT provides longer reads and real-time sequencing capabilities but traditionally has higher error rates. Both platforms continue to improve in terms of accuracy and read length.
-
-## Sample Preparation for Long Read Metagenomics
-
-- DNA extraction and quality control: High molecular weight DNA extraction is crucial for long read sequencing. Methods such as phenol-chloroform extraction or specialized kits designed for long-read sequencing are commonly used. Quality control steps include checking DNA integrity using gel electrophoresis and assessing purity with spectrophotometry.
-- Library preparation methods for PacBio and ONT: For PacBio, SMRTbell libraries are prepared by ligating hairpin adapters to both ends of DNA fragments. For ONT, library preparation involves attaching sequencing adapters to DNA ends. Both methods aim to minimize DNA shearing to preserve long fragments.
-- Considerations for metagenomic samples: Metagenomic samples often contain DNA from various organisms in different abundances. Care must be taken to avoid bias towards certain species during extraction and library preparation. Size selection steps may be included to enrich for longer fragments.
-
-## Sequencing Protocols and Run Setup
-
-- PacBio sequencing protocols for metagenomics: PacBio offers various sequencing modes, including Continuous Long Read (CLR) and High-Fidelity (HiFi) modes. For metagenomics, HiFi reads are often preferred due to their high accuracy.
-- ONT sequencing protocols for metagenomics: ONT offers different flow cell types and sequencing kits. For metagenomics, high-capacity flow cells (e.g., PromethION) are often used to achieve sufficient coverage of complex communities.
-- Optimizing run parameters for metagenomic samples: Parameters such as read length, sequencing time, and basecalling models can be optimized based on the complexity of the metagenomic sample and the specific research questions.
-
-# Data Analysis Guidelines
-
-### 1. **Raw Data Acquisition from the Sequencer**
+### 1. **FastQC**
 
 **Description:**
+- FastQC is a quality control tool for high throughput sequence data. It provides a modular set of analyses to assess the quality of raw sequence data.
 
-- After sequencing on platforms like Oxford Nanopore Technologies (ONT) or PacBio, the initial output is raw signal data. This data contains the electrical signals (ONT) or fluorescence intensity traces (PacBio) corresponding to the nucleotide sequences.
+**Usage:**
+- FastQC is used to generate quality reports for raw and trimmed sequence data.
 
-**Tools:**
-
-- **ONT:** Basecalling is performed using Guppy or Dorado.
-- **PacBio:** The SMRT Link software processes the raw data into sequences.
-
-**How It Works (CS Level):**
-
-- **Basecalling (ONT):** Guppy or Dorado transforms the raw electrical signals from the nanopores into nucleotide sequences using neural networks (CNNs). These models are trained on vast datasets to recognize patterns in the electrical signals that correspond to each nucleotide.
-    - **Input:** Raw signal data from the sequencer (often in `.fast5` format).
-    - **Output:** Basecalled sequences in FASTQ format, which includes the nucleotide sequences and associated quality scores.
-- **PacBio Basecalling:** The SMRT Link software processes the real-time fluorescence signals captured during sequencing into nucleotide sequences. It uses algorithms that model the kinetics of the DNA polymerase to decode the sequence from the fluorescent pulses.
-    - **Input:** Raw `.bax.h5` or `.bam` files containing pulse signals.
-    - **Output:** Basecalled sequences in FASTQ format or circular consensus sequences (CCS) in FASTQ format with high accuracy.
-
-**Rationale:**
-
-- Basecalling is the first step to convert raw sequencing data into usable sequence reads. The accuracy of this step is crucial, as errors introduced here will propagate through subsequent analyses.
-
-### 2. **Quality Control of Raw Reads**
+### 2. **Fastp**
 
 **Description:**
+- Fastp is a tool designed to provide fast all-in-one preprocessing for FASTQ files. It includes quality control, adapter trimming, and filtering.
 
-- After basecalling, the sequence reads undergo quality control to assess and filter out low-quality reads and any adapters or barcodes that may have been attached during library preparation.
+**Usage:**
+- Fastp is used for adapter trimming and quality filtering of raw sequence data.
 
-**Tools:**
-
-- **FASTQC:** Standard genomics QC tool.
-- **NanoPlot/NanoQC:** Visualizes the quality of ONT reads.
-- **Filtlong:** Filters long reads by quality and length for ONT.
-- **PacBio QC:** SMRT Link also provides tools for read quality assessment.
-
-**How It Works:**
-
-- **NanoPlot/NanoQC:** These tools parse the FASTQ files to generate visual reports of read length distributions, quality scores, and GC content. They use Python libraries like `pandas` for data manipulation and `matplotlib`/`seaborn` for visualization.
-    - **Input:** FASTQ files.
-    - **Output:** Graphical reports (e.g., PDFs, PNGs) and summary statistics.
-- **Filtlong:** This tool filters reads by selecting the longest and highest-quality reads based on user-defined criteria. It uses sliding window techniques to assess read quality across the sequence.
-    - **Input:** FASTQ files.
-    - **Output:** Filtered FASTQ files containing high-quality, long reads.
-
-**Rationale:**
-
-- Quality control ensures that only the best data is used in subsequent steps, improving the reliability of downstream analyses. It removes low-quality reads that could lead to errors in assembly or misclassification in taxonomic analysis.
-
-### 5. **Taxonomic Classification**
+### 3. **Kraken2**
 
 **Description:**
+- Kraken2 is a taxonomic classification system that assigns taxonomic labels to short DNA sequences. It uses exact k-mer matches to classify sequences.
 
-- This step involves assigning taxonomy to the contigs or reads, identifying the species or higher-level taxa present in the metagenomic sample.
+**Usage:**
+- Kraken2 is used for taxonomic classification of metagenomic reads.
 
-**Tools:**
-
-- **Kraken2:** A taxonomic classification tool that assigns taxonomy based on exact k-mer matches.
-
-**How It Works:**
-
-- **Kraken2:** Kraken2 builds a database of k-mers from known reference genomes. Each k-mer is associated with a taxon in a classification tree. During classification, Kraken2 breaks down the reads into k-mers and matches them against the database. The tool then assigns the read to the taxon with the most k-mer matches.
-    - **Input:** Reads or contigs in FASTA/FASTQ format.
-    - **Output:** Taxonomic assignments with confidence scores.
-
-**Rationale:**
-
-- Accurate taxonomic classification helps elucidate the composition of the microbial community. Tools like Kraken2 and Centrifuge are optimized for speed and accuracy, making them suitable for large metagenomic datasets.
-
-### 7. **Functional Annotation**
+### 4. **Bracken**
 
 **Description:**
+- Bracken (Bayesian Reestimation of Abundance with KrakEN) is a highly accurate statistical method that computes the abundance of species in DNA sequences from a metagenomics sample.
 
-- Functional annotation involves predicting the functions of genes present in the assembled contigs or MAGs, linking sequences to biological functions.
+**Usage:**
+- Bracken is used to re-estimate species abundance from Kraken2 output.
 
-**Tools:**
-
-- **Prokka:** Annotates bacterial genomes by predicting genes, coding sequences (CDS), and other features.
-- **EggNOG-mapper:** Annotates sequences by mapping them to orthologous groups and functional categories.
-- **GhostKOALA:** Annotates genes by assigning them to KEGG Orthology (KO) terms.
-
-**How It Works (CS Level):**
-
-- **Prokka:** Prokka uses a series of embedded tools (e.g., `Prodigal` for gene prediction, `BLAST` for functional annotation) to predict and annotate coding sequences, tRNAs, rRNAs, and other genomic features. It assigns functions based on similarity to known proteins and functional databases.
-    - **Input:** Assembled contigs or MAGs in FASTA format.
-    - **Output:** Annotated genomes in GFF and GBK formats, with associated protein sequences.
-- **EggNOG-mapper:** This tool aligns predicted protein sequences against the EggNOG database, which contains clusters of orthologous groups. It uses a HMM-based approach to identify the best matching orthologs and assigns functional annotations based on the database's functional categories.
-    - **Input:** Protein sequences in FASTA format.
-    - **Output:** Annotated sequences with functional categories and GO terms.
-
-**Rationale:**
-
-- Functional annotation provides insights into the metabolic pathways, virulence factors, and other biological functions present in the metagenomic sample. Tools like Prokka and EggNOG-mapper offer comprehensive and automated approaches to annotating large datasets.
-
-### 8. **Data Integration and Visualization**
+### 5. **HUMAnN3**
 
 **Description:**
+- HUMAnN3 (The HMP Unified Metabolic Analysis Network) is a pipeline for efficiently and accurately profiling the presence/absence and abundance of microbial pathways in a community from metagenomic or metatranscriptomic sequencing data.
 
-- Integrating taxonomic and functional data provides a holistic view of the microbial ecosystem. Visualization tools help interpret the complex data generated from metagenomic studies.
+**Usage:**
+- HUMAnN3 is used for functional profiling of metagenomic samples.
+
+### 6. **ResFinder**
+
+**Description:**
+- ResFinder is a tool for identifying antimicrobial resistance genes in whole genome sequencing data.
+
+**Usage:**
+- ResFinder is used to detect antimicrobial resistance genes in metagenomic samples.
+
+### 7. **Tree Construction Script**
+
+**Description:**
+- A custom script is used to construct phylogenetic trees based on the taxonomic classification data.
+
+**Usage:**
+- The script generates phylogenetic trees to visualize the evolutionary relationships between the identified species.
+
+### 8. **Custom Python Script for Phenotype Likelihood Calculation**
+
+**Description:**
+- A custom Python script is used to calculate the likelihood of various phenotypes based on species abundance data from Bracken and a phenotype database.
+
+**Usage:**
+- The script compares Bracken output with a phenotype database to calculate and rank phenotype likelihoods.
+
+### 9. **MultiQC**
+
+**Description:**
+- MultiQC is a tool to aggregate results from bioinformatics analyses across many samples into a single report. It parses summary statistics from various tools and generates a comprehensive report.
+
+**Usage:**
+- MultiQC is used to generate a final report that includes quality control metrics, taxonomic classification results, functional profiling, antimicrobial resistance detection, and phenotype likelihoods.
+
+## Pipeline Steps
+
+### 1. **Quality Control**
 
 **Tools:**
+- FastQC
+- Fastp
 
-- **Krona:** Interactive visualization of taxonomic abundance.
-- **Anvi’o:** A platform for visualizing contigs, bins, and functional data.
-- **iTOL:** Visualization of phylogenetic trees with associated metadata.
+**Description:**
+- Raw sequence data undergoes quality control using FastQC to generate initial quality reports.
+- Fastp is used to trim adapters and filter low-quality reads.
 
-**How It Works (CS Level):**
+### 2. **Taxonomic Classification**
 
-- **Krona:** Krona generates interactive, multi-layered pie charts that allow users to explore taxonomic hierarchies. It processes taxonomic classification outputs, aggregating counts and visualizing them hierarchically.
-    - **Input:** Taxonomic classification data (e.g., Kraken2 output).
-    - **Output:** HTML files with interactive visualizations.
-- **Anvi’o:** Anvi’o integrates multiple types of data (e.g., taxonomic, functional, and coverage data) and provides interactive visualizations of contigs, bins, and functional annotations. It uses a SQLite database to store and query large datasets efficiently and `D3.js` for dynamic visualizations.
-    - **Input:** Contigs in FASTA format, binning results, and annotation data.
-    - **Output:** Interactive visualizations and summary reports.
+**Tools:**
+- Kraken2
+- Bracken
 
-**Rationale:**
+**Description:**
+- Kraken2 is used to classify reads taxonomically.
+- Bracken re-estimates species abundance based on Kraken2 output.
 
-- Visualization tools help make sense of complex metagenomic data, allowing researchers to explore relationships between taxa, functions, and environmental factors. Krona, Anvi’o, and similar tools provide interactive and flexible ways to analyze and present data.
+### 3. **Functional Profiling**
 
-### Summary of Pipeline Inputs and Outputs
+**Tools:**
+- HUMAnN3
 
-- **Basecalling (Input:** Raw signals; **Output:** FASTQ files).
-- **Quality Control (Input:** FASTQ files; **Output:** Filtered FASTQ files).
-- **Assembly (Input:** Filtered FASTQ files; **Output:** Contigs in FASTA format).
-- **Polishing (Input:** Contigs and FASTQ files; **Output:** Polished contigs in FASTA format).
-- **Taxonomic Classification (Input:** Reads or contigs in FASTQ/FASTA; **Output:** Taxonomic classifications).
-- **Binning (Input:** Contigs and coverage data; **Output:** MAGs in FASTA format).
-- **Functional Annotation (Input:** Contigs or protein sequences; **Output:** Annotated sequences).
-- **Visualization (Input:** Taxonomic and functional data; **Output:** Interactive visualizations).
+**Description:**
+- HUMAnN3 is used to profile the presence/absence and abundance of microbial pathways in the metagenomic samples.
 
-This pipeline is designed to give a comprehensive, detailed understanding of the computational and biological principles underlying each step in long-read metagenomic sequencing. By understanding the inputs, outputs, and internal workings of each tool, you can optimize the pipeline for various types of metagenomic studies, ensuring accurate and insightful results.
+### 4. **Antimicrobial Resistance Detection**
+
+**Tools:**
+- ResFinder
+
+**Description:**
+- ResFinder is used to detect antimicrobial resistance genes in the metagenomic samples.
+
+### 5. **Phylogenetic Tree Construction**
+
+**Tools:**
+- Custom Tree Construction Script
+
+**Description:**
+- A custom script constructs phylogenetic trees based on the taxonomic classification data to visualize evolutionary relationships.
+
+### 6. **Phenotype Likelihood Calculation**
+
+**Tools:**
+- Custom Python Script
+
+**Description:**
+- A custom script calculates the likelihood of various phenotypes based on species abundance data from Bracken and a phenotype database.
+- The script normalizes abundance values and determines a high likelihood threshold based on the 90th percentile of the 'abudance mean' values in the phenotype database.
+
+### 7. **Multi-Sample Reporting**
+
+**Tools:**
+- MultiQC
+
+**Description:**
+- MultiQC aggregates results from FastQC, Fastp, Kraken2, Bracken, HUMAnN3, ResFinder, and the custom phenotype likelihood script into a single comprehensive report.
+
+## Example Output
+
+### Phenotype Likelihood Calculation
+
+The output file contains the following columns:
+- **Phenotype:** The identifier of the phenotype.
+- **Likelihood:** The calculated likelihood value.
+- **Term:** The descriptive term for the phenotype.
+- **High Likelihood:** A boolean indicating whether the likelihood is considered high based on the threshold.
