@@ -1,9 +1,9 @@
 import argparse
 import pandas as pd
+from fuzzywuzzy import process
 
 def load_data(bracken_file, phenotype_file):
     bracken_df = pd.read_csv(bracken_file, sep='\t')
-    # Skip initial rows that might contain comments and read the correct header
     phenotype_df = pd.read_csv(phenotype_file, sep='\t', dtype=str, comment='#', header=0, low_memory=False)
     print("Phenotype DataFrame columns:", phenotype_df.columns)  # Debugging line
     return bracken_df, phenotype_df
@@ -14,13 +14,25 @@ def normalize_abundance_mean(phenotype_df):
     phenotype_df['normalized_abundance_mean'] = phenotype_df['abudance mean'] / max_abundance_mean
     return phenotype_df
 
+def standardize_names(df, column):
+    df[column] = df[column].str.lower().str.strip()
+    return df
+
+def fuzzy_match_species(species, phenotype_species_list):
+    match, score = process.extractOne(species, phenotype_species_list)
+    return match if score > 80 else None
+
 def calculate_likelihood(bracken_df, phenotype_df):
     likelihoods = {}
+    phenotype_species_list = phenotype_df['scientific name'].unique()
+    
     for index, row in bracken_df.iterrows():
-        species = row['name']
+        species = row['name'].lower().strip()
         abundance = row['fraction_total_reads']
-        if species in phenotype_df['scientific name'].values:
-            phenotypes = phenotype_df[phenotype_df['scientific name'] == species]
+        matched_species = fuzzy_match_species(species, phenotype_species_list)
+        
+        if matched_species:
+            phenotypes = phenotype_df[phenotype_df['scientific name'] == matched_species]
             for _, phenotype_row in phenotypes.iterrows():
                 phenotype = phenotype_row['phenotype']
                 phenotype_term = phenotype_row['phenotype term']
@@ -48,6 +60,8 @@ def main():
     args = parser.parse_args()
 
     bracken_df, phenotype_df = load_data(args.bracken, args.phenotypes)
+    bracken_df = standardize_names(bracken_df, 'name')
+    phenotype_df = standardize_names(phenotype_df, 'scientific name')
     phenotype_df = normalize_abundance_mean(phenotype_df)
     high_likelihood_threshold = phenotype_df['abudance mean'].quantile(0.90)  # 90th percentile
     likelihoods = calculate_likelihood(bracken_df, phenotype_df)

@@ -14,5 +14,5 @@ humann_prot_db: "/mnt/omar/pipelines/ont/work/ref/humann/uniref"
 metadata_file: "path/to/metadata.csv"
 
 
-threads: 40
+threads: 11
 threads_nt: 2
