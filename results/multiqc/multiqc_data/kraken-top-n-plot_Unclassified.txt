@@ -1,7 +1,6 @@
 Sample	Unclassified	Other
-ERR13731435_kraken_report	5873887.0	6408818.0
 ERR13731435_kraken_report_bracken_species	0.0	6387865.0
-ERR13731454_kraken_report	4916481.0	5102089.0
-ERR13731454_kraken_report_bracken_species	0.0	5082605.0
+ERR13731454_kraken_report	494093.0	511237.0
+ERR13731454_kraken_report_bracken_species	0.0	495049.0
 ERR13731530_kraken_report	4401280.0	39912172.0
 ERR13731530_kraken_report_bracken_species	0.0	39894222.0

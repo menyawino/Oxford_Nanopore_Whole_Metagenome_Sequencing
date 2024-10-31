@@ -2,6 +2,14 @@
 
 This pipeline is designed for comprehensive metagenomic analysis using long-read sequencing data. It includes steps for quality control, taxonomic classification, phenotype likelihood calculation, functional profiling, antimicrobial resistance detection, phylogenetic tree construction, and multi-sample reporting.
 
+## Installation
+
+To set up the environment and install the necessary dependencies, run the INSTALL.sh
+
+## Usage
+
+snakemake -c<int - cores available> --use-conda --rerun-incomplete --printshellcmds -k --resources mem_mb=<int - memory available>
+
 ## Tools Used in the Pipeline
 
 ### 1. **FastQC**

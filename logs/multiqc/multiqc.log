@@ -5,7 +5,7 @@
        file_search | Search path: /mnt/omar/pipelines/ont/work/logs
        file_search | Search path: /mnt/omar/pipelines/ont/work/benchmark
 
-            kraken | Found 6 reports
+            kraken | Found 5 reports
             fastqc | Found 6 reports
 
      write_results | Data        : results/multiqc/multiqc_data   (overwritten)

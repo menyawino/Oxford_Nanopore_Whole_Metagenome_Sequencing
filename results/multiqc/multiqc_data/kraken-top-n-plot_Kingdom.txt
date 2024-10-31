@@ -1,7 +1,6 @@
 Sample	Metazoa	Heunggongvirae	Bamfordvirae	Orthornavirae	Shotokuvirae	Other	Unclassified
-ERR13731435_kraken_report	390388.0	2144.0	131.0	17.0	11.0	6016127.0	5873887.0
 ERR13731435_kraken_report_bracken_species	397149.0	5550.0	74.0	10.0	11.0	5985071.0	0.0
-ERR13731454_kraken_report	280404.0	616.0	103.0	14.0	7.0	4820945.0	4916481.0
-ERR13731454_kraken_report_bracken_species	288284.0	1412.0	43.0	0.0	0.0	4792866.0	0.0
+ERR13731454_kraken_report	28212.0	83.0	12.0	1.0	0.0	482929.0	494093.0
+ERR13731454_kraken_report_bracken_species	29041.0	187.0	0.0	0.0	0.0	465821.0	0.0
 ERR13731530_kraken_report	237781.0	22801.0	146.0	127.0	3.0	39651314.0	4401280.0
 ERR13731530_kraken_report_bracken_species	255153.0	28078.0	124.0	108.0	0.0	39610759.0	0.0
