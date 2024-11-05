@@ -32,10 +32,31 @@ rule humann_functional_profiling:
         > {log} 2>&1
         """
 
-rule humann_disease_association:
+#######################################
+# Rule 6: Compare Bracken Output to Phenotype Database
+#######################################
+rule compare_phenotypes:
     input:
-        humann_output = "results/004_pathways/humann/{sample}/{sample}_merged_pathabundance.tsv"
+        bracken_output = rules.reestimate_abundance.output.bracken_output,
+        phenotype_db = "workflow/config/phenotype_summary.tsv"
     output:
-        disease_association = "results/004_pathways/humann/{sample}/{sample}_disease_association.tsv"
-    script:
-        "workflow/scripts/humann_disease_association.py"
+        phenotype_likelihood = "results/004_pathways/disease_phenotypes/{sample}_phenotype_likelihood.txt"
+    params:
+        script = "scripts/calculate_phenotype_likelihood.py"
+    threads:
+        config["threads"]
+    conda:
+        "humann_env"
+    benchmark:
+        "benchmark/004_pathways/disease_phenotypes/{sample}.time"
+    log:
+        "logs/004_pathways/disease_phenotypes/{sample}.log"
+    shell:
+        """
+        python {params.script} \
+        --bracken {input.bracken_output} \
+        --phenotypes {input.phenotype_db} \
+        --output {output.phenotype_likelihood} \
+        --threads {threads} \
+        > {log} 2>&1
+        """

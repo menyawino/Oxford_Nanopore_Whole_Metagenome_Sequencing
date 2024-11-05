@@ -1,6 +1,7 @@
-Sample	Bacteroides uniformis	Faecalibacterium prausnitzii	Roseburia intestinalis	Alistipes finegoldii	Agathobacter rectalis	Other	Unclassified
-ERR13731435_kraken_report_bracken_species	53697.0	425484.0	888569.0	3209.0	231724.0	4785182.0	0.0
-ERR13731454_kraken_report	134.0	32450.0	20755.0	57295.0	46195.0	354408.0	494093.0
-ERR13731454_kraken_report_bracken_species	387.0	63004.0	36381.0	78018.0	56345.0	260914.0	0.0
-ERR13731530_kraken_report	4712753.0	1293227.0	19093.0	262.0	72721.0	33814116.0	4401280.0
-ERR13731530_kraken_report_bracken_species	12286866.0	4210901.0	34507.0	387.0	100728.0	23260833.0	0.0
+Sample	Bacteroides uniformis	Faecalibacterium prausnitzii	Roseburia intestinalis	Agathobacter rectalis	Alistipes finegoldii	Other	Unclassified
+ERR13731435_kraken_report	21.0	239.0	836.0	300.0	3.0	8762.0	9474.0
+ERR13731435_kraken_report_bracken_species	120.0	736.0	1421.0	363.0	0.0	6672.0	0.0
+ERR13731454_kraken_report	134.0	32450.0	20755.0	46195.0	57295.0	354408.0	494093.0
+ERR13731454_kraken_report_bracken_species	387.0	63004.0	36381.0	56345.0	78018.0	260914.0	0.0
+ERR13731530_kraken_report	4712753.0	1293227.0	19093.0	72721.0	262.0	33814116.0	4401280.0
+ERR13731530_kraken_report_bracken_species	12286866.0	4210901.0	34507.0	100728.0	387.0	23260833.0	0.0

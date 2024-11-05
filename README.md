@@ -4,7 +4,7 @@ This pipeline is designed for comprehensive metagenomic analysis using long-read
 
 ## Installation
 
-To set up the environment and install the necessary dependencies, run the INSTALL.sh
+To set up the environment and install the necessary dependencies, run INSTALL.sh
 
 ## Usage
 

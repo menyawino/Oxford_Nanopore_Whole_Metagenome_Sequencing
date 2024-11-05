@@ -2,6 +2,7 @@ Module	Section	Sample Name	Source
 Kraken	all_sections	ERR13731454_kraken_report_bracken_species	/mnt/omar/pipelines/ont/work/results/003_abundance/kraken2/reports/ERR13731454_kraken_report_bracken_species.txt
 Kraken	all_sections	ERR13731435_kraken_report_bracken_species	/mnt/omar/pipelines/ont/work/results/003_abundance/kraken2/reports/ERR13731435_kraken_report_bracken_species.txt
 Kraken	all_sections	ERR13731454_kraken_report	/mnt/omar/pipelines/ont/work/results/003_abundance/kraken2/reports/ERR13731454_kraken_report.txt
+Kraken	all_sections	ERR13731435_kraken_report	/mnt/omar/pipelines/ont/work/results/003_abundance/kraken2/reports/ERR13731435_kraken_report.txt
 Kraken	all_sections	ERR13731530_kraken_report	/mnt/omar/pipelines/ont/work/results/003_abundance/kraken2/reports/ERR13731530_kraken_report.txt
 Kraken	all_sections	ERR13731530_kraken_report_bracken_species	/mnt/omar/pipelines/ont/work/results/003_abundance/kraken2/reports/ERR13731530_kraken_report_bracken_species.txt
 FastQC	all_sections	ERR13731454_2	/mnt/omar/pipelines/ont/work/results/002_qc/fastqc/ERR13731454_2_fastqc.zip

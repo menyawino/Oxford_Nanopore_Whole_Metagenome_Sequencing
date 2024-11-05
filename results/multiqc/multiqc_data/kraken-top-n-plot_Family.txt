@@ -1,5 +1,6 @@
 Sample	Bacteroidaceae	Oscillospiraceae	Lachnospiraceae	Rikenellaceae	Enterobacteriaceae	Other	Unclassified
-ERR13731435_kraken_report_bracken_species	1753125.0	1062121.0	1817752.0	18541.0	7989.0	1728337.0	0.0
+ERR13731435_kraken_report	1804.0	1515.0	2367.0	17.0	2.0	4456.0	9474.0
+ERR13731435_kraken_report_bracken_species	2798.0	1691.0	2692.0	0.0	0.0	2131.0	0.0
 ERR13731454_kraken_report	15709.0	99916.0	140846.0	78707.0	26257.0	149802.0	494093.0
 ERR13731454_kraken_report_bracken_species	26010.0	109989.0	160118.0	92551.0	32178.0	74203.0	0.0
 ERR13731530_kraken_report	19945265.0	9967568.0	510808.0	8442.0	2616164.0	6863925.0	4401280.0
