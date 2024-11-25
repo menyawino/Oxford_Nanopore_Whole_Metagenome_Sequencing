@@ -60,3 +60,26 @@ rule compare_phenotypes:
         --threads {threads} \
         > {log} 2>&1
         """
+
+rule calculate_taxa_contribution:
+    input:
+        pathways_abundance = "results/004_pathways/humann/{sample}/{sample}_pathways_abundance.tsv"
+    output:
+        taxa_contribution = "results/004_pathways/humann/{sample}/{sample}_taxa_contribution.tsv"
+    params:
+        script = "scripts/calculate_taxa_contribution.py"
+    threads:
+        config["threads"]
+    conda:
+        "humann_env"
+    benchmark:
+        "benchmark/004_pathways/humann/{sample}_taxa_contribution.time"
+    log:
+        "logs/004_pathways/humann/{sample}_taxa_contribution.log"
+    shell:
+        """
+        python {params.script} \
+        --input {input.pathways_abundance} \
+        --output {output.taxa_contribution} \
+        > {log} 2>&1
+        """
