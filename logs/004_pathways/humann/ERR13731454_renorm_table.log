@@ -1,0 +1,6 @@
+Loading table from: results/004_pathways/humann/ERR13731454/ERR13731454_merged_genefamilies.tsv
+  Treating results/004_pathways/humann/ERR13731454/ERR13731454_merged_genefamilies.tsv as stratified output, e.g. ['UniRef90_R6BDP0', 'g__Clostridium.s__Clostridium_sp_CAG_245']
+Loading table from: results/004_pathways/humann/ERR13731454/ERR13731454_merged_pathabundance.tsv
+  Treating results/004_pathways/humann/ERR13731454/ERR13731454_merged_pathabundance.tsv as stratified output, e.g. ['UNINTEGRATED', 'unclassified']
+Loading table from: results/004_pathways/humann/ERR13731454/ERR13731454_merged_pathcoverage.tsv
+  Treating results/004_pathways/humann/ERR13731454/ERR13731454_merged_pathcoverage.tsv as stratified output, e.g. ['UNINTEGRATED', 'g__Alistipes.s__Alistipes_finegoldii']

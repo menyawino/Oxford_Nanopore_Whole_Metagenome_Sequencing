@@ -32,8 +32,47 @@ rule humann_functional_profiling:
         > {log} 2>&1
         """
 
+usage: humann_renorm_table [-h] [-i INPUT]
+                           [-u {cpm,}]
+                           [-m {community,levelwise}]
+                           [-s {y,n}] [-p]
+                           [-o OUTPUT]
+
+#########################################
+#  Rule: Pathway conversion to KEGG   #
+#########################################
+rule humann_kegg_pathways:
+    input:
+        genefamilies = rules.humann_functional_profiling.output.gene_families,
+    output:
+        kegg_orthologs = "results/004_pathways/humann/{sample}/{sample}_genefamilies_uniref90_kegg_orthologs.tsv",
+        kegg_pathways = "results/004_pathways/humann/{sample}/{sample}_kegg_pathways.tsv"
+    params:
+        humann_kegg_db = config["humann_kegg_db"]
+    threads:
+        config["threads"]
+    conda:
+        "humann_env"
+    benchmark:
+        "benchmark/004_pathways/humann/{sample}_kegg_pathways.time"
+    log:
+        "logs/004_pathways/humann/{sample}_kegg_pathways.log"
+    shell:
+        """
+        humann_regroup_table --input {input.genefamilies} \
+        --group uniref90_kegg \
+        --output {output.kegg_orthologs} \
+        > {log} 2>&1
+
+        humann --input {output.kegg_orthologs} \
+        --output {output.kegg_pathways} \
+        --pathways-database {params.humann_kegg_db} \
+        >> {log} 2>&1
+        """
+
+
 #######################################
-# Rule 6: Compare Bracken Output to Phenotype Database
+# EXPERIMENTAL Rule: Compare Bracken Output to Phenotype Database
 #######################################
 rule compare_phenotypes:
     input:
@@ -61,9 +100,13 @@ rule compare_phenotypes:
         > {log} 2>&1
         """
 
+
+#########################################
+# EXPERIMENTAL Rule: Calculate Taxa Contribution to Pathways
+#########################################
 rule calculate_taxa_contribution:
     input:
-        pathways_abundance = "results/004_pathways/humann/{sample}/{sample}_pathways_abundance.tsv"
+        pathways_abundance = rules.humann_functional_profiling.output.pathways_abundance,
     output:
         taxa_contribution = "results/004_pathways/humann/{sample}/{sample}_taxa_contribution.tsv"
     params:

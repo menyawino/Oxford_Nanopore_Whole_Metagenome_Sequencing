@@ -1,0 +1,5 @@
+Loading table from: results/004_pathways/humann/ERR13731435/ERR13731435_merged_genefamilies.tsv
+  Treating results/004_pathways/humann/ERR13731435/ERR13731435_merged_genefamilies.tsv as stratified output, e.g. ['UniRef90_S0F965', 'unclassified']
+Loading table from: results/004_pathways/humann/ERR13731435/ERR13731435_merged_pathabundance.tsv
+WARNING: Column 1 (ERR13731435_merged_Abundance) has zero sum at level 1
+Loading table from: results/004_pathways/humann/ERR13731435/ERR13731435_merged_pathcoverage.tsv

@@ -1,15 +1,35 @@
 # Load the necessary environments
 configfile: "workflow/config.yml"
 
+import sys
+
+# Check for single-end or paired-end option
+if "single_end" in sys.argv:
+    data_type = "single_end"
+elif "paired_end" in sys.argv:
+    data_type = "paired_end"
+else:
+    raise ValueError("Please specify either 'single_end' or 'paired_end' as a command-line argument.")
+
+rule prepare_input:
+    input:
+        fast5_dir=config["fast5_dir"]
+    output:
+        "results/input/{data_type}.txt"
+    run:
+        with open(output[0], 'w') as f:
+            f.write(f"{data_type.replace('_', ' ').capitalize()} data\n")
+
 rule all:
     input:
-        expand("results/multiqc/multiqc_report.html")
+        expand("results/multiqc/multiqc_report.html"),
+        kegg = expand("results/004_pathways/humann/{sample}/kegg_pathways", sample=config["samples"]),
+        "results/input/{data_type}.txt"
 
-
-include: "rules/001_basecall.smk"
-include: "rules/002_qc.smk"
-include: "rules/003_abundance.smk"
+# include: "rules/001_basecall.smk"
+# include: "rules/002_qc.smk"
+# include: "rules/003_abundance.smk"
 include: "rules/004_pathways.smk"
-include: "rules/005_amr.smk"
-include: "rules/006_tree.smk"
-include: "rules/010_multiqc.smk"
+# include: "rules/005_amr.smk"
+# include: "rules/006_tree.smk"
+# include: "rules/010_multiqc.smk"
