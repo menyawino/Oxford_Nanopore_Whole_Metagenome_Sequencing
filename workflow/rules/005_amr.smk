@@ -6,7 +6,7 @@ rule resfinder_detection:
     message:
         "Detecting antimicrobial resistance genes in {wildcards.sample}"
     input:
-        merged_fastq = "results/002_qc/merged/{sample}_merged.fastq.gz"
+        fastq = rules.trim_adapters_fastp.output.merged_fastq
     output:
         resfinder_results = "results/005_amr/resfinder/{sample}/ResFinder_results.txt"
     conda:
@@ -21,7 +21,7 @@ rule resfinder_detection:
         """
         run_resfinder.py \
         -o results/005_amr/resfinder/{wildcards.sample} \
-        -ifq {input.merged_fastq} \
+        -ifq {input.fastq} \
         -acq \
-        > {log} 2>&1
+        &> {log}
         """

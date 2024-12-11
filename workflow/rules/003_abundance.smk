@@ -27,7 +27,7 @@ rule classify_taxa:
         --threads {threads} \
         --quick \
         <(gunzip -c {input.fastq}) \
-        > {log} 2>&1
+        &> {log}
         """
 
 #######################################
@@ -54,6 +54,6 @@ rule reestimate_abundance:
         -o {output.bracken_output} \
         -l {params.level} \
         -r 150 \
-        > {log} 2>&1
+        &> {log}
         """
 

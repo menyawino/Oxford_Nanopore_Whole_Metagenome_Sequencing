@@ -1,6 +1,14 @@
 samples:
-  - ERR13731435
-  - ERR13731454
+  - ERR6712396
+  - ERR6712401
+  - ERR6712550
+  - ERR6712555
+  - ERR6712557
+  - ERR6712560
+  - ERR6712567
+
+Library:
+  - p  # p for paired-end, s for single-end
 
 reads:
   - 1
@@ -11,7 +19,6 @@ kraken_db: "/mnt/omar/pipelines/ont/work/ref/kraken2"
 bracken_db: "/mnt/omar/pipelines/ont/work/ref/kraken2"
 humann_nuc_db: "/mnt/omar/pipelines/ont/work/ref/humann/chocophlan"
 humann_prot_db: "/mnt/omar/pipelines/ont/work/ref/humann/uniref"
-metadata_file: "path/to/metadata.csv"
 humann_kegg_db: "/mnt/omar/pipelines/ont/work/ref/humann/legacy/humann_legacy-0.99b/data/keggc"
 
 threads: 11

@@ -1,0 +1,28 @@
+Output files will be written to: /mnt/omar/pipelines/ont/work/results/004_pathways/humann/ERR6712557
+Decompressing gzipped file ...
+
+Removing spaces from identifiers in input file ...
+
+
+Running metaphlan ........
+
+CRITICAL ERROR: Error executing: /home/omar/Downloads/miniconda3/envs/humann_env/bin/metaphlan /mnt/omar/pipelines/ont/work/results/004_pathways/humann/ERR6712557/ERR6712557_merged_humann_temp/tmpkja0ygb3/tmpu42plqk_ -t rel_ab_w_read_stats -o /mnt/omar/pipelines/ont/work/results/004_pathways/humann/ERR6712557/ERR6712557_merged_humann_temp/ERR6712557_merged_metaphlan_bugs_list.tsv --input_type fastq --bowtie2out /mnt/omar/pipelines/ont/work/results/004_pathways/humann/ERR6712557/ERR6712557_merged_humann_temp/ERR6712557_merged_metaphlan_bowtie2.txt --nproc 11
+
+Error message returned from metaphlan :
+Killed
+(ERR): bowtie2-align exited with value 137
+Traceback (most recent call last):
+  File "/home/omar/Downloads/miniconda3/envs/humann_env/bin/read_fastx.py", line 10, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/metaphlan/utils/read_fastx.py", line 173, in main
+    f_nreads, f_avg_read_length = read_and_write_raw(f, opened=False, min_len=min_len, prefix_id=prefix_id)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/metaphlan/utils/read_fastx.py", line 135, in read_and_write_raw
+    nreads, avg_read_length = read_and_write_raw_int(inf, min_len=min_len, prefix_id=prefix_id)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/metaphlan/utils/read_fastx.py", line 108, in read_and_write_raw_int
+    _ = sys.stdout.write(
+        ^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+

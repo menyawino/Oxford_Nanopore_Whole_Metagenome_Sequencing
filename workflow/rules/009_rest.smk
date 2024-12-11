@@ -1,3 +1,61 @@
+# #######################################
+# # EXPERIMENTAL Rule: Compare Bracken Output to Phenotype Database
+# #######################################
+# rule compare_phenotypes:
+#     input:
+#         bracken_output = rules.reestimate_abundance.output.bracken_output,
+#         phenotype_db = "workflow/config/phenotype_summary.tsv"
+#     output:
+#         phenotype_likelihood = "results/004_pathways/disease_phenotypes/{sample}_phenotype_likelihood.txt"
+#     params:
+#         script = "scripts/calculate_phenotype_likelihood.py"
+#     threads:
+#         config["threads"]
+#     conda:
+#         "humann_env"
+#     benchmark:
+#         "benchmark/004_pathways/disease_phenotypes/{sample}.time"
+#     log:
+#         "logs/004_pathways/disease_phenotypes/{sample}.log"
+#     shell:
+#         """
+#         python {params.script} \
+#         --bracken {input.bracken_output} \
+#         --phenotypes {input.phenotype_db} \
+#         --output {output.phenotype_likelihood} \
+#         --threads {threads} \
+#         &> {log}
+#         """
+
+
+# #########################################
+# # EXPERIMENTAL Rule: Calculate Taxa Contribution to Pathways
+# #########################################
+# rule calculate_taxa_contribution:
+#     input:
+#         pathways_abundance = rules.humann_functional_profiling.output.pathways_abundance,
+#     output:
+#         taxa_contribution = "results/004_pathways/humann/{sample}/{sample}_taxa_contribution.tsv"
+#     params:
+#         script = "scripts/calculate_taxa_contribution.py"
+#     threads:
+#         config["threads"]
+#     conda:
+#         "humann_env"
+#     benchmark:
+#         "benchmark/004_pathways/humann/{sample}_taxa_contribution.time"
+#     log:
+#         "logs/004_pathways/humann/{sample}_taxa_contribution.log"
+#     shell:
+#         """
+#         python {params.script} \
+#         --input {input.pathways_abundance} \
+#         --output {output.taxa_contribution} \
+#         &> {log}
+#         """
+
+
+
 #######################################
 # Rule 3: Trim adapters using Porechop
 #######################################
@@ -20,7 +78,7 @@
 #         -o {output.trimmed_fastq} \
 #         --threads {threads} \
 #         | gzip \
-#         > {log} 2>&1
+#         &> {log}
 #         """
 
 
@@ -53,7 +111,7 @@
 #         --verbose \
 #         --iter=1 \
 #         --log {log} \
-#         >> {log} 2>&1
+#         &>> {log}
 #         """
 
 # #######################################
@@ -75,7 +133,7 @@
 #     shell:
 #         """
 #         # Run MUSCLE for multiple sequence alignment
-#         muscle -align {input.contigs} -output {output.msa} -maxiters 2 -diags1 -sv -distance1 kbit20_3 -threads {threads} > {log} 2>&1
+#         muscle -align {input.contigs} -output {output.msa} -maxiters 2 -diags1 -sv -distance1 kbit20_3 -threads {threads} &> {log}
 #         """
 
 # #######################################
@@ -95,7 +153,7 @@
 #     shell:
 #         """
 #         fasttree {input.msa} > {output.tree} \
-#         2> {log}
+#         &> {log}
 #         """
 
 # #######################################
@@ -110,7 +168,7 @@
 #         "ont"
 #     shell:
 #         """
-#         amrfinder -n {input.fastq} -o {output.amr_output}
+#         amrfinder -n {input.fastq} -o {output.amr_output} &> {log}
 #         """
 
 # #######################################
@@ -126,7 +184,7 @@
 #         "ont"
 #     shell:
 #         """
-#         maaslin2 --input_data {input.taxonomy_profile} --input_metadata {input.metadata} --output results/maaslin2
+#         maaslin2 --input_data {input.taxonomy_profile} --input_metadata {input.metadata} --output results/maaslin2 &> {log}
 #         """
 
 # #######################################

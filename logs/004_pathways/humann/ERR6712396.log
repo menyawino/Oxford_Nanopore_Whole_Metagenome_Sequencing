@@ -1,0 +1,33 @@
+Output files will be written to: /mnt/omar/pipelines/ont/work/results/004_pathways/humann/ERR6712396
+Decompressing gzipped file ...
+
+Removing spaces from identifiers in input file ...
+
+
+Running metaphlan ........
+
+Bypass
+
+
+Total species selected from prescreen: 0
+
+Selected species explain 0.00% of predicted community composition
+
+
+
+No species were selected from the prescreen.
+Because of this the custom ChocoPhlAn database is empty.
+This will result in zero species-specific gene families and pathways.
+
+
+Bypass translated search
+
+Computing gene families ...
+
+Computing pathways abundance and coverage ...
+
+Output files created: 
+/mnt/omar/pipelines/ont/work/results/004_pathways/humann/ERR6712396/ERR6712396_merged_genefamilies.tsv
+/mnt/omar/pipelines/ont/work/results/004_pathways/humann/ERR6712396/ERR6712396_merged_pathabundance.tsv
+/mnt/omar/pipelines/ont/work/results/004_pathways/humann/ERR6712396/ERR6712396_merged_pathcoverage.tsv
+

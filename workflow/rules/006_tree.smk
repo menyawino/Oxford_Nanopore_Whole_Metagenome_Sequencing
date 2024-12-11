@@ -19,5 +19,5 @@ rule tree_build:
         -in {input.msa} \
         -out {output.tree_txt} \
         --json-out {output.tree_json} \
-        > {log} 2>&1
+        &> {log}
         """

@@ -1,12 +1,12 @@
 #######################################
-# Rule 2: Quality Control using FastQC
+# Rule 2: Quality Control using FastQC (Paired-end))
 #######################################
 rule qc_fastq:
     message:
         "Running FastQC on {wildcards.sample}_{wildcards.read}"
     input:
         fastq = "samples/fastq/{sample}_{read}.fastq.gz"
-    output:
+    output:z
         html = "results/002_qc/fastqc/{sample}_{read}_fastqc.html",
         zip = "results/002_qc/fastqc/{sample}_{read}_fastqc.zip"
     conda:
@@ -19,11 +19,11 @@ rule qc_fastq:
         """
         fastqc {input.fastq} \
         -o results/002_qc/ \
-        > {log} 2>&1
+        &> {log}
         """
 
 #######################################
-# Rule 3: Trim adapters using FastP
+# Rule 3: Trim adapters using FastP (Paired-end)
 #######################################
 rule trim_adapters_fastp:
     message:
@@ -52,5 +52,5 @@ rule trim_adapters_fastp:
         -j {log} \
         -w {threads} \
         -h {output.html} \
-        > {log} 2>&1
+        &> {log}
         """

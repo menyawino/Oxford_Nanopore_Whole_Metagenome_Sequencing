@@ -20,5 +20,6 @@ rule basecall:
         -s results/fastq \
         --flowcell FLO-MIN106 \
         --kit SQK-LSK109 \
-        --fast5_out none
+        --fast5_out none \
+        &> {log}
         """
