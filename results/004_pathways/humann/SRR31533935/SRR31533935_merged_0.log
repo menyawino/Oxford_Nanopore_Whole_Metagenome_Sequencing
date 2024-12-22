@@ -1,0 +1,61 @@
+12/22/2024 10:47:01 AM - humann.humann - INFO: Running humann v4.0.0.alpha.1
+12/22/2024 10:47:01 AM - humann.humann - INFO: Output files will be written to: /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935
+12/22/2024 10:47:01 AM - humann.humann - INFO: Writing temp files to directory: /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp
+12/22/2024 10:47:01 AM - humann.utilities - INFO: File ( /mnt/omar/pipelines/ont/work/results/002_qc/merged/SRR31533935_merged.fastq.gz ) is of format:  fastq.gz
+12/22/2024 10:47:01 AM - humann.utilities - INFO: Decompressing gzipped file ...
+12/22/2024 10:47:01 AM - humann.humann - INFO: Removing spaces from identifiers in input file
+12/22/2024 10:47:01 AM - humann.utilities - DEBUG: Check software, metaphlan, for required version, 4.0
+12/22/2024 10:47:03 AM - humann.utilities - INFO: Using metaphlan version 4.1
+12/22/2024 10:47:03 AM - humann.utilities - DEBUG: Check software, bowtie2, for required version, 2.2
+12/22/2024 10:47:03 AM - humann.utilities - INFO: Using bowtie2 version 2.5
+12/22/2024 10:47:03 AM - humann.config - INFO: 
+Run config settings: 
+
+DATABASE SETTINGS
+nucleotide database folder = /mnt/omar/misc/tests/chocophlan/chocophlan
+protein database folder = /mnt/omar/misc/tests/chocophlan/uniref
+pathways database file 1 = /mnt/omar/misc/tests/utility_mapping/utility_mapping/metacyc_reactions_level4ec_only.uniref.bz2
+pathways database file 2 = /mnt/omar/misc/tests/utility_mapping/utility_mapping/metacyc_pathways_structured_filtered_v24_subreactions
+utility mapping database folder = /mnt/omar/misc/tests/utility_mapping/utility_mapping
+
+RUN MODES
+resume = True
+verbose = False
+bypass prescreen = False
+bypass nucleotide index = False
+bypass nucleotide search = False
+bypass translated search = True
+translated search = diamond
+threads = 11
+
+Identity thresholds
+nucleotide = 0.0
+translated = 50.0
+
+ALIGNMENT SETTINGS
+bowtie2 options = --very-sensitive --no-hd --no-sq
+diamond options = --top 1 --sensitive --outfmt 6
+evalue threshold = 1.0
+prescreen threshold = 0.5
+average read length = 150.0
+translated subject coverage threshold = 50.0
+translated query coverage threshold = 20.0
+nucleotide subject coverage threshold = 50.0
+nucleotide query coverage threshold = 20.0
+
+PATHWAYS SETTINGS
+minpath = on
+xipe = off
+gap fill = on
+
+INPUT AND OUTPUT FORMATS
+input file format = fastq.gz
+output file format = tsv
+normalization mode = Adjusted CPMs
+output max decimals = 10
+remove stratified output = False
+remove column description output = False
+log level = DEBUG
+
+12/22/2024 10:47:03 AM - humann.store - DEBUG: Initialize Alignments class instance to minimize memory use
+12/22/2024 10:47:03 AM - humann.store - DEBUG: Initialize Reads class instance to minimize memory use

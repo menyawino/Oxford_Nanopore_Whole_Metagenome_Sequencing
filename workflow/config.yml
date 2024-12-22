@@ -1,11 +1,8 @@
 samples:
-  - ERR6712396
-  - ERR6712401
-  - ERR6712550
-  - ERR6712555
-  - ERR6712557
-  - ERR6712560
-  - ERR6712567
+  - SRR31533935
+  - SRR31533936
+  - SRR31533937
+  - SRR31533938
 
 Library:
   - p  # p for paired-end, s for single-end
@@ -17,9 +14,10 @@ reads:
 fast5_dir: "samples/fast5"
 kraken_db: "/mnt/omar/pipelines/ont/work/ref/kraken2"
 bracken_db: "/mnt/omar/pipelines/ont/work/ref/kraken2"
-humann_nuc_db: "/mnt/omar/pipelines/ont/work/ref/humann/chocophlan"
-humann_prot_db: "/mnt/omar/pipelines/ont/work/ref/humann/uniref"
+humann_nuc_db: "/mnt/omar/misc/tests/chocophlan/chocophlan"
+humann_prot_db: "/mnt/omar/misc/tests/chocophlan/uniref"
 humann_kegg_db: "/mnt/omar/pipelines/ont/work/ref/humann/legacy/humann_legacy-0.99b/data/keggc"
 
 threads: 11
 threads_nt: 2
+
