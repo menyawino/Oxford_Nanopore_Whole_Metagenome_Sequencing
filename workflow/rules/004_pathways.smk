@@ -28,8 +28,9 @@ rule humann_functional_profiling:
         --threads {threads} \
         --nucleotide-database {params.humann_nuc_db} \
         --protein-database {params.humann_prot_db} \
-        --bypass-translated-search \
+        # --bypass-translated-search \
         --resume \
+        --bowtie-options "--very-sensitive-local " \
         &> {log}
         """
 
