@@ -28,37 +28,33 @@ rule humann_functional_profiling:
         --nucleotide-database {params.humann_nuc_db} \
         --protein-database {params.humann_prot_db} \
         --resume \
+        --remove-stratified-output \
         --bowtie-options "--very-sensitive-local " \
         &> {log}
         """
 
 #########################################
-# Rule: Split Stratified Table
+# Rule: Normalize Gene Families Table
 #########################################
-rule humann_split_stratified_table:
+rule humann_renorm_table:
     input:
-        gene_families = rules.humann_functional_profiling.output.gene_families,
-        pathways_abundance = rules.humann_functional_profiling.output.pathways_abundance,
-        pathways_coverage = rules.humann_functional_profiling.output.pathways_coverage
+        gene_families = rules.humann_functional_profiling.output.gene_families
     output:
-        gene_families_split = "results/004_pathways/humann/{sample}/{sample}_gene_families_split.tsv",
-        pathways_abundance_split = "results/004_pathways/humann/{sample}/{sample}_pathways_abundance_split.tsv",
-        pathways_coverage_split = "results/004_pathways/humann/{sample}/{sample}_pathways_coverage_split.tsv"
-    params:
-        outdir = "results/004_pathways/humann/{sample}"
-    threads:
-        config["threads"]
+        gene_families_relab = "results/004_pathways/humann/{sample}/{sample}_merged_2_genefamilies_relab.tsv"
     conda:
         "humann_env"
+    threads:
+        config["threads"]
     benchmark:
-        "benchmark/004_pathways/humann/{sample}_split_stratified_table.time"
+        "benchmark/004_pathways/humann/{sample}_renorm_table.time"
     log:
-        "logs/004_pathways/humann/{sample}_split_stratified_table.log"
+        "logs/004_pathways/humann/{sample}_renorm_table.log"
     shell:
         """
-        humann_split_stratified_table --input {input.gene_families} --output {params.outdir} &> {log}
-        humann_split_stratified_table --input {input.pathways_abundance} --output {params.outdir} &> {log}
-        humann_split_stratified_table --input {input.pathways_coverage} --output {params.outdir} &> {log}
+        humann_renorm_table --input {input.gene_families} \
+        --output {output.gene_families_relab} \
+        --units relab \
+        &> {log}
         """
 
 #########################################
@@ -66,7 +62,7 @@ rule humann_split_stratified_table:
 #########################################
 rule humann_kegg_pathways:
     input:
-        genefamilies = rules.humann_functional_profiling.output.gene_families,
+        genefamilies = rules.humann_renorm_table.output.gene_families_relab,
     output:
         kegg_orthologs = "results/004_pathways/humann/{sample}/{sample}_genefamilies_uniref90_kegg_orthologs.tsv",
         kegg_pathways = "results/004_pathways/humann/{sample}/{sample}_kegg_pathways.tsv"
@@ -92,56 +88,5 @@ rule humann_kegg_pathways:
         humann --input {output.kegg_orthologs} \
         --output {params.outdir} \
         --pathways-database {params.humann_kegg_db} \
-        &> {log}
-        """
-
-#######################################
-# Rule: Concatenate Gene Families
-#######################################
-rule concatenate_gene_families:
-    input:
-        gene_families = expand("results/004_pathways/humann/{sample}/{sample}_merged_2_genefamilies.tsv", sample=config["samples"])
-    output:
-        concatenated_gene_families = "results/004_pathways/humann/concatenated_gene_families.tsv"
-    conda:
-        "humann_env"
-    threads:
-        config["threads"]
-    benchmark:
-        "benchmark/004_pathways/humann/concatenate_gene_families.time"
-    log:
-        "logs/004_pathways/humann/concatenate_gene_families.log"
-    shell:
-        """
-        python scripts/concatenate_gene_families.py \
-        --input {input.gene_families} \
-        --output {output.concatenated_gene_families} \
-        &> {log}
-        """
-
-#######################################
-# Rule: Metabolite Prediction with MelonnPan
-#######################################
-rule melonnpan_prediction:
-    input:
-        pathways_abundance = rules.concatenate_gene_families.output.concatenated_gene_families
-    output:
-        metabolites = "results/004_pathways/melonnpan/{sample}/MelonnPan_Predicted_Metabolites.txt",
-        rtsi = "results/004_pathways/melonnpan/{sample}/MelonnPan_RTSI.txt"
-    conda:
-        "melonnpan_env"
-    threads:
-        config["threads"]
-    benchmark:
-        "benchmark/004_pathways/melonnpan/{sample}.time"
-    params:
-        predict_metabolites = config["predict_metabolites"]
-    log:
-        "logs/004_pathways/melonnpan/{sample}.log"
-    shell:
-        """
-        Rscript {params.predict_metabolites} \
-        -i {input.pathways_abundance} \
-        -o results/004_pathways/melonnpan/{wildcards.sample}/ \
         &> {log}
         """
