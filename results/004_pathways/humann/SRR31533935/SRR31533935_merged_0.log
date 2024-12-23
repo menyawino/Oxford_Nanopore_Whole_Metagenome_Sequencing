@@ -1,16 +1,16 @@
-12/22/2024 12:30:42 PM - humann.humann - INFO: Running humann v4.0.0.alpha.1
-12/22/2024 12:30:42 PM - humann.humann - INFO: Output files will be written to: /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935
-12/22/2024 12:30:42 PM - humann.humann - INFO: Writing temp files to directory: /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp
-12/22/2024 12:30:42 PM - humann.utilities - INFO: File ( /mnt/omar/pipelines/ont/work/results/002_qc/merged/SRR31533935_merged.fastq.gz ) is of format:  fastq.gz
-12/22/2024 12:30:42 PM - humann.utilities - INFO: Decompressing gzipped file ...
-12/22/2024 12:30:42 PM - humann.humann - INFO: Removing spaces from identifiers in input file
-12/22/2024 12:30:42 PM - humann.utilities - DEBUG: Check software, metaphlan, for required version, 4.0
-12/22/2024 12:30:45 PM - humann.utilities - INFO: Using metaphlan version 4.1
-12/22/2024 12:30:45 PM - humann.utilities - DEBUG: Check software, bowtie2, for required version, 2.2
-12/22/2024 12:30:45 PM - humann.utilities - INFO: Using bowtie2 version 2.5
-12/22/2024 12:30:45 PM - humann.utilities - DEBUG: Check software, diamond, for required version, 2.0.15
-12/22/2024 12:30:45 PM - humann.utilities - INFO: Using diamond version 2.1.9
-12/22/2024 12:30:45 PM - humann.config - INFO: 
+12/22/2024 01:00:18 PM - humann.humann - INFO: Running humann v4.0.0.alpha.1
+12/22/2024 01:00:18 PM - humann.humann - INFO: Output files will be written to: /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935
+12/22/2024 01:00:18 PM - humann.humann - INFO: Writing temp files to directory: /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp
+12/22/2024 01:00:18 PM - humann.utilities - INFO: File ( /mnt/omar/pipelines/ont/work/results/002_qc/merged/SRR31533935_merged.fastq.gz ) is of format:  fastq.gz
+12/22/2024 01:00:18 PM - humann.utilities - INFO: Decompressing gzipped file ...
+12/22/2024 01:00:18 PM - humann.humann - INFO: Removing spaces from identifiers in input file
+12/22/2024 01:00:18 PM - humann.utilities - DEBUG: Check software, metaphlan, for required version, 4.0
+12/22/2024 01:00:21 PM - humann.utilities - INFO: Using metaphlan version 4.1
+12/22/2024 01:00:21 PM - humann.utilities - DEBUG: Check software, bowtie2, for required version, 2.2
+12/22/2024 01:00:21 PM - humann.utilities - INFO: Using bowtie2 version 2.5
+12/22/2024 01:00:21 PM - humann.utilities - DEBUG: Check software, diamond, for required version, 2.0.15
+12/22/2024 01:00:21 PM - humann.utilities - INFO: Using diamond version 2.1.9
+12/22/2024 01:00:21 PM - humann.config - INFO: 
 Run config settings: 
 
 DATABASE SETTINGS
@@ -40,10 +40,10 @@ diamond options = --top 1 --sensitive --outfmt 6
 evalue threshold = 1.0
 prescreen threshold = 0.01
 average read length = 1548.0
-translated subject coverage threshold = 20.0
-translated query coverage threshold = 8.0
-nucleotide subject coverage threshold = 20.0
-nucleotide query coverage threshold = 8.0
+translated subject coverage threshold = 15.0
+translated query coverage threshold = 6.0
+nucleotide subject coverage threshold = 15.0
+nucleotide query coverage threshold = 6.0
 
 PATHWAYS SETTINGS
 minpath = on
@@ -59,76 +59,76 @@ remove stratified output = False
 remove column description output = False
 log level = DEBUG
 
-12/22/2024 12:30:45 PM - humann.store - DEBUG: Initialize Alignments class instance to minimize memory use
-12/22/2024 12:30:45 PM - humann.store - DEBUG: Initialize Reads class instance to minimize memory use
-12/22/2024 12:32:14 PM - humann.humann - INFO: Load pathways database part 1: /mnt/omar/misc/tests/utility_mapping/utility_mapping/metacyc_reactions_level4ec_only.uniref.bz2
-12/22/2024 12:32:14 PM - humann.humann - INFO: Load pathways database part 2: /mnt/omar/misc/tests/utility_mapping/utility_mapping/metacyc_pathways_structured_filtered_v24_subreactions
-12/22/2024 12:32:14 PM - humann.search.prescreen - INFO: Running metaphlan ........
-12/22/2024 12:32:14 PM - humann.utilities - DEBUG: Using software: /home/omar/Downloads/miniconda3/envs/humann_env/bin/metaphlan
-12/22/2024 12:32:14 PM - humann.humann - INFO: TIMESTAMP: Completed 	prescreen 	:	 0	 seconds
-12/22/2024 12:32:14 PM - humann.search.prescreen - INFO: Total species selected from prescreen: 0
-12/22/2024 12:32:14 PM - humann.search.prescreen - DEBUG: 
+12/22/2024 01:00:21 PM - humann.store - DEBUG: Initialize Alignments class instance to minimize memory use
+12/22/2024 01:00:21 PM - humann.store - DEBUG: Initialize Reads class instance to minimize memory use
+12/22/2024 01:01:55 PM - humann.humann - INFO: Load pathways database part 1: /mnt/omar/misc/tests/utility_mapping/utility_mapping/metacyc_reactions_level4ec_only.uniref.bz2
+12/22/2024 01:01:55 PM - humann.humann - INFO: Load pathways database part 2: /mnt/omar/misc/tests/utility_mapping/utility_mapping/metacyc_pathways_structured_filtered_v24_subreactions
+12/22/2024 01:01:55 PM - humann.search.prescreen - INFO: Running metaphlan ........
+12/22/2024 01:01:55 PM - humann.utilities - DEBUG: Using software: /home/omar/Downloads/miniconda3/envs/humann_env/bin/metaphlan
+12/22/2024 01:01:55 PM - humann.humann - INFO: TIMESTAMP: Completed 	prescreen 	:	 0	 seconds
+12/22/2024 01:01:55 PM - humann.search.prescreen - INFO: Total species selected from prescreen: 0
+12/22/2024 01:01:55 PM - humann.search.prescreen - DEBUG: 
 
 No species were selected from the prescreen.
 Because of this the custom ChocoPhlAn database is empty.
 This will result in zero species-specific gene families and pathways.
 
 
-12/22/2024 12:32:14 PM - humann.humann - INFO: TIMESTAMP: Completed 	custom database creation 	:	 0	 seconds
-12/22/2024 12:32:14 PM - humann.humann - DEBUG: Custom database is empty
-12/22/2024 12:32:14 PM - humann.store - DEBUG: Initialize Reads class instance to minimize memory use
-12/22/2024 12:32:14 PM - humann.utilities - DEBUG: Remove file: /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpax_i39ln/tmp4jlqni64
-12/22/2024 12:32:14 PM - humann.search.translated - DEBUG: Convert unaligned reads fastq file to fasta
-12/22/2024 12:32:14 PM - humann.search.translated - INFO: Running diamond ........
-12/22/2024 12:32:14 PM - humann.search.translated - INFO: Bypass
-12/22/2024 12:32:14 PM - humann.utilities - DEBUG: Remove file: /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpax_i39ln/tmpit3udao1
-12/22/2024 12:32:14 PM - humann.humann - INFO: TIMESTAMP: Completed 	translated alignment 	:	 0	 seconds
-12/22/2024 12:32:14 PM - humann.utilities - DEBUG: Total alignments where percent identity is not a number: 0
-12/22/2024 12:32:14 PM - humann.utilities - DEBUG: Total alignments where alignment length is not a number: 0
-12/22/2024 12:32:14 PM - humann.utilities - DEBUG: Total alignments where E-value is not a number: 0
-12/22/2024 12:32:14 PM - humann.utilities - DEBUG: Total alignments not included based on large e-value: 0
-12/22/2024 12:32:14 PM - humann.utilities - DEBUG: Total alignments not included based on small percent identity: 21
-12/22/2024 12:32:14 PM - humann.utilities - DEBUG: Total alignments not included based on small query coverage: 30
-12/22/2024 12:32:14 PM - humann.search.blastx_coverage - INFO: Total alignments without coverage information: 0
-12/22/2024 12:32:14 PM - humann.search.blastx_coverage - INFO: Total proteins in blastx output: 11
-12/22/2024 12:32:14 PM - humann.search.blastx_coverage - INFO: Total proteins without lengths: 0
-12/22/2024 12:32:14 PM - humann.search.blastx_coverage - INFO: Proteins with coverage greater than threshold (20.0): 5
-12/22/2024 12:32:14 PM - humann.utilities - DEBUG: Total alignments where percent identity is not a number: 0
-12/22/2024 12:32:14 PM - humann.utilities - DEBUG: Total alignments where alignment length is not a number: 0
-12/22/2024 12:32:14 PM - humann.utilities - DEBUG: Total alignments where E-value is not a number: 0
-12/22/2024 12:32:14 PM - humann.utilities - DEBUG: Total alignments not included based on large e-value: 0
-12/22/2024 12:32:14 PM - humann.utilities - DEBUG: Total alignments not included based on small percent identity: 21
-12/22/2024 12:32:14 PM - humann.utilities - DEBUG: Total alignments not included based on small query coverage: 30
-12/22/2024 12:32:14 PM - humann.search.translated - DEBUG: Total translated alignments not included based on small subject coverage value: 18
-12/22/2024 12:32:14 PM - humann.utilities - DEBUG: Remove file: /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpax_i39ln/tmpvzxs45ua
-12/22/2024 12:32:14 PM - humann.humann - INFO: TIMESTAMP: Completed 	translated alignment post-processing 	:	 0	 seconds
-12/22/2024 12:32:14 PM - humann.humann - INFO: Total bugs after translated alignment: 1
-12/22/2024 12:32:14 PM - humann.humann - INFO: 
-unclassified: 24 hits
-12/22/2024 12:32:14 PM - humann.humann - INFO: Total gene families after translated alignment: 5
-12/22/2024 12:32:14 PM - humann.humann - INFO: Unaligned reads after translated alignment: 76.0000000000 %
-12/22/2024 12:32:14 PM - humann.humann - INFO: Computing gene families ...
-12/22/2024 12:32:14 PM - humann.quantify.families - DEBUG: Compute gene families
-12/22/2024 12:32:14 PM - humann.store - INFO: 
-Total gene families  : 5
-unclassified : 5 gene families
-12/22/2024 12:32:14 PM - humann.humann - INFO: TIMESTAMP: Completed 	computing gene families 	:	 0	 seconds
-12/22/2024 12:32:14 PM - humann.humann - INFO: Computing reaction and pathway abundance ...
-12/22/2024 12:32:14 PM - humann.quantify.modules - DEBUG: Write flat reactions to pathways file for Minpath
-12/22/2024 12:32:14 PM - humann.quantify.modules - INFO: Compute reaction scores for bug: unclassified
-12/22/2024 12:32:17 PM - humann.quantify.modules - INFO: Run MinPath on unclassified
-12/22/2024 12:32:17 PM - humann.quantify.modules - INFO: Compute reaction scores for bug: all
-12/22/2024 12:32:21 PM - humann.quantify.modules - INFO: Run MinPath on all
-12/22/2024 12:32:21 PM - humann.quantify.modules - DEBUG: Print pathways 
-12/22/2024 12:32:21 PM - humann.utilities - DEBUG: Using python module : /home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py
-12/22/2024 12:32:21 PM - humann.utilities - DEBUG: Using python module : /home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py
-12/22/2024 12:32:21 PM - humann.utilities - INFO: Execute command: /home/omar/Downloads/miniconda3/envs/humann_env/bin/python3.12 /home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py -any /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpax_i39ln/tmp3iyim69i -map /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpax_i39ln/tmpvrivqplv -report /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpax_i39ln/tmpf4aa00sg -details /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpax_i39ln/tmprxap5xad -mps /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpax_i39ln/tmpcu5oy0fc
-12/22/2024 12:32:21 PM - humann.utilities - INFO: Execute command: /home/omar/Downloads/miniconda3/envs/humann_env/bin/python3.12 /home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py -any /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpax_i39ln/tmpxkc_52xo -map /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpax_i39ln/tmpvrivqplv -report /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpax_i39ln/tmp6ktxv3ha -details /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpax_i39ln/tmplx_orwpc -mps /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpax_i39ln/tmpn2fmi79e
-12/22/2024 12:32:22 PM - humann.quantify.modules - DEBUG: Compute pathway abundance for bug: unclassified
-12/22/2024 12:32:22 PM - humann.quantify.modules - DEBUG: Compute pathway abundance for bug: all
-12/22/2024 12:32:22 PM - humann.quantify.modules - DEBUG: Print pathways _Abundance
-12/22/2024 12:32:22 PM - humann.humann - INFO: TIMESTAMP: Completed 	computing pathways 	:	 8	 seconds
-12/22/2024 12:32:22 PM - humann.humann - INFO: 
+12/22/2024 01:01:55 PM - humann.humann - INFO: TIMESTAMP: Completed 	custom database creation 	:	 0	 seconds
+12/22/2024 01:01:55 PM - humann.humann - DEBUG: Custom database is empty
+12/22/2024 01:01:55 PM - humann.store - DEBUG: Initialize Reads class instance to minimize memory use
+12/22/2024 01:01:55 PM - humann.utilities - DEBUG: Remove file: /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpguorxwac/tmp5xylv59r
+12/22/2024 01:01:55 PM - humann.search.translated - DEBUG: Convert unaligned reads fastq file to fasta
+12/22/2024 01:01:55 PM - humann.search.translated - INFO: Running diamond ........
+12/22/2024 01:01:55 PM - humann.search.translated - INFO: Bypass
+12/22/2024 01:01:55 PM - humann.utilities - DEBUG: Remove file: /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpguorxwac/tmpzr4a_5zb
+12/22/2024 01:01:55 PM - humann.humann - INFO: TIMESTAMP: Completed 	translated alignment 	:	 0	 seconds
+12/22/2024 01:01:55 PM - humann.utilities - DEBUG: Total alignments where percent identity is not a number: 0
+12/22/2024 01:01:55 PM - humann.utilities - DEBUG: Total alignments where alignment length is not a number: 0
+12/22/2024 01:01:55 PM - humann.utilities - DEBUG: Total alignments where E-value is not a number: 0
+12/22/2024 01:01:55 PM - humann.utilities - DEBUG: Total alignments not included based on large e-value: 0
+12/22/2024 01:01:55 PM - humann.utilities - DEBUG: Total alignments not included based on small percent identity: 21
+12/22/2024 01:01:55 PM - humann.utilities - DEBUG: Total alignments not included based on small query coverage: 13
+12/22/2024 01:01:55 PM - humann.search.blastx_coverage - INFO: Total alignments without coverage information: 0
+12/22/2024 01:01:55 PM - humann.search.blastx_coverage - INFO: Total proteins in blastx output: 14
+12/22/2024 01:01:55 PM - humann.search.blastx_coverage - INFO: Total proteins without lengths: 0
+12/22/2024 01:01:55 PM - humann.search.blastx_coverage - INFO: Proteins with coverage greater than threshold (15.0): 8
+12/22/2024 01:01:55 PM - humann.utilities - DEBUG: Total alignments where percent identity is not a number: 0
+12/22/2024 01:01:55 PM - humann.utilities - DEBUG: Total alignments where alignment length is not a number: 0
+12/22/2024 01:01:55 PM - humann.utilities - DEBUG: Total alignments where E-value is not a number: 0
+12/22/2024 01:01:55 PM - humann.utilities - DEBUG: Total alignments not included based on large e-value: 0
+12/22/2024 01:01:55 PM - humann.utilities - DEBUG: Total alignments not included based on small percent identity: 21
+12/22/2024 01:01:55 PM - humann.utilities - DEBUG: Total alignments not included based on small query coverage: 13
+12/22/2024 01:01:55 PM - humann.search.translated - DEBUG: Total translated alignments not included based on small subject coverage value: 10
+12/22/2024 01:01:55 PM - humann.utilities - DEBUG: Remove file: /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpguorxwac/tmpsmboa_1v
+12/22/2024 01:01:55 PM - humann.humann - INFO: TIMESTAMP: Completed 	translated alignment post-processing 	:	 0	 seconds
+12/22/2024 01:01:55 PM - humann.humann - INFO: Total bugs after translated alignment: 1
+12/22/2024 01:01:55 PM - humann.humann - INFO: 
+unclassified: 49 hits
+12/22/2024 01:01:55 PM - humann.humann - INFO: Total gene families after translated alignment: 8
+12/22/2024 01:01:55 PM - humann.humann - INFO: Unaligned reads after translated alignment: 51.0000000000 %
+12/22/2024 01:01:55 PM - humann.humann - INFO: Computing gene families ...
+12/22/2024 01:01:55 PM - humann.quantify.families - DEBUG: Compute gene families
+12/22/2024 01:01:55 PM - humann.store - INFO: 
+Total gene families  : 8
+unclassified : 8 gene families
+12/22/2024 01:01:55 PM - humann.humann - INFO: TIMESTAMP: Completed 	computing gene families 	:	 0	 seconds
+12/22/2024 01:01:55 PM - humann.humann - INFO: Computing reaction and pathway abundance ...
+12/22/2024 01:01:55 PM - humann.quantify.modules - DEBUG: Write flat reactions to pathways file for Minpath
+12/22/2024 01:01:55 PM - humann.quantify.modules - INFO: Compute reaction scores for bug: unclassified
+12/22/2024 01:01:59 PM - humann.quantify.modules - INFO: Run MinPath on unclassified
+12/22/2024 01:01:59 PM - humann.quantify.modules - INFO: Compute reaction scores for bug: all
+12/22/2024 01:02:02 PM - humann.quantify.modules - INFO: Run MinPath on all
+12/22/2024 01:02:02 PM - humann.quantify.modules - DEBUG: Print pathways 
+12/22/2024 01:02:02 PM - humann.utilities - DEBUG: Using python module : /home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py
+12/22/2024 01:02:02 PM - humann.utilities - DEBUG: Using python module : /home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py
+12/22/2024 01:02:02 PM - humann.utilities - INFO: Execute command: /home/omar/Downloads/miniconda3/envs/humann_env/bin/python3.12 /home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py -any /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpguorxwac/tmpvkv8mhq2 -map /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpguorxwac/tmpc37y4fr5 -report /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpguorxwac/tmp0prpwz5l -details /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpguorxwac/tmp9i0vdd0m -mps /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpguorxwac/tmpnfm_f97h
+12/22/2024 01:02:02 PM - humann.utilities - INFO: Execute command: /home/omar/Downloads/miniconda3/envs/humann_env/bin/python3.12 /home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py -any /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpguorxwac/tmpwbfth4rl -map /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpguorxwac/tmpc37y4fr5 -report /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpguorxwac/tmpj3cvc_ro -details /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpguorxwac/tmpilj8bk2k -mps /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpguorxwac/tmp1hz9dojn
+12/22/2024 01:02:03 PM - humann.quantify.modules - DEBUG: Compute pathway abundance for bug: unclassified
+12/22/2024 01:02:03 PM - humann.quantify.modules - DEBUG: Compute pathway abundance for bug: all
+12/22/2024 01:02:03 PM - humann.quantify.modules - DEBUG: Print pathways _Abundance
+12/22/2024 01:02:03 PM - humann.humann - INFO: TIMESTAMP: Completed 	computing pathways 	:	 8	 seconds
+12/22/2024 01:02:03 PM - humann.humann - INFO: 
 Output files created: 
 /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_1_metaphlan_profile.tsv
 /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_2_genefamilies.tsv
@@ -136,4 +136,4 @@ Output files created:
 /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_4_pathabundance.tsv
 /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_0.log
 
-12/22/2024 12:32:22 PM - humann.utilities - DEBUG: Remove directory: /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpax_i39ln
+12/22/2024 01:02:03 PM - humann.utilities - DEBUG: Remove directory: /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR31533935/SRR31533935_merged_humann_temp/tmpguorxwac
