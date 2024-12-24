@@ -7,7 +7,8 @@ rule humann_functional_profiling:
         # fastq = rules.trim_adapters_fastp.output.merged_fastq
     output:
         gene_families = "results/004_pathways/humann/{sample}/{sample}_merged_2_genefamilies.tsv",
-        pathways_abundance = "results/004_pathways/humann/{sample}/{sample}_merged_4_pathabundance.tsv"
+        pathways_abundance = "results/004_pathways/humann/{sample}/{sample}_merged_4_pathabundance.tsv",
+        reactions_abundance = "results/004_pathways/humann/{sample}/{sample}_merged_3_reactions.tsv"
     params:
         humann_nuc_db = config["humann_nuc_db"],
         humann_prot_db = config["humann_prot_db"],
@@ -19,7 +20,7 @@ rule humann_functional_profiling:
     benchmark:
         "benchmark/004_pathways/humann/{sample}.time"
     log:
-        "logs/004_pathways/humann/{sample}.log"
+        "logs/004_pathways/humann/{sample}/{sample}.log"
     shell:
         """
         humann --input {input.fastq} \
@@ -28,7 +29,6 @@ rule humann_functional_profiling:
         --nucleotide-database {params.humann_nuc_db} \
         --protein-database {params.humann_prot_db} \
         --resume \
-        --remove-stratified-output \
         --bowtie-options "--very-sensitive-local " \
         &> {log}
         """
@@ -48,7 +48,7 @@ rule humann_renorm_table:
     benchmark:
         "benchmark/004_pathways/humann/{sample}_renorm_table.time"
     log:
-        "logs/004_pathways/humann/{sample}_renorm_table.log"
+        "logs/004_pathways/humann/{sample}/{sample}_renorm_table.log"
     shell:
         """
         humann_renorm_table --input {input.gene_families} \
@@ -62,7 +62,7 @@ rule humann_renorm_table:
 #########################################
 rule humann_kegg_pathways:
     input:
-        genefamilies = rules.humann_renorm_table.output.gene_families_relab,
+        genefamilies = rules.humann_functional_profiling.output.gene_families
     output:
         kegg_orthologs = "results/004_pathways/humann/{sample}/{sample}_genefamilies_uniref90_kegg_orthologs.tsv",
         kegg_pathways = "results/004_pathways/humann/{sample}/{sample}_kegg_pathways.tsv"
@@ -72,21 +72,19 @@ rule humann_kegg_pathways:
         config["threads"]
     conda:
         "humann_env"
-    params:
-        outdir = "results/004_pathways/humann/{sample}"
     benchmark:
-        "benchmark/004_pathways/humann/{sample}_kegg_pathways.time"
+        "benchmark/004_pathways/humann/{sample}/{sample}_kegg_pathways.time"
     log:
-        "logs/004_pathways/humann/{sample}_kegg_pathways.log"
+        "logs/004_pathways/humann/{sample}/{sample}_kegg_pathways.log"
     shell:
         """
         humann_regroup_table --input {input.genefamilies} \
-        --group uniref90_kegg \
+        --group uniref90_ko \
         --output {output.kegg_orthologs} \
         &> {log}
 
         humann --input {output.kegg_orthologs} \
-        --output {params.outdir} \
+        --output results/004_pathways/humann/{wildcards.sample} \
         --pathways-database {params.humann_kegg_db} \
         &> {log}
         """

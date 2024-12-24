@@ -33,7 +33,7 @@ rule melonnpan_prediction:
         metabolites = "results/004_pathways/melonnpan/{sample}/MelonnPan_Predicted_Metabolites.txt",
         rtsi = "results/004_pathways/melonnpan/{sample}/MelonnPan_RTSI.txt"
     conda:
-        "melonnpan_env"
+        "melonpann_env"
     threads:
         config["threads"]
     benchmark:

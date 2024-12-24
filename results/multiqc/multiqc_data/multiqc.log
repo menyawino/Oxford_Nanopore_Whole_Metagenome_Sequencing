@@ -1,5 +1,6 @@
-[2024-10-31 16:38:32,015] multiqc.core.file_search                           [INFO   ]  Search path: /mnt/omar/pipelines/ont/work/results
-[2024-10-31 16:38:32,015] multiqc.core.file_search                           [INFO   ]  Search path: /mnt/omar/pipelines/ont/work/logs
-[2024-10-31 16:38:32,015] multiqc.core.file_search                           [INFO   ]  Search path: /mnt/omar/pipelines/ont/work/benchmark
-[2024-10-31 16:38:33,136] multiqc.modules.kraken.kraken                      [INFO   ]  Found 6 reports
-[2024-10-31 16:38:33,306] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 6 reports
+[2024-12-23 14:33:01,420] multiqc.core.version_check                         [WARNING]  MultiQC Version v1.26 now available!
+[2024-12-23 14:33:01,421] multiqc.core.file_search                           [INFO   ]  Search path: /mnt/omar/pipelines/ont/work/results
+[2024-12-23 14:33:01,421] multiqc.core.file_search                           [INFO   ]  Search path: /mnt/omar/pipelines/ont/work/logs
+[2024-12-23 14:33:01,421] multiqc.core.file_search                           [INFO   ]  Search path: /mnt/omar/pipelines/ont/work/benchmark
+[2024-12-23 14:33:06,832] multiqc.modules.kraken.kraken                      [INFO   ]  Found 6 reports
+[2024-12-23 14:33:07,723] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 6 reports

@@ -12,6 +12,6 @@ include: "rules/010_multiqc.smk"
 
 rule all:
     input:
-        expand("results/multiqc/multiqc_report.html", sample=config["samples"]),
-        expand("results/004_pathways/humann/{sample}/{sample}_kegg_pathways.tsv", sample=config["samples"]),
-        expand(rules.melonnpan_prediction.output.metabolite_prediction, sample=config["samples"]),
+        expand(rules.humann_functional_profiling.output.pathways_abundance, sample=config["samples"]),
+        expand(rules.humann_kegg_pathways.output.kegg_pathways, sample=config["samples"]),
+        # expand(rules.melonnpan_prediction.output.metabolites, sample=config["samples"]),

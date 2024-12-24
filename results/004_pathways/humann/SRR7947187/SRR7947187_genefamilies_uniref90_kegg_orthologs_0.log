@@ -1,0 +1,60 @@
+12/24/2024 10:37:52 PM - humann.humann - INFO: Running humann v4.0.0.alpha.1
+12/24/2024 10:37:52 PM - humann.humann - INFO: Output files will be written to: /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947187
+12/24/2024 10:37:52 PM - humann.humann - INFO: Writing temp files to directory: /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947187/SRR7947187_genefamilies_uniref90_kegg_orthologs_humann_temp
+12/24/2024 10:37:52 PM - humann.utilities - INFO: File ( /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947187/SRR7947187_genefamilies_uniref90_kegg_orthologs.tsv ) is of format:  genetable
+12/24/2024 10:37:52 PM - humann.config - INFO: 
+Run config settings: 
+
+DATABASE SETTINGS
+nucleotide database folder = /mnt/omar/misc/tests/chocophlan/chocophlan
+protein database folder = /mnt/omar/misc/tests/uniref
+pathways database file = /mnt/omar/pipelines/ont/work/ref/humann/legacy/humann_legacy-0.99b/data/keggc
+utility mapping database folder = /mnt/omar/misc/tests/utility_mapping/utility_mapping
+
+RUN MODES
+resume = True
+verbose = True
+bypass prescreen = False
+bypass nucleotide index = False
+bypass nucleotide search = False
+bypass translated search = False
+translated search = diamond
+threads = 20
+
+Identity thresholds
+nucleotide = 0.0
+translated = 50.0
+
+ALIGNMENT SETTINGS
+bowtie2 options = --very-sensitive --no-hd --no-sq
+diamond options = --top 1 --sensitive --outfmt 6
+evalue threshold = 1.0
+prescreen threshold = 0.01
+average read length = 1548.0
+translated subject coverage threshold = 15.0
+translated query coverage threshold = 6.0
+nucleotide subject coverage threshold = 15.0
+nucleotide query coverage threshold = 6.0
+
+PATHWAYS SETTINGS
+minpath = on
+xipe = off
+gap fill = on
+
+INPUT AND OUTPUT FORMATS
+input file format = genetable
+output file format = tsv
+normalization mode = Adjusted CPMs
+output max decimals = 10
+remove stratified output = False
+remove column description output = False
+log level = DEBUG
+
+12/24/2024 10:37:52 PM - humann.store - DEBUG: Initialize Alignments class instance to minimize memory use
+12/24/2024 10:37:52 PM - humann.store - DEBUG: Initialize Reads class instance to minimize memory use
+12/24/2024 10:37:52 PM - humann.humann - INFO: Load pathways database: /mnt/omar/pipelines/ont/work/ref/humann/legacy/humann_legacy-0.99b/data/keggc
+12/24/2024 10:37:52 PM - humann.humann - INFO: Process the gene table ...
+12/24/2024 10:37:52 PM - humann.humann - INFO: TIMESTAMP: Completed 	processing gene table 	:	 0	 seconds
+12/24/2024 10:37:52 PM - humann.humann - INFO: Computing reaction and pathway abundance ...
+12/24/2024 10:37:52 PM - humann.quantify.modules - DEBUG: Write flat reactions to pathways file for Minpath
+12/24/2024 10:37:52 PM - humann.quantify.modules - INFO: Compute reaction scores for bug: all

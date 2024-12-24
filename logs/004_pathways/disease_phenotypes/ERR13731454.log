@@ -1,4 +1,4 @@
-Phenotype DataFrame columns: Index(['phenotype', 'taxonomic rank', 'NCBI taxon ID', 'scientific name',
+ Phenotype DataFrame columns: Index(['phenotype', 'taxonomic rank', 'NCBI taxon ID', 'scientific name',
        'nr. total valid samples of this phenotype',
        'samples in which current taxon is found', 'abudance mean',
        'abundance median', 'abundance sd', 'phenotype term',
