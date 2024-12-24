@@ -1,8 +1,10 @@
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
 Output files will be written to: /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947187
 
-Writing temp files to directory: /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947187/SRR7947187_genefamilies_uniref90_kegg_orthologs_humann_temp
+Writing temp files to directory: /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947187/SRR7947187_kegg_humann_temp
 
-File ( /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947187/SRR7947187_genefamilies_uniref90_kegg_orthologs.tsv ) is of format:  genetable
+File ( /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947187/SRR7947187_kegg.tsv ) is of format:  genetable
 
 
 Process the gene table ...
@@ -11,14 +13,15 @@ TIMESTAMP: Completed processing gene table : 0 seconds
 
 
 Computing reaction and pathway abundance ...
-Traceback (most recent call last):
-  File "/home/omar/Downloads/miniconda3/envs/humann_env/bin/humann", line 8, in <module>
-    sys.exit(main())
-             ^^^^^^
-  File "/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/humann.py", line 1128, in main
-    pathways_and_reactions_store=modules.identify_reactions_and_pathways(
-                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/modules.py", line 142, in identify_reactions_and_pathways
-    reactions_store.add(bug,reaction,score)
-                            ^^^^^^^^
-UnboundLocalError: cannot access local variable 'reaction' where it is not associated with a value
+
+/home/omar/Downloads/miniconda3/envs/humann_env/bin/python3.12 /home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py -any /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947187/SRR7947187_kegg_humann_temp/tmpj2hhbe8e/tmpmeqoc7sn -map /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947187/SRR7947187_kegg_humann_temp/tmpj2hhbe8e/tmps60adycp -report /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947187/SRR7947187_kegg_humann_temp/tmpj2hhbe8e/tmpo2g2a_9y -details /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947187/SRR7947187_kegg_humann_temp/tmpj2hhbe8e/tmpaf9bi2kg -mps /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947187/SRR7947187_kegg_humann_temp/tmpj2hhbe8e/tmpanm898ml
+
+
+TIMESTAMP: Completed computing pathways : 2 seconds
+
+
+Output files created: 
+/mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947187/SRR7947187_kegg_3_reactions.tsv
+/mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947187/SRR7947187_kegg_4_pathabundance.tsv
+/mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947187/SRR7947187_kegg_0.log
+

@@ -1,0 +1,74 @@
+12/24/2024 11:16:34 PM - humann.humann - INFO: Running humann v4.0.0.alpha.1
+12/24/2024 11:16:34 PM - humann.humann - INFO: Output files will be written to: /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947168
+12/24/2024 11:16:34 PM - humann.humann - INFO: Writing temp files to directory: /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947168/SRR7947168_kegg_humann_temp
+12/24/2024 11:16:34 PM - humann.utilities - INFO: File ( /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947168/SRR7947168_kegg.tsv ) is of format:  genetable
+12/24/2024 11:16:34 PM - humann.config - INFO: 
+Run config settings: 
+
+DATABASE SETTINGS
+nucleotide database folder = /mnt/omar/misc/tests/chocophlan/chocophlan
+protein database folder = /mnt/omar/misc/tests/uniref
+pathways database file = /mnt/omar/pipelines/ont/work/ref/humann/legacy/humann_legacy-0.99b/data/keggc
+utility mapping database folder = /mnt/omar/misc/tests/utility_mapping/utility_mapping
+
+RUN MODES
+resume = True
+verbose = True
+bypass prescreen = False
+bypass nucleotide index = False
+bypass nucleotide search = False
+bypass translated search = False
+translated search = diamond
+threads = 20
+
+Identity thresholds
+nucleotide = 0.0
+translated = 50.0
+
+ALIGNMENT SETTINGS
+bowtie2 options = --very-sensitive --no-hd --no-sq
+diamond options = --top 1 --sensitive --outfmt 6
+evalue threshold = 1.0
+prescreen threshold = 0.01
+average read length = 1548.0
+translated subject coverage threshold = 15.0
+translated query coverage threshold = 6.0
+nucleotide subject coverage threshold = 15.0
+nucleotide query coverage threshold = 6.0
+
+PATHWAYS SETTINGS
+minpath = on
+xipe = off
+gap fill = on
+
+INPUT AND OUTPUT FORMATS
+input file format = genetable
+output file format = tsv
+normalization mode = Adjusted CPMs
+output max decimals = 10
+remove stratified output = False
+remove column description output = False
+log level = DEBUG
+
+12/24/2024 11:16:34 PM - humann.store - DEBUG: Initialize Alignments class instance to minimize memory use
+12/24/2024 11:16:34 PM - humann.store - DEBUG: Initialize Reads class instance to minimize memory use
+12/24/2024 11:16:34 PM - humann.humann - INFO: Load pathways database: /mnt/omar/pipelines/ont/work/ref/humann/legacy/humann_legacy-0.99b/data/keggc
+12/24/2024 11:16:34 PM - humann.humann - INFO: Process the gene table ...
+12/24/2024 11:16:34 PM - humann.humann - INFO: TIMESTAMP: Completed 	processing gene table 	:	 0	 seconds
+12/24/2024 11:16:34 PM - humann.humann - INFO: Computing reaction and pathway abundance ...
+12/24/2024 11:16:34 PM - humann.quantify.modules - DEBUG: Write flat reactions to pathways file for Minpath
+12/24/2024 11:16:34 PM - humann.quantify.modules - INFO: Compute reaction scores for bug: all
+12/24/2024 11:16:34 PM - humann.quantify.modules - INFO: Run MinPath on all
+12/24/2024 11:16:34 PM - humann.quantify.modules - DEBUG: Print pathways 
+12/24/2024 11:16:34 PM - humann.utilities - DEBUG: Using python module : /home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py
+12/24/2024 11:16:34 PM - humann.utilities - INFO: Execute command: /home/omar/Downloads/miniconda3/envs/humann_env/bin/python3.12 /home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py -any /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947168/SRR7947168_kegg_humann_temp/tmp4gd2bzl1/tmpn3egjmzg -map /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947168/SRR7947168_kegg_humann_temp/tmp4gd2bzl1/tmpw9lbk6hc -report /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947168/SRR7947168_kegg_humann_temp/tmp4gd2bzl1/tmpacogrj0_ -details /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947168/SRR7947168_kegg_humann_temp/tmp4gd2bzl1/tmpwkknspgo -mps /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947168/SRR7947168_kegg_humann_temp/tmp4gd2bzl1/tmpc4ii6_2f
+12/24/2024 11:16:36 PM - humann.quantify.modules - DEBUG: Compute pathway abundance for bug: all
+12/24/2024 11:16:36 PM - humann.quantify.modules - DEBUG: Print pathways _Abundance
+12/24/2024 11:16:36 PM - humann.humann - INFO: TIMESTAMP: Completed 	computing pathways 	:	 2	 seconds
+12/24/2024 11:16:36 PM - humann.humann - INFO: 
+Output files created: 
+/mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947168/SRR7947168_kegg_3_reactions.tsv
+/mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947168/SRR7947168_kegg_4_pathabundance.tsv
+/mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947168/SRR7947168_kegg_0.log
+
+12/24/2024 11:16:36 PM - humann.utilities - DEBUG: Remove directory: /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947168/SRR7947168_kegg_humann_temp/tmp4gd2bzl1

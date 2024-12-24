@@ -64,8 +64,8 @@ rule humann_kegg_pathways:
     input:
         genefamilies = rules.humann_functional_profiling.output.gene_families
     output:
-        kegg_orthologs = "results/004_pathways/humann/{sample}/{sample}_genefamilies_uniref90_kegg_orthologs.tsv",
-        kegg_pathways = "results/004_pathways/humann/{sample}/{sample}_kegg_pathways.tsv"
+        kegg_orthologs = "results/004_pathways/humann/{sample}/{sample}_kegg.tsv",
+        kegg_pathways = "results/004_pathways/humann/{sample}/{sample}_kegg_4_pathabundance.tsv"
     params:
         humann_kegg_db = config["humann_kegg_db"]
     threads:

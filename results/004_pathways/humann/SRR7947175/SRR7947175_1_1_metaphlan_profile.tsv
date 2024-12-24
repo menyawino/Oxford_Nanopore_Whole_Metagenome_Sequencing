@@ -1,8 +1,0 @@
-#mpa_vOct22_CHOCOPhlAnSGB_202403
-#/home/omar/Downloads/miniconda3/envs/humann_env/bin/metaphlan /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947175/SRR7947175_1_humann_temp/tmpryouacxx/tmpt4p929_6 -t rel_ab_w_read_stats -o /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947175/SRR7947175_1_1_metaphlan_profile.tsv --input_type fastq --bowtie2out /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947175/SRR7947175_1_humann_temp/SRR7947175_1_metaphlan_bowtie2.txt --nproc 11
-#65242 reads processed
-#Average read length 753.0900800098096
-#SampleID	Metaphlan_Analysis
-#estimated_reads_mapped_to_known_clades:0
-#clade_name	clade_taxid	relative_abundance	coverage	estimated_number_of_reads_from_the_clade
-unclassified	-1	100.0	0	0
