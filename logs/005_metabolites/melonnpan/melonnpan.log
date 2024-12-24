@@ -54,10 +54,10 @@ Loading required package: tibble
 Running MelonnPan-Predict using the following parameters: 
 $options
 $options$metag
-[1] "results/004_pathways/humann/concatenated_gene_families.tsv"
+[1] "results/005_metabolites/humann/concatenated_gene_families.tsv"
 
 $options$output
-[1] "results/004_pathways/melonnpan/SRR7947168/"
+[1] "results/005_metabolites/melonnpan/"
 
 $options$criticalpoint
 [1] 0.9793
