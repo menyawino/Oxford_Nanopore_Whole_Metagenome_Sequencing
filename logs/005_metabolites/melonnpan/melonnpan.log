@@ -78,6 +78,6 @@ $options$help
 $args
 character(0)
 
-Error in melonnpan::melonnpan.predict(metag = metag, output = output,  : 
-  No common IDs found between training and test data. Execution halted!
-Execution halted
+Warning messages:
+1: In cor(r, y, method = corr.method) : the standard deviation is zero
+2: In cor(r, y, method = corr.method) : the standard deviation is zero

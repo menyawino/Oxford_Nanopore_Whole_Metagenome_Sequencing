@@ -19,6 +19,7 @@ rule concatenate_gene_families:
         python scripts/concatenate_gene_families.py \
         --input {input.gene_families} \
         --output {output.concatenated_gene_families} \
+        --threads {threads} \
         &> {log}
         """
 

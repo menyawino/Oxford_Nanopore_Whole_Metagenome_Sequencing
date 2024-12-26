@@ -14,5 +14,4 @@ rule all:
     input:
         expand(rules.humann_functional_profiling.output.pathways_abundance, sample=config["samples"]),
         expand(rules.humann_kegg_pathways.output.kegg_pathways, sample=config["samples"]),
-        expand(rules.humann_renorm_table.output.gene_families_relab, sample=config["samples"]),
         expand(rules.melonnpan_prediction.output.metabolites, sample=config["samples"]),
