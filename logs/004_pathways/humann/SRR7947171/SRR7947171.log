@@ -1,0 +1,89 @@
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+/home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py:804: SyntaxWarning: invalid escape sequence '\d'
+  m = re.match('^[^\d]+(?P<id>\d+)', aline)
+Output files will be written to: /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947171
+
+Writing temp files to directory: /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947171/SRR7947171_merged_humann_temp
+
+File ( /mnt/omar/pipelines/ont/work/results/002_qc/merged/SRR7947171_merged.fastq.gz ) is of format:  fastq.gz
+
+Decompressing gzipped file ...
+
+Removing spaces from identifiers in input file ...
+
+
+Running metaphlan ........
+
+
+/home/omar/Downloads/miniconda3/envs/humann_env/bin/metaphlan /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947171/SRR7947171_merged_humann_temp/tmp3jk84jot/tmp_8b3amj9 -t rel_ab_w_read_stats -o /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947171/SRR7947171_merged_1_metaphlan_profile.tsv --input_type fastq --bowtie2out /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947171/SRR7947171_merged_humann_temp/SRR7947171_merged_metaphlan_bowtie2.txt --nproc 11
+
+
+TIMESTAMP: Completed prescreen : 442 seconds
+
+
+Total species selected from prescreen: 0
+
+Selected species explain 0.00% of predicted community composition
+
+
+
+No species were selected from the prescreen.
+Because of this the custom ChocoPhlAn database is empty.
+This will result in zero species-specific gene families and pathways.
+
+
+
+TIMESTAMP: Completed custom database creation : 0 seconds
+
+
+Running diamond ........
+
+
+Aligning to reference database: humann4_protein_database_filtered_v2019_06.dmnd
+
+
+/home/omar/Downloads/miniconda3/envs/humann_env/bin/diamond blastx --query /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947171/SRR7947171_merged_humann_temp/tmp3jk84jot/tmpjm9l8xvd --evalue 1.0 --threads 11 --top 1 --sensitive --outfmt 6 --db /mnt/omar/misc/tests/uniref/humann4_protein_database_filtered_v2019_06 --out /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947171/SRR7947171_merged_humann_temp/tmp3jk84jot/diamond_m8_xxr73u5e --tmpdir /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947171/SRR7947171_merged_humann_temp/tmp3jk84jot
+
+
+/usr/bin/cat /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947171/SRR7947171_merged_humann_temp/tmp3jk84jot/diamond_m8_xxr73u5e
+
+
+TIMESTAMP: Completed translated alignment : 500 seconds
+
+
+TIMESTAMP: Completed translated alignment post-processing : 2 seconds
+
+Total bugs after translated alignment: 1
+unclassified: 5612 hits
+
+Total gene families after translated alignment: 4002
+
+Unaligned reads after translated alignment: 80.7878787879 %
+
+
+Computing gene families ...
+Total gene families  : 4002
+unclassified : 4002 gene families
+
+TIMESTAMP: Completed computing gene families : 0 seconds
+
+
+Computing reaction and pathway abundance ...
+
+/home/omar/Downloads/miniconda3/envs/humann_env/bin/python3.12 /home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py -any /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947171/SRR7947171_merged_humann_temp/tmp3jk84jot/tmp_7ujtyyn -map /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947171/SRR7947171_merged_humann_temp/tmp3jk84jot/tmpxugio_b5 -report /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947171/SRR7947171_merged_humann_temp/tmp3jk84jot/tmp8rap9s5m -details /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947171/SRR7947171_merged_humann_temp/tmp3jk84jot/tmpl6e0r9sf -mps /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947171/SRR7947171_merged_humann_temp/tmp3jk84jot/tmpzzxzx84r
+
+
+/home/omar/Downloads/miniconda3/envs/humann_env/bin/python3.12 /home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py -any /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947171/SRR7947171_merged_humann_temp/tmp3jk84jot/tmpe7b4vbg_ -map /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947171/SRR7947171_merged_humann_temp/tmp3jk84jot/tmpxugio_b5 -report /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947171/SRR7947171_merged_humann_temp/tmp3jk84jot/tmpks_atsvu -details /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947171/SRR7947171_merged_humann_temp/tmp3jk84jot/tmppikmzvps -mps /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947171/SRR7947171_merged_humann_temp/tmp3jk84jot/tmpdl5zkone
+
+
+TIMESTAMP: Completed computing pathways : 26 seconds
+
+
+Output files created: 
+/mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947171/SRR7947171_merged_1_metaphlan_profile.tsv
+/mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947171/SRR7947171_merged_2_genefamilies.tsv
+/mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947171/SRR7947171_merged_3_reactions.tsv
+/mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947171/SRR7947171_merged_4_pathabundance.tsv
+/mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947171/SRR7947171_merged_0.log
+

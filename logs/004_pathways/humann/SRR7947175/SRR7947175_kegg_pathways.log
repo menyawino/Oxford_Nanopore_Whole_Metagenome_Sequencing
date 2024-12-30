@@ -14,7 +14,7 @@ TIMESTAMP: Completed processing gene table : 0 seconds
 
 Computing reaction and pathway abundance ...
 
-/home/omar/Downloads/miniconda3/envs/humann_env/bin/python3.12 /home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py -any /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947175/SRR7947175_kegg_humann_temp/tmp_y8jhu2_/tmp8mvleuzp -map /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947175/SRR7947175_kegg_humann_temp/tmp_y8jhu2_/tmpvs55h7n5 -report /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947175/SRR7947175_kegg_humann_temp/tmp_y8jhu2_/tmpwuxc2zq6 -details /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947175/SRR7947175_kegg_humann_temp/tmp_y8jhu2_/tmps6wpko1l -mps /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947175/SRR7947175_kegg_humann_temp/tmp_y8jhu2_/tmp_i8r60ti
+/home/omar/Downloads/miniconda3/envs/humann_env/bin/python3.12 /home/omar/Downloads/miniconda3/envs/humann_env/lib/python3.12/site-packages/humann/quantify/MinPath12hmp.py -any /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947175/SRR7947175_kegg_humann_temp/tmpso0cpjrf/tmp6t06uz_i -map /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947175/SRR7947175_kegg_humann_temp/tmpso0cpjrf/tmpkoq9tppu -report /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947175/SRR7947175_kegg_humann_temp/tmpso0cpjrf/tmpkf4io330 -details /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947175/SRR7947175_kegg_humann_temp/tmpso0cpjrf/tmpjble6ttg -mps /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947175/SRR7947175_kegg_humann_temp/tmpso0cpjrf/tmpjc67mk7o
 
 
 TIMESTAMP: Completed computing pathways : 2 seconds

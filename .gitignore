@@ -7,4 +7,5 @@
 /results/005_amr/resfinder/*/resfinder_kma/*
 /samples/*
 /others/*
-/mnt/omar/pipelines/ont/work/workflow/scripts/archived/*
+/workflow/scripts/archived/*
+/mnt/omar/pipelines/ont/work/results/005_metabolites/*/*

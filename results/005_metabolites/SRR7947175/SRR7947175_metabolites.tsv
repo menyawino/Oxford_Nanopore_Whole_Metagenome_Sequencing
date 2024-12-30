@@ -1,0 +1,906 @@
+	Abundance
+dCMP	1121.5095212377
+H2O	31808.51190621525
+dUMP	1428.2469887121997
+Ammonia	5272.2938129914
+di-trans,poly-cis-Undecaprenyl diphosphate	534.458705562
+di-trans,poly-cis-Undecaprenyl phosphate	684.810352841
+Orthophosphate	10394.028391105401
+S-Adenosyl-L-methionine	4221.1886441631
+tRNA guanine	440.69758955879996
+S-Adenosyl-L-homocysteine	2910.4478692069
+tRNA containing N1-methylguanine	400.8853885777
+Reduced ferredoxin	2737.6154872268007
+Succinyl-CoA	522.1936557858
+CO2	6992.376659139198
+H	27468.954153739214
+	26874.631765409034
+Oxidized ferredoxin	2737.6154872268007
+2-Oxoglutarate	2169.6163097248996
+CoA	2725.4064577381996
+Acetyl-CoA	1388.5608342832002
+Malonyl-[acyl-carrier protein]	2485.8671508623006
+Acetoacetyl-[acp]	632.9753690314
+ATP	11256.768532787495
+Pantetheine 4'-phosphate	536.5558143072
+Diphosphate	7324.782616762904
+Dephospho-CoA	440.5614961207
+D-Ribose 5-phosphate	687.9064829034
+D-Ribulose 5-phosphate	1001.3899715721001
+GTP	1397.6334599025
+Formate	1786.7648670689998
+2,5-Diamino-6-(5-phospho-D-ribosylamino)pyrimidin-4(3H)-one	348.1072390926
+L-3,4-Dihydroxybutan-2-one 4-phosphate	447.4690457784
+Adenine in rRNA	472.7430478949
+N6-Dimethyladenine in rRNA	472.7430478949
+N-Acetyl-L-glutamate	445.0960370089
+ADP	7685.590752789302
+N-Acetyl-L-glutamate 5-phosphate	456.6844855447
+AMP	4003.7115002869014
+Adenine	373.11621873060005
+5-Phospho-alpha-D-ribose 1-diphosphate	1031.9357012352002
+1-(5'-Phosphoribosyl)-5-amino-4-imidazolecarboxamide	786.8520669459001
+5-Amino-4-imidazolecarboxyamide	312.0840261754
+Ubiquinone	1517.1080768703
+NADH	6568.340647130804
+Ubiquinol	1517.1080768703
+NAD	6922.952286105105
+5-Dehydro-4-deoxy-D-glucuronate	296.5843290211
+(4S)-4,6-Dihydroxy-2,5-dioxohexanoate	296.5843290211
+3-Amino-2-oxopropyl phosphate	514.8177148615
+1-Deoxy-D-xylulose 5-phosphate	377.7222055743
+Pyridoxine phosphate	377.9334289994
+alpha-Isopropylmalate	397.61232386699993
+3-Methyl-2-oxobutanoic acid	564.5201553822999
+IMP	555.8383047854
+1-(5'-Phosphoribosyl)-5-formamido-4-imidazolecarboxamide	573.6633380554
+10-Formyltetrahydrofolate	645.5786229113
+Tetrahydrofolate	1448.0482054725
+D-Mannose 6-phosphate	793.7441899807
+D-Mannose 1-phosphate	527.383076738
+Phosphatidate	768.1847829061999
+1-Acyl-sn-glycerol 3-phosphate	683.0249452124
+Acyl-CoA	280.3411073635
+Acyl-[acyl-carrier protein]	648.6315721497999
+Acyl-carrier protein	3563.657309394901
+Demethylmenaquinol	279.4956653513
+Menaquinol	279.4956653513
+2-Methoxy-6-all-trans-polyprenyl-1,4-benzoquinol	279.4956653513
+5-Methoxy-2-methyl-3-(all-trans-polyprenyl)benzene-1,4-diol	279.4956653513
+L-Tyrosine	284.96857487069997
+Reduced acceptor	739.494034085
+Iminoglycine	265.46287577
+4-Cresol	265.46287577
+5'-Deoxyadenosine	1232.7144145844
+L-Methionine	1419.4071862165001
+Acceptor	739.494034085
+L-Proline	708.8253541192
+(S)-1-Pyrroline-5-carboxylate	581.8120786594
+NADP	4707.392524937999
+NADPH	4624.1718291612
+Hydroxyproline	521.2309434766
+L-1-Pyrroline-3-hydroxy-5-carboxylate	561.6183669318
+D-Fructose 1,6-bisphosphate	942.5350535183001
+D-Fructose 6-phosphate	1795.2091179774002
+beta-D-Fructose 1,6-bisphosphate	942.5350535183001
+beta-D-Fructose 6-phosphate	1501.3909306780001
+1-(5-Phospho-D-ribosyl)-ATP	311.7729701387
+Phosphoribosyl-AMP	691.5201182941
+5-(5-Phospho-D-ribosylaminoformimino)-1-(5-phosphoribosyl)-imidazole-4-carboxamide	505.3934338609
+Dimethylallyl diphosphate	447.9195460376
+tRNA adenine	465.9659228022
+tRNA containing 6-isopentenyladenosine	585.6879295722
+L-Leucine	327.3195865136
+4-Methyl-2-oxopentanoate	340.2773008057
+L-Glutamate	3444.723038289901
+L-Valine	316.1181230971
+L-Isoleucine	356.4145996793
+(S)-3-Methyl-2-oxopentanoic acid	270.9682303717
+2-Oxo-5-methylthiopentanoic acid	252.177659305
+L-Amino acid	504.35531861
+Homomethionine	252.177659305
+2-Oxo acid	504.35531861
+2-Oxo-6-methylthiohexanoic acid	252.177659305
+Dihomomethionine	252.177659305
+(S)-2-Aminobutanoate	252.177659305
+2-Oxobutanoate	321.486729739
+N-(5-Phospho-D-ribosyl)anthranilate	250.6249915043
+1-(2-Carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate	250.6249915043
+Glycerone phosphate	858.7501321495
+Methylglyoxal	425.0808544505
+CMP	1261.5950689845001
+CDP	450.0139605838
+dCDP	240.1278183295
+L-Asparagine	240.0810989945
+L-Aspartate	760.7411928744
+2-Phospho-4-(cytidine 5'-diphospho)-2-C-methyl-D-erythritol	365.143903936
+2-C-Methyl-D-erythritol 2,4-cyclodiphosphate	376.0915105509
+Octanoyl-[acp]	1035.0281538556
+[Lipoyl-carrier protein]-L-lysine	476.1694507714
+[Protein]-N6-(octanoyl)-L-lysine	297.076892374
+Lipoyl-[acp]	238.0847253857
+Protein N6-(lipoyl)lysine	238.0847253857
+Lipoyl-carrier protein E2	238.0847253857
+[Lipoyl-carrier protein E2]-N6-octanoyl-L-lysine	297.076892374
+Glycine cleavage system H	238.0847253857
+[Glycine cleavage system H]-N6-octanoyl-L-lysine	297.076892374
+D-Tagatose 6-phosphate	1077.5023796249002
+D-Tagatose 1,6-bisphosphate	1153.4419798184001
+dUTP	410.1249526849
+5-Fluorodeoxyuridine triphosphate	237.2998142334
+5-Fluorodeoxyuridine monophosphate	281.5278249116
+tRNA(Glu)	236.7678773871
+L-Glutamyl-tRNA(Glu)	236.7678773871
+2-Phosphoglycolate	233.9479504653
+Glycolate	353.33052468610003
+Cytidine	999.9382844485
+GDP	751.6433417734
+Uridine	1113.7709277701001
+UMP	1136.0571221037
+5-Fluorouridine	345.8725694271
+5-Fluorouridine monophosphate	232.0399261055
+Deoxycytidine	357.64004244520004
+Deoxyuridine	552.7748251056
+5'-Deoxy-5-fluorocytidine	216.4957813135
+5'-Deoxy-5-fluorouridine	216.4957813135
+(R)-S-Lactoylglutathione	350.078215364
+Glutathione	701.0488610292
+(R)-Lactate	373.0601704223
+CTP	761.9518512013
+UTP	525.0178205015001
+UDP	552.0688754283001
+ITP	209.8861422543
+IDP	209.8861422543
+Carbamoyl phosphate	465.1109179278001
+N2-Succinyl-L-ornithine	208.3825018552
+N-Succinyl-L-citrulline	208.3825018552
+D-Altronate	202.747285476
+D-Tagaturonate	281.703242803
+dTDP-L-rhamnose	201.8471812595
+dTDP-4-dehydro-beta-L-rhamnose	201.8471812595
+D-Glucosamine 6-phosphate	408.7661597398
+Coenzyme B	798.4996701556
+Coenzyme M	798.4996701556
+Coenzyme F420	399.2498350778
+Coenzyme M 7-mercaptoheptanoylthreonine-phosphate heterodisulfide	798.4996701556
+Reduced coenzyme F420	399.2498350778
+Hydrogen	437.75457461450003
+alpha-D-Glucose	1047.9390137873
+beta-D-Glucose	1815.9409272594999
+D-Galactose	2305.6887115172008
+alpha-D-Galactose	244.907550434
+Hydroxymethylbilane	253.7447509987
+Uroporphyrinogen III	250.64294813409998
+L-Histidinol	758.5162702918
+L-Histidine	557.4047045322
+L-Histidinal	395.0541173864
+GDP-mannose	244.635885937
+alpha-D-Ribose 1,2-cyclic phosphate 5-phosphate	194.3550789034
+D-Ribose 1,5-bisphosphate	276.7782296164
+L-Histidinol phosphate	363.4621529054
+Galactan	656.9153440398001
+Lactose	417.55068707849995
+Lactosylceramide	858.6683534829999
+Glucosylceramide	188.2293388658
+3-Ketolactose	188.2293388658
+3-Keto-beta-D-galactose	188.2293388658
+D-Glucose	2651.4766420229994
+beta-D-Galactose	193.5484692679
+dTDP-glucose	202.4965824448
+dTDP-4-oxo-6-deoxy-D-glucose	184.5139241796
+5,10-Methylenetetrahydrofolate	726.3864606423999
+Dihydrofolate	710.3519990212001
+dTMP	557.5406501412
+Lipid A disaccharide	180.2431986858
+2,3,2'3'-Tetrakis(3-hydroxytetradecanoyl)-D-glucosaminyl-1,6-beta-D-glucosamine 1,4'-bisphosphate	180.2431986858
+Chorismate	786.030528691
+Anthranilate	351.1776326574
+Pyruvate	1875.2034959128002
+L-Glutamine	1015.0058158558
+5,10-Methenyltetrahydrofolate	579.9200762895
+D-erythro-1-(Imidazol-4-yl)glycerol 3-phosphate	357.6911570419
+3-(Imidazol-4-yl)-2-oxopropyl phosphate	272.7296121946
+Starch	860.7395898771
+Dextrin	704.3774979432001
+dGTP	172.8251384515
+dATP	172.8251384515
+dCTP	172.8251384515
+meso-2,6-Diaminoheptanedioate	408.2517038858
+L-2-Amino-6-oxoheptanedioate	167.4622051111
+tRNA(Pro)	167.400698915
+L-Prolyl-tRNA(Pro)	167.400698915
+Sulfur donor	486.84599271260004
+2-Methylthio-N6-dimethylallyladenine in tRNA	333.1916503726
+2-Thio-N6-dimethylallyladenine in tRNA	333.1916503726
+(S)-Dihydroorotate	234.935298978
+Orotate	163.7954561786
+Sirohydrochlorin	322.21540945590004
+Cobalt ion	236.103310117
+Cobalt-sirohydrochlorin	233.91605180890002
+GMP	610.9684726457001
+dGMP	300.8453760681
+dGDP	159.7011149364
+dZMP	262.6759418319
+dZDP	159.7011149364
+Nicotinate D-ribonucleotide	463.55923012729994
+Dimethylbenzimidazole	159.4816759921
+Nicotinate	173.69342531200002
+N1-(5-Phospho-alpha-D-ribosyl)-5,6-dimethylbenzimidazole	227.3525482869
+(S)-Malate	156.6757390304
+Oxaloacetate	474.20113502699996
+(2R)-3-Sulfolactate	156.6757390304
+3-Sulfopyruvate	156.6757390304
+3-Phospho-D-glycerate	292.1755914656
+3-Phospho-D-glyceroyl phosphate	156.1573435539
+Inositol 1-phosphate	154.4289035662
+myo-Inositol	563.0417101114
+myo-Inositol 4-phosphate	154.4289035662
+1D-myo-Inositol 3-phosphate	154.4289035662
+L-Xylulose	153.2386560241
+L-Xylulose 1-phosphate	283.95783310080003
+L-Rhamnulose	275.1777938947
+L-Rhamnulose 1-phosphate	283.95783310080003
+Cellobiose	701.5438230101001
+Prunasin	305.4967078462
+Mandelonitrile	152.7483539231
+Cellodextrin	310.5243184379
+(n-2) H2O	152.7483539231
+(n-2) D-Glucose	152.7483539231
+Amygdalin	152.7483539231
+beta-D-Glucoside	152.7483539231
+ROH	152.7483539231
+Cyanoglycoside	152.7483539231
+Cyanohydrin	152.7483539231
+cis-beta-D-Glucosyl-2-hydroxycinnamate	152.7483539231
+cis-2-Hydroxycinnamate	152.7483539231
+Dhurrin	152.7483539231
+(S)-4-Hydroxymandelonitrile	152.7483539231
+Lotaustralin	152.7483539231
+(2R)-2-Hydroxy-2-methylbutanenitrile	152.7483539231
+Linamarin	152.7483539231
+Acetone cyanohydrin	152.7483539231
+Daidzin	152.7483539231
+Daidzein	152.7483539231
+Genistin	152.7483539231
+Genistein	152.7483539231
+Isoquercitrin	187.1689960237
+Quercetin	152.7483539231
+Naringenin 7-O-beta-D-glucoside	187.1689960237
+Naringenin	152.7483539231
+D-Glucose 6-phosphate	269.562675745
+alpha-D-Glucose 6-phosphate	608.6397910982
+beta-D-Glucose 6-phosphate	425.1741500106
+Oxygen	714.6689055062001
+Glycine	886.7644149069997
+Folinic acid	147.7066677445
+[Protein]-S8-aminomethyldihydrolipoyllysine	188.82236150830002
+Dihydrolipoylprotein	225.48940579950002
+Maltose	617.1649340001001
+Sucrose	864.1717273622002
+D-Fructose	637.4761750059001
+beta-D-Fructose	347.7260407678
+Taurocholate	143.3415936068
+Cholic acid	286.6831872136
+Taurine	430.0247808204
+Glycochenodeoxycholate	143.3415936068
+Chenodeoxycholate	286.6831872136
+Taurochenodeoxycholate	143.3415936068
+Glycodeoxycholate	143.3415936068
+Deoxycholic acid	286.6831872136
+Taurodeoxycholate	143.3415936068
+Glycocholate	143.3415936068
+D-Glyceraldehyde 3-phosphate	584.2313944927
+1,2-Diacyl-sn-glycerol	141.261363722
+Adenosine	282.2885222634
+Inosine	141.1442611317
+Guanosine	282.2885222634
+3'-AMP	141.1442611317
+Thymidine	222.4464004705
+3'-UMP	141.1442611317
+Deoxyguanosine	141.1442611317
+dAMP	141.1442611317
+Deoxyadenosine	141.1442611317
+Guanosine 3'-phosphate	141.1442611317
+Nicotinamide D-ribonucleotide	411.6392529602
+Nicotinamide-beta-riboside	141.1442611317
+3'-CMP	141.1442611317
+Xanthosine 5'-phosphate	315.5256131197
+Xanthosine	141.1442611317
+Nicotinate D-ribonucleoside	141.1442611317
+2'-Deoxyinosine 5'-phosphate	141.1442611317
+Deoxyinosine	141.1442611317
+2-Carboxy-2,5-dihydro-5-oxofuran-2-acetate	141.1340002612
+2-Oxo-2,3-dihydrofuran-5-acetate	141.1340002612
+L-Cysteine	360.38815808749996
+Hydrogen sulfide	584.8017345682
+L-Cystathionine	139.5041102111
+L-Homocysteine	222.74337118570003
+L-Cystine	139.5041102111
+Thiocysteine	139.5041102111
+L-Selenocystathionine	139.5041102111
+Selenohomocysteine	139.5041102111
+L-Cysteine-S-conjugate	139.5041102111
+Thiol	139.5041102111
+L-Arogenate	138.882041391
+L-Phenylalanine	224.7554459142
+Prephenate	277.764082782
+Phenylpyruvate	138.882041391
+UDP-N-acetylmuramoyl-L-alanyl-D-glutamate	175.8099666064
+UDP-N-acetylmuramoyl-L-alanyl-gamma-D-glutamyl-meso-2,6-diaminopimelate	138.749921097
+Citrate	263.5421483142
+Acetate	677.9279817841999
+trans-2,3-Dehydroacyl-[acyl-carrier protein]	260.9951793495
+Butyryl-[acp]	320.77397769849995
+But-2-enoyl-[acyl-carrier protein]	260.9951793495
+Dodecanoyl-[acyl-carrier protein]	450.463114256
+trans-Dodec-2-enoyl-[acp]	260.9951793495
+Hexanoyl-[acp]	320.77397769849995
+trans-Hex-2-enoyl-[acp]	260.9951793495
+trans-Oct-2-enoyl-[acp]	260.9951793495
+Decanoyl-[acp]	320.77397769849995
+trans-Dec-2-enoyl-[acp]	260.9951793495
+Tetradecanoyl-[acp]	320.77397769849995
+trans-Tetradec-2-enoyl-[acp]	260.9951793495
+Hexadecanoyl-[acp]	320.77397769849995
+trans-Hexadec-2-enoyl-[acp]	260.9951793495
+(2E)-Octadecenoyl-[acp]	134.0454880542
+Octadecanoyl-[acyl-carrier protein]	134.0454880542
+UDP-2,3-bis(3-hydroxytetradecanoyl)glucosamine	226.6274258272
+Lipid X	131.716315802
+N-Acetyl-L-glutamate 5-semialdehyde	131.3975803693
+5alpha-Pregnane-3,20-dione	130.8569685095
+Progesterone	130.8569685095
+Dihydrotestosterone	130.8569685095
+Testosterone	130.8569685095
+11-Deoxycorticosterone	130.8569685095
+5alpha-Dihydrodeoxycorticosterone	130.8569685095
+5alpha-Androstane-3,17-dione	130.8569685095
+Androstenedione	130.8569685095
+5alpha-Pregnan-17alpha-ol-3,20-dione	130.8569685095
+17alpha-Hydroxyprogesterone	130.8569685095
+Glycolaldehyde	130.7191770767
+(S)-Lactaldehyde	130.7191770767
+tRNA(His)	130.2501266696
+L-Histidyl-tRNA(His)	130.2501266696
+L-Arginine	230.7986342671
+Agmatine	129.7224549748
+6,7-Dimethyl-8-(D-ribityl)lumazine	356.3245539166
+Riboflavin	128.4813736154
+5-Amino-6-(1-D-ribitylamino)uracil	310.9970327049
+N6-(1,2-Dicarboxyethyl)-AMP	230.8372015215
+3-Oxoacyl-[acyl-carrier protein]	258.7696152291
+Acetyl-[acyl-carrier protein]	186.7284896443
+3-Oxotetradecanoyl-[acp]	258.7696152291
+3-Oxohexanoyl-[acp]	258.7696152291
+3-Oxooctanoyl-[acp]	258.7696152291
+3-Oxodecanoyl-[acp]	258.7696152291
+3-Oxododecanoyl-[acp]	258.7696152291
+3-Oxohexadecanoyl-[acp]	258.7696152291
+3-Oxostearoyl-[acp]	258.7696152291
+Malonyl-[acp] methyl ester	186.7284896443
+3-Ketoglutaryl-[acp] methyl ester	258.7696152291
+Glutaryl-[acp] methyl ester	186.7284896443
+3-Ketopimeloyl-[acp] methyl ester	258.7696152291
+(3R)-3-Hydroxybutanoyl-[acyl-carrier protein]	198.9908168801
+(3R)-3-Hydroxydecanoyl-[acyl-carrier protein]	198.9908168801
+(3R)-3-Hydroxyoctanoyl-[acyl-carrier protein]	198.9908168801
+(3R)-3-Hydroxypalmitoyl-[acyl-carrier protein]	198.9908168801
+(3R)-3-Hydroxytetradecanoyl-[acyl-carrier protein]	327.16346786680003
+UDP-3-O-(3-hydroxytetradecanoyl)-N-acetylglucosamine	160.2112322568
+UDP-3-O-(3-hydroxytetradecanoyl)-D-glucosamine	221.8608013205
+(3R)-3-Hydroxyhexanoyl-[acyl-carrier protein]	198.9908168801
+(3R)-3-Hydroxydodecanoyl-[acyl-carrier protein]	198.9908168801
+(3R)-3-Hydroxyacyl-[acyl-carrier protein]	198.9908168801
+Dihydroflavodoxin	126.452544172
+Protein glycine	126.452544172
+Flavodoxin semiquinone	126.452544172
+Protein glycin-2-yl radical	126.452544172
+4-(Cytidine 5'-diphospho)-2-C-methyl-D-erythritol	205.1044246623
+Chitobiose	239.16386459839998
+N-Acetyl-D-glucosamine	816.9692961450999
+GA2	250.1146031848
+N-Acetyl-D-galactosamine	875.4011111468
+alpha-D-Galactosyl-(1->4)-beta-D-galactosyl-(1->4)-beta-D-glucosyl-(1<->1)-ceramide	224.8123010052
+Globoside	250.1146031848
+N-Acetyl-D-galactosaminyl-(N-acetylneuraminyl)-D-galactosyl-D-glucosylceramide	125.0573015924
+GM3	470.9290157916
+Globotriaosylceramide	224.8123010052
+GM2	125.0573015924
+G13074	125.0573015924
+G01391	250.1146031848
+G13073	125.0573015924
+N-Acetyl-D-glucosamine 6-sulfate	125.0573015924
+G13056	125.0573015924
+G10665	125.0573015924
+Gangliotriaosylceramide-II3 sulfate	125.0573015924
+Lactosylceramide sulfate	125.0573015924
+Pantetheine	179.59284359769998
+Pantothenate	295.6127595286
+D-4'-Phosphopantothenate	179.59284359769998
+N-((R)-Pantothenoyl)-L-cysteine	179.59284359769998
+(R)-4'-Phosphopantothenoyl-L-cysteine	179.59284359769998
+Protein glutamine	124.187790798
+Protein N5-methyl-L-glutamine	124.187790798
+D-Allose 6-phosphate	123.4178230413
+D-Allulose 6-phosphate	123.4178230413
+Phosphoenolpyruvate	538.9295820361999
+Shikimate 3-phosphate	217.8990020954
+5-O-(1-Carboxyvinyl)-3-phosphoshikimate	214.6769636501
+Acyl phosphate	169.8592175732
+sn-Glycerol 3-phosphate	224.7417976376
+L-Rhamnose	121.9391378706
+DNA(n)	121.7734481449
+5'-Phospho-DNA(m)	121.7734481449
+DNA(n	121.7734481449
+m)	121.7734481449
+Thiamine	187.907585769
+Thiamin diphosphate	217.8997196786
+THF-L-glutamate	116.2782225471
+Dihydropteroate	116.2782225471
+THF-polyglutamate(n)	116.2782225471
+THF-polyglutamate(n	116.2782225471
+1)	147.0187622279
+(R)-Pantoate	116.0199159309
+beta-Alanine	145.0437614627
+tRNA hypoxanthine	115.799438903
+Phenylacetic acid	169.9788398719
+Phenylacetyl-CoA	115.6349548711
+N-Acetyl-D-glucosamine 6-phosphate	273.28637252240003
+UDPMurNAc(oyl-L-Ala-D-gamma-Glu-L-Lys-D-Ala-D-Ala)	114.45452779
+MurAc(oyl-L-Ala-D-gamma-Glu-L-Lys-D-Ala-D-Ala)-diphospho-undecaprenol	200.0002110835
+UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-6-carboxy-L-lysyl-D-alanyl-D-alanine	114.45452779
+Undecaprenyl-diphospho-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine	200.0002110835
+Isochorismate	175.7079986475
+2-Succinyl-5-enolpyruvyl-6-hydroxy-3-cyclohexene-1-carboxylate	114.3511514278
+[Ribosomal protein uS12]-L-aspartate	114.3427138776
+[Ribosomal protein uS12]-3-methylthioaspartate	114.3427138776
+Chitin	456.426252024
+Uracil	301.8135439644
+alpha-D-Ribose 1-phosphate	343.95080609890005
+2-Deoxy-D-ribose 1-phosphate	230.1181627773
+5-FU	113.8326433216
+alpha-D-Fructofuranose	113.5509707547
+D-Xylose	139.40475948440002
+D-Xylulose	182.91578831790002
+alpha-D-Xylose	113.5509707547
+alpha-D-Xylulofuranose	113.5509707547
+L-Alanine	312.628265414
+tRNA(Ala)	112.782058179
+L-Alanyl-tRNA	112.782058179
+Maltodextrin	165.37000043220002
+O-Phospho-4-hydroxy-L-threonine	352.41628226110004
+2-Amino-3-oxo-4-phosphonooxybutyrate	220.932265711
+N-Acetylneuraminate	495.1662370352
+Galactosylceramide	420.3244114324
+GM4	220.8144126068
+Guanosine 3'-diphosphate 5'-triphosphate	195.22936390939998
+Guanosine 3',5'-bis(diphosphate)	107.8770159205
+Isopentenyl diphosphate	950.7584885598
+Geranyl diphosphate	214.8661481012
+trans,trans-Farnesyl diphosphate	293.4235564022
+Geranylgeranyl diphosphate	107.4330740506
+dTTP	124.8135757041
+tRNA(Ile)	104.2369403743
+L-Isoleucyl-tRNA(Ile)	104.2369403743
+Glutaconyl-1-CoA	103.7264083409
+Crotonoyl-CoA	157.42863291199998
+Carboxybiotinyl-[protein]	103.7264083409
+Biotinyl-[protein]	103.7264083409
+Sodium cation	414.9056333636
+[tRNA(Ile2)]-cytidine34	103.422088811
+L-Lysine	196.17356299929997
+[tRNA(Ile2)]-lysidine34	103.422088811
+Fumarate	638.9226381916001
+1-(5'-Phosphoribosyl)-5-amino-4-(N-succinocarboxamide)-imidazole	129.1646077187
+N6-Succino-2-amino-2'-deoxyadenylate	102.9748268955
+Folate	409.5962686088
+Tetrahydrobiopterin	102.3990671522
+7,8-Dihydrobiopterin	102.3990671522
+CDP-glycerol	102.3990671522
+Biotin	101.7759163416
+Biotinyl-5'-AMP	203.5518326832
+Apo-[carboxylase]	101.7759163416
+Holo-[carboxylase]	123.7734645385
+Hydrogen peroxide	629.1876296475
+Glutathione disulfide	175.4853228326
+Protein N(pi)-phospho-L-histidine	773.6428035032001
+Protein histidine	773.6428035032001
+alpha,alpha-Trehalose	101.0749412838
+alpha,alpha'-Trehalose 6-phosphate	101.0749412838
+Maltose 6'-phosphate	101.0749412838
+Salicin	101.0749412838
+Salicin 6-phosphate	101.0749412838
+Arbutin	101.0749412838
+Arbutin 6-phosphate	101.0749412838
+N-Acetylmuramate	101.0749412838
+N-Acetylmuramic acid 6-phosphate	158.338400082
+L-Methionyl-tRNA	152.7216370381
+N-Formylmethionyl-tRNA	100.9153628178
+Sulfite	316.7395598795
+Adenylyl sulfate	201.2822865052
+Ferricytochrome c	829.4257029158
+Selenite	159.931627141
+Ferrocytochrome c	829.4257029158
+Adenylylselenate	100.6411432526
+FAD	100.6411432526
+FADH2	100.6411432526
+Guanine	140.4533442337
+Xanthine	225.8730194744
+Melibiose	329.1940172274
+Raffinose	229.4390178146
+3-beta-D-Galactosyl-sn-glycerol	99.7549994128
+Glycerol	99.7549994128
+alpha-D-Galactosyl-(1->3)-1D-myo-inositol	99.7549994128
+Epimelibiose	99.7549994128
+D-Mannose	99.7549994128
+Melibiitol	99.7549994128
+D-Sorbitol	99.7549994128
+Stachyose	129.68401840180002
+Digalactosylceramide	99.7549994128
+Digalactosyl-diacylglycerol	99.7549994128
+1,2-Diacyl-3-beta-D-galactosyl-sn-glycerol	99.7549994128
+D-Gal alpha 1->6D-Gal alpha 1->6D-Glucose	129.68401840180002
+Galabiosylceramide	99.7549994128
+Nitrite	101.7368076192
+L-Threonylcarbamoyladenylate	97.6702046996
+N6-L-Threonylcarbamoyladenine in tRNA	136.98183316200002
+3-Deoxy-D-manno-octulosonate 8-phosphate	162.8163793113
+3-Deoxy-D-manno-octulosonate	96.1040425322
+2-Phospho-D-glycerate	260.6527764471
+Shikimate	150.1871597211
+L-Glutamyl 5-phosphate	93.7200318022
+tRNA uridine	93.3784811084
+[Enzyme]-S-sulfanylcysteine	93.3784811084
+tRNA containing 2-thiouridine	93.3784811084
+[Enzyme]-cysteine	93.3784811084
+L-Selenomethionine	145.0731411448
+Se-Adenosylselenomethionine	93.2668669245
+O-Phospho-L-serine	110.76868740610001
+3-Phosphonooxypyruvate	93.2617078658
+2-Oxo-3-hydroxy-4-phosphobutanoate	93.2617078658
+6-Carboxy-5,6,7,8-tetrahydropterin	92.868856942
+7-Carboxy-7-carbaguanine	92.868856942
+tRNA queuine	92.5025103663
+Epoxyqueuosine in tRNA	92.5025103663
+Ni(II)-pyridinium-3,5-bisthiocarboxylate mononucleotide	91.7074865288
+Pyridinium-3,5-bisthiocarboxylate mononucleotide	91.7074865288
+Nickel(2	91.7074865288
+)	91.7074865288
+4-Amino-4-deoxychorismate	91.5174186975
+N-Succinyl-LL-2,6-diaminoheptanedioate	89.3499264665
+Succinate	322.81849003919996
+LL-2,6-Diaminoheptanedioate	148.7154616003
+UDP-N-acetyl-alpha-D-glucosamine	336.49019090729996
+UDP-N-acetyl-3-(1-carboxyvinyl)-D-glucosamine	234.43921699589998
+ADP-ribose	87.9901927874
+Dimethylallyl phosphate	87.9901927874
+1,4-beta-D-Mannan	87.2831620457
+(n-1) H2O	87.2831620457
+n D-Mannose	87.2831620457
+Undecaprenyl-diphospho-N-acetylmuramoyl-(N-acetylglucosamine)-L-alanyl-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine	85.5456832935
+Undecaprenyl-diphospho-N-acetylmuramoyl-(N-acetylglucosamine)-L-alanyl-gamma-D-glutamyl-L-lysyl-D-alanyl-D-alanine	85.5456832935
+G10552	85.5456832935
+UDP-N-acetyl-D-glucosamine	171.091366587
+G10553	85.5456832935
+G10556	85.5456832935
+G10555	85.5456832935
+4-O-beta-D-Glucopyranosyl-D-mannose	85.522796726
+Mannobiose	134.83801518619998
+4-O-beta-D-Mannopyranosyl-D-glucopyranose	85.522796726
+Deamino-NAD	213.0799751009
+Carboxyspermidine	85.0092737001
+Spermidine	85.0092737001
+Carboxynorspermidine	85.0092737001
+Norspermidine	85.0092737001
+N-(5'-Phospho-D-1'-ribulosylformimino)-5-amino-1-(5''-phospho-D-ribosyl)-4-imidazolecarboxamide	152.6365416088
+Pyridoxamine phosphate	84.0479798489
+Pyridoxal phosphate	168.0959596978
+Pyridoxamine	84.0479798489
+Pyridoxal	168.0959596978
+Pyridoxine	84.0479798489
+5'-Phosphoribosylglycinamide	166.8995471732
+5'-Phosphoribosyl-N-formylglycinamide	189.6083033381
+L-Serine	419.9038512431
+Indole	325.07020357499994
+L-Tryptophan	325.07020357499994
+Indoleglycerol phosphate	325.07020357499994
+5-Amino-6-(5'-phospho-D-ribitylamino)uracil	83.1538524037
+dTDP	80.8599530271
+dUDP	80.8599530271
+Siroheme	79.8956946434
+Fe2	787.801698503
+Precorrin 2	151.3877262832
+2-C-Methyl-D-erythritol 4-phosphate	122.218713401
+1,4-beta-D-Glucan(n	78.8879822574
+2)	78.8879822574
+1,4-beta-D-Glucan(n)	78.8879822574
+Cellulose	157.7759645148
+Iminoaspartate	78.8228583645
+L-Ribulose 5-phosphate	92.4560804909
+D-Xylulose 5-phosphate	147.3993812166
+Glycerone	129.97118907499998
+tRNA(Leu)	75.1419272086
+L-Leucyl-tRNA	75.1419272086
+3-Phosphonopyruvate	73.6859655083
+Hydrogenobyrinate a,c diamide	73.6792899479
+Cob(II)yrinate a,c diamide	73.6792899479
+N-(L-Arginino)succinate	114.6310048778
+UDP-N-acetylmuramate	199.4346402227
+dTDP-4-amino-4,6-dideoxy-D-galactose	72.9374381893
+dTDP-4-acetamido-4,6-dideoxy-alpha-D-galactose	72.9374381893
+(3R)-3-Hydroxyoctadecanoyl-[acyl-carrier protein]	72.0411255848
+3-Hydroxyglutaryl-[acp] methyl ester	72.0411255848
+3-Hydroxypimeloyl-[acp] methyl ester	72.0411255848
+Malonyl-CoA	209.3346957271
+Phosphatidylserine	141.9106093511
+Phosphatidylethanolamine	71.4920316398
+Precorrin 3A	71.4920316398
+Cobalt-factor III	71.4920316398
+Thiamin monophosphate	71.1918418308
+7,8-Dihydroneopterin 3'-triphosphate	71.1918418308
+7,8-Dihydroneopterin	71.1918418308
+N-Carbamoyl-L-aspartate	124.3130545406
+Quinone	208.3494513818
+Hydroquinone	208.3494513818
+CDP-diacylglycerol	136.6597821685
+tRNA(Cys)	69.6026463214
+L-Cysteinyl-tRNA(Cys)	69.6026463214
+D-erythro-3-Methylmalate	121.33926986220001
+(2R,3S)-3-Isopropylmalate	242.67853972440003
+(2S)-2-Isopropyl-3-oxosuccinate	69.309070434
+tRNA(Phe)	85.87340452320001
+L-Phenylalanyl-tRNA(Phe)	85.87340452320001
+Long-chain fatty acid	68.8943986444
+Long-chain acyl-CoA	68.8943986444
+Hexadecanoic acid	68.8943986444
+Palmitoyl-CoA	68.8943986444
+1-Hydroxy-2-methyl-2-butenyl 4-diphosphate	137.0978683888
+Oxidized flavodoxin	68.5489341944
+Reduced flavodoxin	68.5489341944
+Propanoate	197.0027006276
+Propanoyl-CoA	161.819825342
+Reduced adrenal ferredoxin	136.135769973
+Oxidized adrenal ferredoxin	136.135769973
+DNA cytosine	68.0678849865
+5-Methylcytosine in DNA	68.0678849865
+Cobamide coenzyme	67.8708722948
+Adenosine-GDP-cobinamide	135.7417445896
+alpha-Ribazole	67.8708722948
+Adenosylcobalamin 5'-phosphate	67.8708722948
+D-Arabinose 5-phosphate	126.68519196540001
+2,3,4,5-Tetrahydrodipicolinate	132.6697956314
+(2S,4S)-4-Hydroxy-2,3,4,5-tetrahydrodipicolinate	132.6697956314
+Arabinan	131.2552775978
+L-Arabinose	65.6276387989
+ADP-glucose	109.0584072633
+Amylose	267.5388241618
+Isocitrate	128.566019023
+cis-Aconitate	128.566019023
+Creatinine	63.9819546462
+Creatine	63.9819546462
+tRNA(Val)	63.9404637921
+L-Valyl-tRNA(Val)	63.9404637921
+NMNH	63.4624800483
+Orotidine 5'-phosphate	63.3767199401
+L-Alanyl-D-glutamate	63.1681019353
+L-Alanyl-L-glutamate	63.1681019353
+N-Acetyl-D-glutamate	63.1681019353
+Hypoxanthine	123.6481306661
+Urate	62.6159381109
+HCO3-	194.377088984
+Carbamate	150.3819925902
+Carboxyphosphate	150.3819925902
+Thioredoxin	160.0367244033
+Thioredoxin disulfide	160.0367244033
+Hydrogen selenide	76.7974634287
+Methylselenic acid	59.2904838884
+Methaneselenol	59.2904838884
+D-Alanine	59.1680526585
+[Fe-S] cluster scaffold protein carrying a [4Fe-4S]2	176.9765009649
+cluster	176.9765009649
+Reduced [2Fe-2S] ferredoxin	353.9530019298
+[Protein]-N6-[(R)-dihydrolipoyl]-L-lysine	58.9921669883
+[Fe-S] cluster scaffold protein	176.9765009649
+Oxidized [2Fe-2S] ferredoxin	353.9530019298
+Enzyme N6-(dihydrolipoyl)lysine	77.782738055
+3-Dehydroshikimate	111.2663647822
+3,5-Dehydroshikimate	55.6331823911
+D-Glucuronate	248.05146826329997
+D-Fructuronate	55.052403425
+D-Galacturonate	55.052403425
+Porphobilinogen	219.9239050676
+2-Phenylacetamide	54.3438850008
+(Indol-3-yl)acetamide	54.3438850008
+Indole-3-acetate	54.3438850008
+4-Guanidinobutanamide	54.3438850008
+4-Guanidinobutanoate	54.3438850008
+Monocarboxylic acid amide	54.3438850008
+Carboxylate	54.3438850008
+Acrylic acid	54.3438850008
+Acrylamide	54.3438850008
+Benzamide	54.3438850008
+Benzoate	54.3438850008
+L-3-Aminobutyryl-CoA	53.7022245711
+L-2-Amino-3-oxobutanoic acid	53.6290646179
+N-Acetyl-D-mannosamine	107.0748236432
+Aceneuramate	53.5374118216
+UDP-N-acetylmuramoyl-L-alanine	90.4846693777
+L-Galactose	53.3546902795
+L-Galactono-1,5-lactone	53.3546902795
+L-Ornithine	53.1732117412
+L-Citrulline	94.2045089903
+L-Homoserine	52.5770995019
+O-Phospho-L-homoserine	90.7994081862
+G13038	52.2433670255
+G13039	52.2433670255
+(R)-2-Methylmalate	52.0301994282
+2-Methylmaleate	104.0603988564
+2-Isopropylmaleate	104.0603988564
+Coproporphyrinogen III	51.8791734023
+Uroporphyrinogen I	51.8791734023
+Coproporphyrinogen I	51.8791734023
+tRNA(Met)	103.6125484406
+Selenomethionyl-tRNA(Met)	51.8062742203
+4-Hydroxybenzoate	51.7646498407
+Glyoxylate	119.3825742208
+D-Glycerate	138.45941394660002
+Hydroxypyruvate	51.7075774594
+6-Phospho-D-gluconate	149.23668513159998
+2-(alpha-Hydroxyethyl)thiamine diphosphate	101.1839757404
+Enzyme N6-(lipoyl)lysine	119.9745468071
+[Dihydrolipoyllysine-residue acetyltransferase] S-acetyldihydrolipoyllysine	101.1839757404
+tRNA(Lys)	50.0774316444
+L-Lysyl-tRNA	50.0774316444
+UDP-glucuronate	85.3411192696
+UDP-D-xylose	49.8923114422
+1,4-beta-D-Mannooligosaccharide(n)	49.3152184602
+(n-2) Orthophosphate	49.3152184602
+(n-2) D-Mannose 1-phosphate	49.3152184602
+beta-D-Mannosyl-1,4-N-acetyl-D-glucosamine	49.3152184602
+2-(Formamido)-N1-(5'-phosphoribosyl)acetamidine	70.3217234296
+Aminoimidazole ribotide	47.6129672647
+GDP-4-dehydro-6-deoxy-D-mannose	47.2293784045
+L-Threonine O-3-phosphate	47.1344449806
+D-1-Aminopropan-2-ol O-phosphate	47.1344449806
+Acetyl adenylate	93.4030915622
+Propionyladenylate	93.4030915622
+D-Glucono-1,5-lactone 6-phosphate	149.5382927146
+5-Aminopentanoate	75.3207584199
+D-Proline	46.2969128881
+(2R,4S)-2,4-Diaminopentanoate	92.5938257762
+2-Amino-4-oxopentanoic acid	92.5938257762
+(2R,5S)-2,5-Diaminohexanoate	92.5938257762
+2-Amino-5-oxohexanoate	92.5938257762
+alpha-D-Galactose 1-phosphate	46.0243108496
+Itaconate	45.3128239185
+Itaconyl-CoA	45.3128239185
+alpha-D-Ribose 1-methylphosphonate 5-triphosphate	45.0516549046
+alpha-D-Ribose 1-methylphosphonate 5-phosphate	45.0516549046
+Butanoic acid	44.8792083787
+Butanoylphosphate	44.8792083787
+5-Fluorodeoxyuridine	44.2280106782
+D-Glucose 1-phosphate	174.319581504
+UDP-N-acetyl-D-mannosamine	43.7080827173
+Pimeloyl-CoA	43.6267653541
+8-Amino-7-oxononanoate	108.7963753364
+Pimeloyl-[acyl-carrier protein]	43.6267653541
+2-Deoxy-D-ribose 5-phosphate	71.99694212579999
+Hydroxyacetone	41.9488128405
+O-Acetyl-L-homoserine	124.8588914619
+Methanethiol	41.6196304873
+Thiosulfate	100.7462405149
+O-Acetyl-L-serine	94.1405691082
+beta-D-Glucose 1-phosphate	41.415990457
+Lipoylprotein	59.90626483050001
+4-Phospho-L-aspartate	40.3408617894
+7-Aminomethyl-7-carbaguanine	39.8122009811
+tRNA 7-aminomethyl-7-carbaguanine	39.8122009811
+2-Methylthio-N6-L-threonylcarbamoyladenine in tRNA	39.3116284624
+L-Threonine	71.7815182413
+4-Hydroxy-L-threonine	38.2223086843
+Thymine	37.0741286606
+Cytosine	37.0741286606
+D-Glutamate	37.0600455094
+6-Thioxanthine 5'-monophosphate	36.8701043677
+6-Thioguanosine monophosphate	36.8701043677
+S-Inosyl-L-homocysteine	36.7833511809
+5'-Methylthioadenosine	36.7833511809
+5'-S-Methyl-5'-thioinosine	36.7833511809
+Precorrin 6Y	36.5539927948
+Precorrin 8X	36.5539927948
+Cobalt-dihydro-precorrin 6	36.5539927948
+Cobalt-precorrin 7	73.1079855896
+Cobalt-precorrin 8	36.5539927948
+Galactitol	35.6644659739
+Galactitol 1-phosphate	35.6644659739
+UDP-glucose	70.9244301842
+Acetyl phosphate	35.1828752856
+Propanoyl phosphate	35.1828752856
+(R)-Methylmalonyl-CoA	34.5944423651
+Rutin	34.4206421006
+beta-L-Rhamnose	68.8412842012
+Naringin	34.4206421006
+(Alginate)n	34.2827286226
+Oligouronide with 4-deoxy-alpha-L-erythro-hex-4-enopyranuronosyl group	34.2827286226
+tRNA(Thr)	33.559209557
+L-Threonyl-tRNA(Thr)	33.559209557
+Cys-Gly	57.140832446800005
+R-S-Cysteinylglycine	57.140832446800005
+S-Substituted L-cysteine	57.140832446800005
+Urocanate	32.1004604762
+4-Hydroxy-2-oxo-heptanedioate	32.0344061231
+Succinate semialdehyde	93.09265777799999
+2,4-Dihydroxyhept-2-enedioate	32.0344061231
+Lactose 6'-phosphate	30.4537485427
+Sucrose 6-phosphate	29.929018989
+D-Ribose	29.8596799913
+Deoxyribose	29.8596799913
+3-Oxopropanoate	29.0238455318
+4-Aminobutanoate	29.0238455318
+5-Oxopentanoate	29.0238455318
+L-3-Aminoisobutanoate	29.0238455318
+(S)-Methylmalonate semialdehyde	29.0238455318
+beta-D-Glucuronoside	27.5712949769
+Alcohol	27.5712949769
+Bilirubin beta-diglucuronide	27.5712949769
+D-Urobilinogen	27.5712949769
+G13040	27.5712949769
+G09660	27.5712949769
+Luteolin 7-O-[beta-D-glucuronosyl-(1->2)-beta-D-glucuronide]-4'-O-beta-D-glucuronide	27.5712949769
+Luteolin 7-O-[beta-D-glucuronosyl-(1->2)-beta-D-glucuronide]	27.5712949769
+SN38 glucuronide	27.5712949769
+SN-38	27.5712949769
+G00526	49.3239725074
+G00711	27.5712949769
+D-Arabinose	27.5389152999
+D-Ribulose	41.960432137400005
+L-Fucose	27.5389152999
+L-Fuculose	27.5389152999
+tRNA(Arg)	27.4764716636
+L-Arginyl-tRNA(Arg)	27.4764716636
+1-(5-Phospho-D-ribosyl)-5-amino-4-imidazolecarboxylate	26.1897808232
+1,4-beta-D-Xylan	51.7075774594
+CDP-glucose	24.8152185588
+Cyclic di-3',5'-adenylate	24.2120664717
+5'-O-Phosphonoadenylyl-(3'->5')-adenosine	24.2120664717
+L-Galactonate	23.903553902
+Carboxybiotin-carboxyl-carrier protein	21.9975481969
+G13043	21.7526775305
+DWA-2	43.505355061
+N-Acetylgalactosamine	21.7526775305
+G12336	21.7526775305
+N-Acetylgalactosamine 4-sulfate	21.7526775305
+Hyaluronic acid	43.505355061
+S-Adenosyl-4-methylthio-2-oxobutanoate	21.5428446282
+7,8-Diaminononanoate	21.5428446282
+L-Glutamate 5-semialdehyde	40.3874234552
+L-erythro-4-Hydroxyglutamate	60.5811351828
+L-4-Hydroxyglutamate semialdehyde	20.1937117276
+tRNA(Tyr)	19.5056991007
+L-Tyrosyl-tRNA(Tyr)	19.5056991007
+4-Imidazolone-5-propanoate	19.5054034241
+N-Formimino-L-glutamate	19.5054034241
+2-Methylpropanoyl-CoA	18.7905710667
+3-Methylbutanoyl-CoA	18.7905710667
+Dihydrolipoamide	18.7905710667
+Lipoamide	18.7905710667
+2-Oxoadipate	18.7905710667
+Glutaryl-CoA	18.7905710667
+(S)-2-Methylbutanoyl-CoA	18.7905710667
+Trimethylamine	18.2485497104
+Trimethylamine N-oxide	18.2485497104
+n D-Glucose	17.5782506581
+n Maltose	17.5782506581
+L-Selenocysteine	17.5069795403
+Fructan(n	17.4474601026
+Fructan(n)	17.4474601026
+tRNA(Gly)	15.6852082795
+Glycyl-tRNA(Gly)	15.6852082795
+L-Ribulose	14.4215168375
+Isomaltose	13.2930795782
+Starch(n	13.2930795782
+Starch(n)	13.2930795782
+5,6,7,8-Tetrahydromethanopterin	12.2075349784
+5,10-Methylenetetrahydromethanopterin	12.2075349784
+tRNA(Asp)	6.1741406998
+L-Aspartyl-tRNA(Asp)	6.1741406998

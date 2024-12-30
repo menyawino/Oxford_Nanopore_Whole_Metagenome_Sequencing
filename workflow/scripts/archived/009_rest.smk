@@ -28,6 +28,34 @@
 #         """
 
 
+# #######################################
+# # Rule: Metabolite Prediction with MelonnPan
+# #######################################
+# rule melonnpan_prediction:
+#     input:
+#         pathways_abundance = rules.map_ko_to_metabolites.output.metabolites
+#     output:
+#         metabolites = "results/005_metabolites/melonnpan/MelonnPan_Predicted_Metabolites.txt",
+#         rtsi = "results/005_metabolites/melonnpan/MelonnPan_RTSI.txt"
+#     conda:
+#         "melonpann_env"
+#     threads:
+#         config["threads"]
+#     benchmark:
+#         "benchmark/005_metabolites/melonnpan/melonnpan.time"
+#     params:
+#         predict_metabolites = config["predict_metabolites"]
+#     log:
+#         "logs/005_metabolites/melonnpan/melonnpan.log"
+#     shell:
+#         """
+#         Rscript {params.predict_metabolites} \
+#         -i {input.pathways_abundance} \
+#         -o results/005_metabolites/melonnpan/ \
+#         &> {log}
+#         """
+
+
 # #########################################
 # # EXPERIMENTAL Rule: Calculate Taxa Contribution to Pathways
 # #########################################

@@ -1,5 +1,5 @@
 #mpa_vOct22_CHOCOPhlAnSGB_202403
-#/home/omar/Downloads/miniconda3/envs/humann_env/bin/metaphlan /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947175/SRR7947175_merged_humann_temp/tmput8gtde8/tmpf2qlyn__ -t rel_ab_w_read_stats -o /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947175/SRR7947175_merged_1_metaphlan_profile.tsv --input_type fastq --bowtie2out /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947175/SRR7947175_merged_humann_temp/SRR7947175_merged_metaphlan_bowtie2.txt --nproc 22
+#/home/omar/Downloads/miniconda3/envs/humann_env/bin/metaphlan /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947175/SRR7947175_merged_humann_temp/tmpto0oyb68/tmp9wlyjne1 -t rel_ab_w_read_stats -o /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947175/SRR7947175_merged_1_metaphlan_profile.tsv --input_type fastq --bowtie2out /mnt/omar/pipelines/ont/work/results/004_pathways/humann/SRR7947175/SRR7947175_merged_humann_temp/SRR7947175_merged_metaphlan_bowtie2.txt --nproc 11
 #65242 reads processed
 #Average read length 753.0900800098096
 #SampleID	Metaphlan_Analysis

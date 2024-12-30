@@ -30,6 +30,7 @@ rule humann_functional_profiling:
         --protein-database {params.humann_prot_db} \
         --resume \
         --bowtie-options "--very-sensitive-local " \
+        --remove-stratified-output \
         &> {log}
         """
 
