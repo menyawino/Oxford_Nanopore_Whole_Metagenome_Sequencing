@@ -4,7 +4,6 @@ import requests
 import time
 
 def read_and_process_file(file):
-    # turn list into a string
     file = file[0]
     print(f"Processing {file}")
 
@@ -20,11 +19,8 @@ def read_and_process_file(file):
     for i, row in df.iterrows():
         if row["Reaction"] == "UNMAPPED" or row["Reaction"] == "UNGROUPED":
             df.drop(i, inplace=True)
-
-    # reset index
     df.reset_index(drop=True, inplace=True)
     
-
     return df.to_dict(orient='list')
 
 def get_reactions_from_ko(ko_id):
