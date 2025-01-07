@@ -8,4 +8,5 @@
 /samples/*
 /others/*
 /workflow/scripts/archived/*
+/workflow/scripts/mptest.tsv/*
 /mnt/omar/pipelines/ont/work/logs/005_metabolites/*/*
