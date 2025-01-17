@@ -2,16 +2,17 @@
 configfile: "workflow/config.yml"
 
 # include: "rules/001_basecall.smk"
-# include: "rules/002_qc.smk"
-# include: "rules/003_abundance.smk"
+include: "rules/002_qc.smk"
+include: "rules/003_abundance.smk"
 include: "rules/004_pathways.smk"
 # include: "rules/005_amr.smk"
 # include: "rules/006_tree.smk"
-include: "rules/007_metabolites.smk"
+# include: "rules/007_metabolites.smk"
 include: "rules/010_multiqc.smk"
 
 rule all:
     input:
-        expand(rules.humann_functional_profiling.output.pathways_abundance, sample=config["samples"]),
-        expand(rules.humann_kegg_pathways.output.kegg_pathways, sample=config["samples"]),
-        expand(rules.map_ko_to_metabolites.output.metabolites, sample=config["samples"]),
+        expand(rules.estimate_alpha_diversity.output.alpha_diversity, sample=config["samples"]),
+        # expand(rules.humann_functional_profiling.output.pathways_abundance, sample=config["samples"]),
+        # expand(rules.humann_kegg_pathways.output.kegg_pathways, sample=config["samples"]),
+        # expand(rules.map_ko_to_metabolites.output.metabolites, sample=config["samples"]),

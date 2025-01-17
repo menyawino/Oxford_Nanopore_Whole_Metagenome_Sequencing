@@ -6,7 +6,7 @@ rule qc_fastq:
         "Running FastQC on {wildcards.sample}_{wildcards.read}"
     input:
         fastq = "samples/fastq/{sample}_{read}.fastq.gz"
-    output:z
+    output:
         html = "results/002_qc/fastqc/{sample}_{read}_fastqc.html",
         zip = "results/002_qc/fastqc/{sample}_{read}_fastqc.zip"
     conda:

@@ -43,6 +43,8 @@ rule reestimate_abundance:
         level = "S"  # For species level
     conda:
         "ont"
+    threads: 
+        config["threads"]
     benchmark:
         "benchmark/003_abundance/bracken/{sample}.time"
     log:
@@ -54,6 +56,32 @@ rule reestimate_abundance:
         -o {output.bracken_output} \
         -l {params.level} \
         -r 150 \
+        -t {threads} \
         &> {log}
+        """
+
+#######################################
+# Rule 6: Alpha Diversity Estimation
+#######################################
+rule estimate_alpha_diversity:
+    input:
+        bracken_output = rules.reestimate_abundance.output.bracken_output
+    output:
+        alpha_diversity = "results/003_abundance/alpha_diversity/{sample}_alpha_diversity.txt"
+    params:
+        alpha_type = "Sh"  # Default to Shannon's diversity
+    conda:
+        "ont"
+    benchmark:
+        "benchmark/003_abundance/alpha_diversity/{sample}.time"
+    log:
+        "logs/003_abundance/alpha_diversity/{sample}.log"
+    shell:
+        """
+        python scripts/003_alpha_diversity.py \
+        -f {input.bracken_output} \
+        -a {params.alpha_type} \
+        > {output.alpha_diversity} \
+        2> {log}
         """
 
