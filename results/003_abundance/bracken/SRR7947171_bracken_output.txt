@@ -1,0 +1,36 @@
+name	taxonomy_id	taxonomy_lvl	kraken_assigned_reads	added_reads	new_est_reads	fraction_total_reads
+Homo sapiens	9606	S	10369	46	10415	0.55393
+Bacteroides thetaiotaomicron	818	S	501	173	674	0.03585
+Bacteroides uniformis	820	S	446	742	1188	0.06318
+Bacteroides caccae	47678	S	245	54	299	0.01590
+Bacteroides ovatus	28116	S	75	603	678	0.03606
+Bacteroides xylanisolvens	371601	S	24	62	86	0.00457
+Bacteroides faecis	674529	S	18	8	26	0.00138
+Bacteroides salyersiae	291644	S	13	2	15	0.00080
+Phocaeicola vulgatus	821	S	12	5	17	0.00090
+Parabacteroides merdae	46503	S	515	200	715	0.03803
+Parabacteroides distasonis	823	S	25	56	81	0.00431
+Butyricimonas paravirosa	1472417	S	38	35	73	0.00388
+Enterocloster bolteae	208479	S	494	81	575	0.03058
+Enterocloster clostridioformis	1531	S	305	90	395	0.02101
+Enterocloster asparagiformis	333367	S	14	0	14	0.00074
+Mediterraneibacter gnavus	33038	S	549	99	648	0.03446
+[Ruminococcus] torques	33039	S	179	17	196	0.01042
+Blautia wexlerae	418240	S	394	175	569	0.03026
+Blautia hansenii	1322	S	103	25	128	0.00681
+Blautia luti	89014	S	33	12	45	0.00239
+Blautia obeum	40520	S	24	6	30	0.00160
+Blautia coccoides	1532	S	11	35	46	0.00245
+Blautia argi	1912897	S	11	2	13	0.00069
+[Clostridium] scindens	29347	S	74	4	78	0.00415
+Dorea longicatena	88431	S	12	2	14	0.00074
+Clostridium sp. M62/1	411486	S	45	15	60	0.00319
+Hungatella hathewayi	154046	S	20	2	22	0.00117
+Flavonifractor plautii	292800	S	32	9	41	0.00218
+Intestinimonas butyriciproducens	1297617	S	17	0	17	0.00090
+Phascolarctobacterium sp. Marseille-Q4147	2823317	S	18	9	27	0.00144
+Phascolarctobacterium succinatutens	626940	S	17	13	30	0.00160
+Dialister pneumosintes	39950	S	14	0	14	0.00074
+[Clostridium] innocuum	1522	S	38	3	41	0.00218
+Thomasclavelia ramosa	1547	S	15	0	15	0.00080
+Escherichia coli	562	S	250	1249	1499	0.07973

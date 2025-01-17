@@ -14,7 +14,7 @@ rule classify_taxa:
     threads: 
         config["threads"]
     resources:
-        mem_mb = 37000
+        mem_mb = 80000 #Very ram intensive for long reads input, for short reads, reduce to 40000
     benchmark:
         "benchmark/003_abundance/kraken2/{sample}.time"
     log:
@@ -69,6 +69,7 @@ rule estimate_alpha_diversity:
     output:
         alpha_diversity = "results/003_abundance/alpha_diversity/{sample}_alpha_diversity.txt"
     params:
+        alpha_diversity = config["003_alpha_diversity"],
         alpha_type = "Sh"  # Default to Shannon's diversity
     conda:
         "ont"
@@ -78,7 +79,7 @@ rule estimate_alpha_diversity:
         "logs/003_abundance/alpha_diversity/{sample}.log"
     shell:
         """
-        python scripts/003_alpha_diversity.py \
+        python {params.alpha_diversity} \
         -f {input.bracken_output} \
         -a {params.alpha_type} \
         > {output.alpha_diversity} \

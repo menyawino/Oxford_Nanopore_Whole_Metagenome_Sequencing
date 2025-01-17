@@ -11,12 +11,16 @@ reads:
   - 1
   - 2
 
+# databases
 fast5_dir: "samples/fast5"
 kraken_db: "/mnt/omar/pipelines/ont/work/ref/kraken2"
 bracken_db: "/mnt/omar/pipelines/ont/work/ref/kraken2"
 humann_nuc_db: "/mnt/omar/misc/tests/chocophlan/chocophlan"
 humann_prot_db: "/mnt/omar/misc/tests/uniref"
 humann_kegg_db: "/mnt/omar/pipelines/ont/work/ref/humann/legacy/humann_legacy-0.99b/data/keggc"
+
+# scripts
+003_alpha_diversity: "/mnt/omar/pipelines/ont/work/workflow/scripts/003_alpha_diversity.py"
 predict_metabolites: "/mnt/omar/pipelines/ont/softwares/melonnpan/predict_metabolites.R"
 
 threads: 11
